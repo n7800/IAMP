@@ -1,0 +1,202 @@
+object frmDesign: TfrmDesign
+  Left = 199
+  Height = 420
+  Top = 140
+  Width = 620
+  HelpType = htKeyword
+  HelpKeyword = 'passingvariables'
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Install $TITLE$'
+  ClientHeight = 420
+  ClientWidth = 620
+  Color = clBtnFace
+  DoubleBuffered = True
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Lucida Grande'
+  KeyPreview = True
+  ParentDoubleBuffered = False
+  Position = poScreenCenter
+  LCLVersion = '2.2.2.0'
+object Welcome: TLabel
+  Left = 184
+  Height = 16
+  Top = 18
+  Width = 171
+  Caption = 'Change, Repair, or Remove'
+  ParentColor = False
+end
+object GoForward: TButton
+  Tag = 1
+  Left = 517
+  Height = 24
+  Top = 382
+  Width = 83
+  Caption = 'Continue'
+  Default = True
+  TabOrder = 0
+end
+object GoBack: TButton
+  Tag = 2
+  Left = 427
+  Height = 24
+  Top = 382
+  Width = 81
+  Caption = 'Go Back'
+  Enabled = False
+  TabOrder = 1
+end
+object Label1: TLabel
+  Left = 39
+  Height = 16
+  Top = 61
+  Width = 78
+  Caption = 'Introduction'
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Lucida Grande'
+  ParentColor = False
+  ParentFont = False
+end
+object Label2: TLabel
+  Left = 39
+  Height = 16
+  Top = 86
+  Width = 53
+  Caption = 'Read Me'
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Lucida Grande'
+  ParentColor = False
+  ParentFont = False
+end
+object Label3: TLabel
+  Left = 39
+  Height = 16
+  Top = 111
+  Width = 47
+  Caption = 'License'
+  ParentColor = False
+end
+object Label4: TLabel
+  Left = 39
+  Height = 16
+  Top = 136
+  Width = 113
+  Caption = 'Destination Select'
+  ParentColor = False
+end
+object Label5: TLabel
+  Left = 39
+  Height = 16
+  Top = 161
+  Width = 113
+  Caption = 'Installation Type'
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Lucida Grande'
+  Font.Style = [fsBold]
+  ParentColor = False
+  ParentFont = False
+end
+object Label6: TLabel
+  Left = 39
+  Height = 16
+  Top = 186
+  Width = 70
+  Caption = 'Installation'
+  ParentColor = False
+end
+object Label7: TLabel
+  Left = 39
+  Height = 16
+  Top = 211
+  Width = 59
+  Caption = 'Summary'
+  ParentColor = False
+end
+object Remove: TButton
+  Tag = 5
+  Left = 183
+  Height = 25
+  Top = 382
+  Width = 121
+  Caption = 'Remove'
+  TabOrder = 2
+end
+object Tree: TTreeView
+  Tag = 1
+  Left = 183
+  Height = 223
+  Top = 39
+  Width = 416
+  TabOrder = 3
+end
+object Label8: TLabel
+  Left = 234
+  Height = 13
+  Top = 271
+  Width = 85
+  Caption = 'Space Required:'
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Lucida Grande'
+  ParentColor = False
+  ParentFont = False
+end
+object Label9: TLabel
+  Left = 411
+  Height = 13
+  Top = 271
+  Width = 60
+  Caption = 'Remaining:'
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Lucida Grande'
+  ParentColor = False
+  ParentFont = False
+end
+object SpaceRequired: TStaticText
+  Tag = 3
+  Left = 325
+  Height = 17
+  Top = 271
+  Width = 75
+  Caption = '-'
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Lucida Grande'
+  ParentFont = False
+  TabOrder = 4
+end
+object Remaining: TStaticText
+  Tag = 5
+  Left = 475
+  Height = 17
+  Top = 271
+  Width = 65
+  Caption = '-'
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Lucida Grande'
+  ParentFont = False
+  TabOrder = 5
+end
+object Bevel1: TBevel
+  Left = 183
+  Height = 67
+  Top = 303
+  Width = 417
+  Shape = bsFrame
+end
+object Description: TStaticText
+  Tag = 2
+  Left = 194
+  Height = 40
+  Top = 317
+  Width = 392
+  Caption = 'Description'
+  TabOrder = 6
+end
+end

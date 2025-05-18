@@ -1,0 +1,201 @@
+object scrGetSystemSettings: TscrGetSystemSettings
+  Left = 8
+  Height = 150
+  Top = 25
+  Width = 528
+  HelpType = htKeyword
+  HelpKeyword = 'getsystemsettings'
+  BorderStyle = bsDialog
+  Caption = 'Get System Settings (Windows Only)'
+  ClientHeight = 150
+  ClientWidth = 528
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 16
+    Width = 42
+    Caption = '&Variable:'
+    FocusControl = Variable
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 64
+    Width = 51
+    Caption = '&Capability:'
+    ParentColor = False
+  end
+  object Variable: TComboBox
+    Left = 16
+    Height = 20
+    Top = 32
+    Width = 497
+    ItemHeight = 19
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 360
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    NumGlyphs = 2
+    TabOrder = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 440
+    Height = 25
+    Top = 112
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    NumGlyphs = 2
+    TabOrder = 3
+  end
+  object Capability: TComboBox
+    Left = 16
+    Height = 20
+    Top = 80
+    Width = 497
+    ItemHeight = 26
+    ItemIndex = 0
+    Items.Strings = (
+      'Administrator Rights'
+      '32 MB Physical Memory'
+      '64 MB Physical Memory'
+      '128 MB Physical Memory'
+      '256 MB Physical Memory'
+      '512 MB Physical Memory'
+      '1 GB Physical Memory'
+      '2 GB Physical Memory'
+      '800x600 Resolution'
+      '1024x768 Resolution'
+      '1280x1024 Resolution'
+      '1600x1200 Resolution'
+      '1920x1440 Resolution'
+      '8-bit Color Depth (Low Colors)'
+      '16-bit Color Depth (Medium Colors)'
+      '24-bit Color Depth (High Colors)'
+      '32-bit Color Depth (Highest Colors)'
+      'Windows 9X Kernel (95, 98, ME)'
+      'Windows NT Kernel (NT4, 2000, XP, 2003, Vista, 2008, 7, 2008 R2, 8, 2012, 8.1, 2012 R2, 10, 2016, 2019)'
+      'Windows 95'
+      'Windows 98'
+      'Windows 98 SE'
+      'Windows ME'
+      'Windows NT4'
+      'Windows 2000'
+      'Windows XP'
+      'Windows 2003'
+      'Service Pack 1'
+      'Service Pack 2'
+      'Service Pack 3'
+      'Service Pack 4'
+      'Service Pack 5'
+      'Service Pack 6'
+      'Language (Numeric)'
+      'Language (Text)'
+      'Licensed User (Text)'
+      'Licensed Company (Text)'
+      'Internet Explorer 6.0 Service Pack 1'
+      'Internet Explorer 6.0'
+      'Internet Explorer 5.5 Service Pack 2'
+      'Internet Explorer 5.5 Service Pack 1'
+      'Internet Explorer 5.5'
+      'Internet Explorer 5.01 Service Pack 3'
+      'Internet Explorer 5.01 Service Pack 2'
+      'Internet Explorer 5.01 Service Pack 1'
+      'Internet Explorer 5.0'
+      'Internet Explorer 4.01 Service Pack 2'
+      'Internet Explorer 4.01 Service Pack 1'
+      'Internet Explorer 4.01'
+      'Internet Explorer 4.0'
+      'Internet Explorer 3.02 and 3.02a'
+      'Internet Explorer 3.01'
+      'Internet Explorer 3.0'
+      'Internet Information Server 6'
+      'Internet Information Server 5.1'
+      'Internet Information Server 5'
+      'Internet Information Server 4'
+      'Internet Information Server 3'
+      'Internet Information Server 2'
+      'IIS Anonymous User Account'
+      'Logged on User Name'
+      'Logged on Computer Name'
+      'Logged on Domain Name'
+      'Logged on User Priviledge Level'
+      'Screen DPI Setting'
+      'Windows in 64 bit Mode'
+      'Windows with Tablet PC Support'
+      'Windows with Media Center'
+      'Windows with Server Features'
+      'Windows Vista'
+      'VMware Virtual Machine'
+      'Virtual PC Virtual Machine'
+      'Internet Explorer 7'
+      'Internet Information Server 7'
+      'Real Hardware (no virtualization)'
+      'Processor Architecture'
+      'Windows 2008'
+      'Vista UAC Elevation'
+      'Internet Explorer 8'
+      'Windows 7'
+      'Internet Information Server 7.5'
+      'Windows 2008 R2'
+      'Horizontal Pixel Count (X)'
+      'Vertical Pixel Count (Y)'
+      'Total RAM Count (MB)'
+      'Internet Explorer 9'
+      'Internet Explorer 10'
+      'Windows 8'
+      'Windows Server 2012'
+      'Internet Information Server 8'
+      'Hyper-V Virtual Machine'
+      'Processor Count'
+      'Windows 8.1'
+      'Windows Server 2012 R2'
+      'Internet Explorer 11'
+      'Windows 8.1 Update 1'
+      'Solid State Drive at $TARGETDIR$'
+      'Windows Server 2012 R2 Update 1'
+      'Windows 10'
+      'Windows Server 2016'
+      'Windows 10 Threshold 2'
+      'Windows 10 Redstone'
+      'Windows 10 Creators Update'
+      'Windows 10 Fall Creators Update'
+      'System Default UI Language/Install Language (Numeric)'
+      'System Default UI Language/Install Language (Text)'
+      'System UI Language (Numeric)'
+      'System UI Language (Text)'
+      'User UI Language (Numeric)'
+      'User UI Language (Text)'
+      'Windows 10 April 2018 Update'
+      'Windows on ARM'
+      'Windows 10 October 2018 Update'
+      'Windows 10 April 2019 Update'
+      'Windows Server 2019'
+      'Windows 10 October 2019 Update'
+      'Windows 10 April 2020 Update'
+      'Windows Edition (Vista and Newer)'
+      'Pseudo Unique Machine Identifier'
+      'Windows 10 October 2020 Update'
+    )
+    Style = csDropDownList
+    TabOrder = 1
+    Text = 'Administrator Rights'
+  end
+end

@@ -1,0 +1,24 @@
+object SetupSplash: TSetupSplash
+  Left = 337
+  Height = 105
+  Top = 243
+  Width = 105
+  AutoSize = True
+  BorderStyle = bsNone
+  Caption = 'SetupSplash'
+  ClientHeight = 105
+  ClientWidth = 105
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Position = poDefault
+  LCLVersion = '3.4.0.0'
+  object Image: TImage
+    Left = 0
+    Height = 105
+    Top = 0
+    Width = 105
+    AutoSize = True
+  end
+end

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="miaxbuild.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="68"/>
+        <CursorPos X="5" Y="75"/>
+        <UsageCount Value="75"/>
+        <Bookmarks Count="2">
+          <Item0 X="29" Y="130" ID="2"/>
+          <Item1 Y="287" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mbuild.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Build"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="283"/>
+        <CursorPos X="9" Y="287"/>
+        <UsageCount Value="75"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mscriptexec.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mScriptExec"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="16270"/>
+        <CursorPos X="61" Y="16291"/>
+        <UsageCount Value="75"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mbuildthread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="417"/>
+        <CursorPos Y="437"/>
+        <UsageCount Value="75"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mAutomate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="539"/>
+        <CursorPos Y="428"/>
+        <UsageCount Value="75"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mUtils"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="4032"/>
+        <CursorPos X="3" Y="4036"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="upool.pas"/>
+        <UnitName Value="uPool"/>
+        <EditorIndex Value="11"/>
+        <CursorPos X="21" Y="11"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/inc/systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1359"/>
+        <CursorPos X="11" Y="1369"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/inc/system.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1873"/>
+        <CursorPos X="3" Y="1875"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/unix/sysdir.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="112"/>
+        <CursorPos X="11" Y="112"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/finah.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="11" Y="40"/>
+        <UsageCount Value="16"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/fina.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="160"/>
+        <CursorPos X="13" Y="166"/>
+        <UsageCount Value="16"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/unix/sysunixh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="2" Y="35"/>
+        <UsageCount Value="15"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/inc/fexpand.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="250"/>
+        <CursorPos X="45" Y="262"/>
+        <UsageCount Value="15"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ugui.pas"/>
+        <ComponentName Value="ui"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uGui"/>
+        <EditorIndex Value="10"/>
+        <CursorPos Y="9"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="design.pas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Design"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="53"/>
+        <CursorPos Y="65"/>
+        <UsageCount Value="19"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/include/winapi.inc"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="674"/>
+        <CursorPos X="59" Y="681"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="GreatisRuntimeFusion/ObjInsp/Source/InspCtrl.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="2453"/>
+        <CursorPos Y="2452"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="GreatisRuntimeFusion/RunFus/Source/RFReg.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="11" Y="39"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dialogs/macOS/maintain.lfm"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="28">
+      <Position>
+        <Filename Value="GreatisRuntimeFusion/ObjInsp/Source/InspCtrl.pas"/>
+        <Caret Line="2476" TopLine="2456"/>
+      </Position>
+      <Position>
+        <Filename Value="GreatisRuntimeFusion/ObjInsp/Source/InspCtrl.pas"/>
+        <Caret Line="2468" Column="15" TopLine="2456"/>
+      </Position>
+      <Position>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/include/winapi.inc"/>
+        <Caret Line="686" TopLine="674"/>
+      </Position>
+      <Position>
+        <Filename Value="GreatisRuntimeFusion/ObjInsp/Source/InspCtrl.pas"/>
+        <Caret Line="2478" TopLine="2457"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="69" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/include/winapi.inc"/>
+        <Caret Line="686" TopLine="674"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="90" Column="34" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="221" TopLine="195"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="355" Column="5" TopLine="329"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="88" TopLine="84"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="162" Column="71" TopLine="148"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="173" Column="69" TopLine="152"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="5228" Column="14" TopLine="5195"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="137" Column="12" TopLine="124"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="138" Column="10" TopLine="124"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="785" Column="18" TopLine="763"/>
+      </Position>
+      <Position>
+        <Filename Value="mscriptexec.pas"/>
+        <Caret Column="16"/>
+      </Position>
+      <Position>
+        <Filename Value="mscriptexec.pas"/>
+        <Caret Line="7059" Column="42" TopLine="7038"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="86" Column="48" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="87" Column="51" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="174" Column="72" TopLine="152"/>
+      </Position>
+      <Position>
+        <Filename Value="GreatisRuntimeFusion/RunFus/Source/RFReg.pas"/>
+        <Caret Line="39" Column="12" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="174" Column="72" TopLine="152"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="87" Column="50" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="174" Column="71" TopLine="152"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="87" Column="50" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="77" Column="40" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="352" Column="5" TopLine="326"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+        <Caret Line="75" Column="5" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="miaxbuild.lpr"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default">
+        <Mode Name="default">
+          <local>
+            <CommandLineParams Value="~/documents/miamp/iamp/iamp.mprx"/>
+          </local>
+        </Mode>
+      </Modes>
+    </RunParams>
+    <HistoryLists>
+      <List Name="CommandLineParameters" Count="2">
+        <Item1 Value="~/documents/miamp/iamp/iamp.mprx"/>
+        <Item2 Value="./iamp/iamp.mprx"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/fina.inc"/>
+        <Line Value="165"/>
+      </Item>
+    </BreakPoints>
+    <Watches>
+      <Item>
+        <Expression Value="ProjectFile"/>
+      </Item>
+      <Item>
+        <Expression Value="CurrentDir"/>
+      </Item>
+      <Item>
+        <Expression Value="RootPath"/>
+      </Item>
+      <Item>
+        <Expression Value="Path"/>
+      </Item>
+      <Item>
+        <Expression Value="s"/>
+      </Item>
+      <Item>
+        <Expression Value="ScriptFile"/>
+      </Item>
+      <Item>
+        <Expression Value="CompileLine"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

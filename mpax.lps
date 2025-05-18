@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="mpax.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="54"/>
+        <CursorPos X="21" Y="89"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uguipa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="GuiPA"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="409"/>
+        <CursorPos X="80" Y="415"/>
+        <UsageCount Value="210"/>
+        <Bookmarks Count="1">
+          <Item0 ID="7"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uScanning.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Scanning"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos Y="9"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uScanner.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="240"/>
+        <CursorPos X="11" Y="249"/>
+        <UsageCount Value="210"/>
+        <Bookmarks Count="5">
+          <Item0 X="18" Y="396" ID="2"/>
+          <Item1 X="3" Y="356" ID="4"/>
+          <Item2 Y="300" ID="5"/>
+          <Item3 Y="689" ID="6"/>
+          <Item4 X="3" Y="871" ID="3"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uScanThread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="86"/>
+        <CursorPos X="6" Y="51"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uUpdateThread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="146"/>
+        <CursorPos X="6" Y="120"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uGuiBar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="49"/>
+        <CursorPos X="4" Y="64"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uGlobals.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="571"/>
+        <CursorPos X="32" Y="575"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mUtils"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="4432"/>
+        <CursorPos X="3" Y="4434"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mAutomate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="246"/>
+        <CursorPos X="7" Y="269"/>
+        <UsageCount Value="209"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="filelbl.pas"/>
+        <UnitName Value="FileLbl"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="120"/>
+        <CursorPos X="26" Y="152"/>
+        <UsageCount Value="124"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="miaAutomate.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="31" Y="43"/>
+        <UsageCount Value="142"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uHalcyonSupport.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="59" Y="10"/>
+        <UsageCount Value="16"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/fileutil.pas"/>
+        <UnitName Value="FileUtil"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="138"/>
+        <CursorPos X="15" Y="148"/>
+        <UsageCount Value="39"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/fileutil.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="816"/>
+        <CursorPos X="48" Y="856"/>
+        <UsageCount Value="39"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/filutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <CursorPos X="14" Y="68"/>
+        <UsageCount Value="41"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/lazfileutils.pas"/>
+        <UnitName Value="LazFileUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="103"/>
+        <CursorPos X="15" Y="114"/>
+        <UsageCount Value="38"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="WiseListBox.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="80"/>
+        <UsageCount Value="62"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="848"/>
+        <CursorPos X="14" Y="860"/>
+        <UsageCount Value="42"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="upool.pas"/>
+        <ComponentName Value="PoolTemplate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPool"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="21" Y="11"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/packages/fcl-base/src/inifiles.pp"/>
+        <UnitName Value="IniFiles"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="354"/>
+        <CursorPos Y="359"/>
+        <UsageCount Value="37"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/classes/stringl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2044"/>
+        <CursorPos X="3" Y="2050"/>
+        <UsageCount Value="36"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="packages/multithreadprocs/mtprocs.pas"/>
+        <UnitName Value="MTProcs"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="12"/>
+        <UsageCount Value="70"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/darwin/ptypes.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="38"/>
+        <CursorPos X="5" Y="47"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/unix/ctypes.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="3" Y="31"/>
+        <UsageCount Value="7"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/lookupstringlist.pas"/>
+        <UnitName Value="LookupStringList"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="14" Y="52"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/avglvltree.pas"/>
+        <UnitName Value="AvgLvlTree"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="166"/>
+        <CursorPos X="14" Y="173"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/laz_avl_tree.pp"/>
+        <UnitName Value="Laz_AVL_Tree"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="200"/>
+        <UsageCount Value="4"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/unix/bunxh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="15" Y="49"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/2.2.4/components/lazutils/lookupstringlist.pas"/>
+        <UnitName Value="LookupStringList"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos X="20" Y="38"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mscriptexec.pas"/>
+        <UnitName Value="mScriptExec"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="7360"/>
+        <CursorPos X="15" Y="7381"/>
+        <UsageCount Value="18"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucopymedia.pas"/>
+        <UnitName Value="uCopyMedia"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="106"/>
+        <CursorPos X="9" Y="117"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup/mbuildthread.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="668"/>
+        <CursorPos X="7" Y="679"/>
+        <UsageCount Value="13"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup/mutils.pas"/>
+        <UnitName Value="mUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2535"/>
+        <CursorPos X="11" Y="2547"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/lcl/forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <CursorPos X="3" Y="70"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Desktop/mscrcheckprocess.pas"/>
+        <ComponentName Value="scrCheckProcess"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="39" Y="52"/>
+        <UsageCount Value="10"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/ide/lazarus.pp"/>
+        <UnitName Value="Lazarus"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="41"/>
+        <CursorPos X="3" Y="54"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="437" Column="54" TopLine="422"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="502" Column="36" TopLine="487"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="507" Column="36" TopLine="492"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="516" Column="36" TopLine="501"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="525" Column="51" TopLine="510"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="534" Column="45" TopLine="519"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="546" Column="51" TopLine="531"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="570" Column="48" TopLine="555"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="763" Column="43" TopLine="754"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="305" Column="51" TopLine="292"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="307" Column="56" TopLine="292"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="309" Column="53" TopLine="292"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="562" Column="66" TopLine="549"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="565" Column="38" TopLine="549"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="589" Column="84" TopLine="576"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="567" Column="38" TopLine="554"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="565" Column="38" TopLine="554"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="562" Column="38" TopLine="554"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="309" Column="53" TopLine="296"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="307" Column="56" TopLine="296"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="305" Column="51" TopLine="296"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="589" Column="84" TopLine="576"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="567" Column="38" TopLine="554"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="565" Column="38" TopLine="554"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="562" Column="38" TopLine="554"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="309" Column="53" TopLine="296"/>
+      </Position>
+      <Position>
+        <Filename Value="uguipa.pas"/>
+        <Caret Line="627" TopLine="606"/>
+      </Position>
+      <Position>
+        <Filename Value="mpax.lpr"/>
+        <Caret Line="89" Column="21" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="uScanning.pas"/>
+        <Caret Line="9"/>
+      </Position>
+      <Position>
+        <Filename Value="../../fpcupdeluxe/lazarus/ide/lazarus.pp"/>
+        <Caret Line="54" Column="3" TopLine="41"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/local/share/fpcsrc/packages/fcl-base/src/inifiles.pp"/>
+        <Line Value="359"/>
+      </Item>
+    </BreakPoints>
+    <Watches>
+      <Item>
+        <Expression Value="s"/>
+      </Item>
+      <Item>
+        <Expression Value="sX"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

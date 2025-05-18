@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="mTranslator.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="7"/>
+        <CursorPos X="20" Y="17"/>
+        <UsageCount Value="84"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ulangeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Translator"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uLangEditor"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="11" Y="8"/>
+        <UsageCount Value="84"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../mutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mUtils"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="2878"/>
+        <CursorPos X="31" Y="2894"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mutils.pas"/>
+        <UnitName Value="mUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2485"/>
+        <CursorPos X="36" Y="2457"/>
+        <UsageCount Value="19"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7240"/>
+        <CursorPos Y="7254"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="563" TopLine="553"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="586" TopLine="571"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="608" Column="12" TopLine="608"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="586" TopLine="577"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="562" Column="3" TopLine="558"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="556" Column="72" TopLine="547"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="562" Column="36" TopLine="547"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="563" Column="18" TopLine="547"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="575" Column="19" TopLine="559"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="579" Column="56" TopLine="563"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="586" Column="18" TopLine="570"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="614" Column="18" TopLine="598"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="615" Column="16" TopLine="599"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="583" Column="12" TopLine="571"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="586" Column="18" TopLine="571"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="614" Column="18" TopLine="598"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="615" Column="16" TopLine="599"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="618" Column="62" TopLine="603"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="677" Column="20" TopLine="661"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="678" Column="21" TopLine="662"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="679" Column="16" TopLine="663"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="680" Column="36" TopLine="664"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="624" Column="33" TopLine="609"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="194" Column="27" TopLine="182"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="191" Column="50" TopLine="182"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="194" Column="27" TopLine="182"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="201" Column="22" TopLine="182"/>
+      </Position>
+      <Position>
+        <Filename Value="ulangeditor.pas"/>
+        <Caret Line="203" Column="22" TopLine="184"/>
+      </Position>
+      <Position>
+        <Filename Value="mTranslator.lpr"/>
+        <Caret Line="6" Column="42"/>
+      </Position>
+      <Position>
+        <Filename Value="mTranslator.lpr"/>
+        <Caret Line="31" Column="21" TopLine="6"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

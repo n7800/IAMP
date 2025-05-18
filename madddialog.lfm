@@ -1,0 +1,110 @@
+object AddDialog: TAddDialog
+  Left = 8
+  Height = 201
+  Top = 25
+  Width = 354
+  HelpType = htKeyword
+  HelpKeyword = 'modifyingprojectdialogs'
+  BorderStyle = bsDialog
+  Caption = 'Add Dialogs to Project'
+  ClientHeight = 201
+  ClientWidth = 354
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 17
+    Top = 16
+    Width = 321
+    AutoSize = False
+    Caption = 'Choose the dialog(s) to be added to the project:'
+    ParentColor = False
+    WordWrap = True
+  end
+  object OK: TBitBtn
+    Left = 184
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    NumGlyphs = 2
+    OnClick = OKClick
+    TabOrder = 5
+  end
+  object BitBtn2: TBitBtn
+    Left = 264
+    Height = 25
+    Top = 160
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    NumGlyphs = 2
+    TabOrder = 6
+  end
+  object Auto: TRadioButton
+    Left = 16
+    Height = 18
+    Top = 48
+    Width = 251
+    Caption = 'Add a Pre-Built, &Themed Collection of Dialogs:'
+    Checked = True
+    OnClick = AutoClick
+    TabOrder = 0
+    TabStop = True
+  end
+  object Manual: TRadioButton
+    Left = 16
+    Height = 18
+    Top = 104
+    Width = 215
+    Caption = 'Choose Dialog(s) to Add by &File Name:'
+    OnClick = AutoClick
+    TabOrder = 2
+  end
+  object SingleDialog: TEdit
+    Left = 32
+    Height = 22
+    Top = 120
+    Width = 225
+    TabOrder = 3
+  end
+  object BrowseSingleDialog: TButton
+    Left = 264
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = '&Browse...'
+    OnClick = BrowseSingleDialogClick
+    TabOrder = 4
+  end
+  object Themes: TComboBox
+    Left = 32
+    Height = 20
+    Top = 64
+    Width = 225
+    ItemHeight = 26
+    Sorted = True
+    Style = csDropDownList
+    TabOrder = 1
+    Text = '0'
+  end
+  object OpenDialog: TOpenDialog
+    Title = 'Choose Dialog:'
+    Filter = 'Installation Dialogs (*.lfm)|*.lfm|All Files|*.*'
+    Options = [ofHideReadOnly, ofAllowMultiSelect, ofFileMustExist, ofEnableSizing]
+    Left = 272
+    Top = 88
+  end
+end

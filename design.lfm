@@ -1,0 +1,36 @@
+object frmDesign: TfrmDesign
+  Tag = 1
+  Left = 231
+  Height = 260
+  Top = 145
+  Width = 460
+  HelpType = htKeyword
+  HelpKeyword = 'passingvariables'
+  Caption = 'Dialog'
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Position = poDefault
+  LCLVersion = '3.99.0.0'
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object cmpFormDesigner: TRFDesigner
+    DisplayGrid = True
+    OnMoveSizeControl = cmpFormDesignerMoveSizeControl
+    OnChange = cmpFormDesignerChange
+    OnLoadControl = cmpFormDesignerLoadControl
+    OnSaveControl = cmpFormDesignerSaveControl
+    OnSelectControl = cmpFormDesignerSelectControl
+    OnAddControl = cmpFormDesignerAddControl
+    OnControlDblClick = cmpFormDesignerControlDblClick
+    OnKeyDown = cmpFormDesignerKeyDown
+    OnReadError = cmpFormDesignerReadError
+    OnPasteComponent = cmpFormDesignerPasteComponent
+    OnPlaceComponent = cmpFormDesignerPlaceComponent
+    Inspector = frmObjectInspector.cmpObjectInspector
+    Left = 48
+    Top = 8
+  end
+end

@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="InstallAware Multi Platform"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="3">
+      <Item1 Name="Default" Default="True"/>
+      <Item2 Name="Linux">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="miamp"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="packages/anchordocking;packages/multithreadprocs;GreatisRuntimeFusion/FormDes/Source;GreatisRuntimeFusion/ObjInsp/Source;GreatisRuntimeFusion/RunFus/Source"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+            </Debugging>
+            <Options>
+              <PassLinkerOptions Value="True"/>
+              <LinkerOptions Value="-R ./"/>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dBACKIDE"/>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Licensed">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="miamp"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="packages/anchordocking;packages/multithreadprocs;GreatisRuntimeFusion/FormDes/Source;GreatisRuntimeFusion/ObjInsp/Source;GreatisRuntimeFusion/RunFus/Source"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dBACKIDE
+-dLICENSED"/>
+          </Other>
+        </CompilerOptions>
+      </Item3>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages Count="7">
+      <Item1>
+        <PackageName Value="OIPKG7"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="GFDSTD"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="GFDLIB"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="RFPKG"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="FCL"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="miap"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="LCL"/>
+      </Item7>
+    </RequiredPackages>
+    <Units Count="134">
+      <Unit0>
+        <Filename Value="miamp.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="ugui.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ui"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uGui"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="uabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="About"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAbout"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="mutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mUtils"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="mAutomate.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="mproject.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Project"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mProject"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="moptions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Options"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="mscrcomment.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrComment"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mscrComment"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="usaveall.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SaveAll"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSaveAll"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="mideoptions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="IDEOptions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="mscrmessagebox.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrMessageBox"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="mscrsetvariable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetVariable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="mscrif.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrIf"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="mscriptexec.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mScriptExec"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="mbuildthread.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="mscrinclude.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrInclude"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="madddialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AddDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="meval.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mEval"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="mwatches.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Watches"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="crc32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CRC32"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="maddwatch.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AddWatch"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="mscrdisplaydialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDisplayDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="udlgapi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uDlgAPI"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="usevenzipapi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSevenZIPAPI"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="mbuild.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Build"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="mcompilervariable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CompilerVariable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="mscrlabel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrLabel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="mscrgotolabel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGoToLabel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="upool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PoolTemplate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPool"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="mscrinstallfiles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrInstallFiles"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="mscrgetfolderlocation.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetFolderLocation"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="umacglass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMacGlass"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="mapplychanges.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrApplyChanges"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="verifysign.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="VerifySign"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="mscrdefinecomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDefineComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="mscrdeletecomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDeleteComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="mscrgetcomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="mscrsetcomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="mscrspacecomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSpaceComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="mscrcreatefolder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCreateFolder"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="mscrcreateshortcut.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCreateShortcut"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="mscrrunprogram.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRunProgram"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="mvirtualbrowse.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="VirtualBrowse"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="urunapp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRunApp"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="mscrwebmediablock.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrWebMediaBlock"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="ugrabmedia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uGrabMedia"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="uextractmedia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uExtractMedia"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="ucopymedia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCopyMedia"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="uretrydownload.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="miaProxy"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRetryDownload"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="uretrydownloadex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="miaProxyEx"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRetryDownloadEx"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="uretryextract.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="miaExtract"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRetryExtract"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="umiawebform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="miaWebForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="umiaWebForm"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="udownload.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDownload"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDownload"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="mbatchbuild.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BatchBuild"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="mscrdeletefiles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDeleteFiles"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="mscrregion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRegion"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="mscrdeletefilesrecursive.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDeleteFilesRecursive"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="mscrreadtext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReadText"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="mscrwritetext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrWriteText"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="mscrrmdir.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRmDir"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="mscrcreatelink.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCreateLink"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="mdialoglocalize.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DialogLocalize"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="udisplaysystemfolder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DisplaySystemFolder"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDisplaySystemFolder"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="mnewproject.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewProject"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="mscrmathematics.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrMathematics"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="mscrparsestring.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrParseString"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="mnewshortcut.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewShortcut"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="mnewrunprogram.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewRunProgram"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="mchangetheme.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ChangeTheme"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="mquickstartthread.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="mquickstart.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="QuickStartWizard"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="mscrcreatefiletype.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCreateFileType"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="mscraccesscontrol.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrAccessControl"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="mscrgetfileversion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetFileVersion"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="mscrgetfilesize.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetFileSize"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="mscrcheckfileversion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCheckFileVersion"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="mscrforeach.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrForEach"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="mscrsleep.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSleep"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="usleep.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSleep"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="mscrterminatewithexitcode.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrTerminateWithExitCode"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="mscrconvertcase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrConvertCase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="mscrconvertpath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrConvertPath"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="mscrevaluate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrEvaluate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="mscrextractpath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrExtractPath"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="mscrformatstr.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFormatStr"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="mscrgetstrlen.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetStrLen"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="mscrgetstrpos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetStrPos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="mscrlocalizationvariable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrLocalizationVariable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="mscrregex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRegEx"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="mscrreplacestring.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReplaceString"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="mscrbrowsefile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrBrowseFile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="mscrbrowsefolder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrBrowseFolder"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit91>
+      <Unit92>
+        <Filename Value="mscrloadfeatures.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrLoadFeatures"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit92>
+      <Unit93>
+        <Filename Value="mscrpromptfortext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrPromptForText"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit93>
+      <Unit94>
+        <Filename Value="mscrsavefeatures.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSaveFeatures"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit94>
+      <Unit95>
+        <Filename Value="mscrsetcomponentchoice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetComponentChoice"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit95>
+      <Unit96>
+        <Filename Value="mscrgetcomponentspace.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetComponentSpace"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit96>
+      <Unit97>
+        <Filename Value="mscrsetcomponentvisibility.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetComponentVisibility"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit97>
+      <Unit98>
+        <Filename Value="mscrcheckdiskspace.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCheckDiskSpace"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit98>
+      <Unit99>
+        <Filename Value="mscrfilefolderexist.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFileFolderExist"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit99>
+      <Unit100>
+        <Filename Value="mscrgetlinktarget.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetLinkTarget"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit100>
+      <Unit101>
+        <Filename Value="mscrfindallfiles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFindAllFiles"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit101>
+      <Unit102>
+        <Filename Value="mscrguid.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGUID"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit102>
+      <Unit103>
+        <Filename Value="mscrgetenvironment.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetEnvironment"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit103>
+      <Unit104>
+        <Filename Value="mscrgetinifile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetINI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit104>
+      <Unit105>
+        <Filename Value="mscrgettemporaryfile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetTempFile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit105>
+      <Unit106>
+        <Filename Value="mscrisnative.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrIsNativeSetupInstalled"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit106>
+      <Unit107>
+        <Filename Value="mscrreadbinary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReadBinary"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit107>
+      <Unit108>
+        <Filename Value="mscrlocalfiles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrLocalFiles"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit108>
+      <Unit109>
+        <Filename Value="mscreditinifile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrEditIniFile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit109>
+      <Unit110>
+        <Filename Value="mscrset64bitmode.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSet64BitMode"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit110>
+      <Unit111>
+        <Filename Value="mscrrename.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRename"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit111>
+      <Unit112>
+        <Filename Value="mscrwritebinary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrWriteBinary"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit112>
+      <Unit113>
+        <Filename Value="mscrhaltcompile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrHaltCompile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit113>
+      <Unit114>
+        <Filename Value="mscrfilebag.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFileBag"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mscrFileBag"/>
+      </Unit114>
+      <Unit115>
+        <Filename Value="mscrdeleteregistry.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDeleteRegistry"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit115>
+      <Unit116>
+        <Filename Value="mscrfindallregistry.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFindAllRegistry"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit116>
+      <Unit117>
+        <Filename Value="mscrgetosorsp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetOSorSP"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit117>
+      <Unit118>
+        <Filename Value="mscrgetsystemsettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetSystemSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit118>
+      <Unit119>
+        <Filename Value="mscrreadregistry.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReadRegistry"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit119>
+      <Unit120>
+        <Filename Value="mscrwriteregistry.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrWriteRegistry"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit120>
+      <Unit121>
+        <Filename Value="mupdatepack.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="UpdatePack"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit121>
+      <Unit122>
+        <Filename Value="mscrcompress7zip.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCompress7Zip"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit122>
+      <Unit123>
+        <Filename Value="mscrextract7zip.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrExtract7Zip"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit123>
+      <Unit124>
+        <Filename Value="mscrsetowner.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetOwner"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit124>
+      <Unit125>
+        <Filename Value="mscrsetgroup.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetGroup"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit125>
+      <Unit126>
+        <Filename Value="mscrgetnativesettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetNativeSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit126>
+      <Unit127>
+        <Filename Value="mscrreturnfrominclude.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReturnFromInclude"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit127>
+      <Unit128>
+        <Filename Value="ulicenseeslr8.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LicenseESLR8"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uLicenseESLR8"/>
+      </Unit128>
+      <Unit129>
+        <Filename Value="mscrrunprogramas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRunProgramAs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit129>
+      <Unit130>
+        <Filename Value="urunappas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRunAppAs"/>
+      </Unit130>
+      <Unit131>
+        <Filename Value="mscrrunscript.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRunScript"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit131>
+      <Unit132>
+        <Filename Value="urunscript.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRunScript"/>
+      </Unit132>
+      <Unit133>
+        <Filename Value="mscrcheckprocess.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCheckProcess"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit133>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="miamp"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="packages/anchordocking;packages/multithreadprocs;GreatisRuntimeFusion/FormDes/Source;GreatisRuntimeFusion/ObjInsp/Source;GreatisRuntimeFusion/RunFus/Source"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dBACKIDE"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="11">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="EConvertError"/>
+      </Item4>
+      <Item5>
+        <Name Value="EInvalidOperation"/>
+      </Item5>
+      <Item6>
+        <Name Value="00000011EInvalidOperation"/>
+      </Item6>
+      <Item7>
+        <Name Value="EResourceReaderNotFoundException"/>
+      </Item7>
+      <Item8>
+        <Name Value="EInterfaceException"/>
+      </Item8>
+      <Item9>
+        <Name Value="Exception"/>
+      </Item9>
+      <Item10>
+        <Name Value="EReadError"/>
+      </Item10>
+      <Item11>
+        <Name Value="&lt;Unknown Class>"/>
+      </Item11>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,1972 @@
+object Options: TOptions
+  Left = 756
+  Height = 434
+  Top = 143
+  Width = 684
+  HelpType = htKeyword
+  HelpKeyword = 'projectsettings'
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'Project Options'
+  ClientHeight = 434
+  ClientWidth = 684
+  Constraints.MinHeight = 434
+  Constraints.MinWidth = 684
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '3.4.0.0'
+  object btnOK: TButton
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = btnCancel
+    AnchorSideBottom.Control = btnCancel
+    AnchorSideBottom.Side = asrBottom
+    Left = 502
+    Height = 25
+    Top = 393
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 16
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object btnCancel: TButton
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 593
+    Height = 25
+    Top = 393
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Top = 16
+    BorderSpacing.Right = 16
+    BorderSpacing.Bottom = 16
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 2
+    OnClick = btnCancelClick
+  end
+  object Tree: TTreeView
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideBottom.Control = pcOptionTabs
+    AnchorSideBottom.Side = asrBottom
+    Left = 16
+    Height = 361
+    Top = 16
+    Width = 176
+    Anchors = [akTop, akLeft, akBottom]
+    BorderSpacing.Left = 16
+    BorderSpacing.Top = 16
+    HideSelection = False
+    Indent = 19
+    ReadOnly = True
+    ScrollBars = ssNone
+    TabOrder = 0
+    OnChange = TreeChange
+    Options = [tvoAutoItemHeight, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+    Items.Data = {
+      F9FFFFFF020002000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF010000000000
+      0000010700000050726F6A656374FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      0000000000000012000000436F6D70696C6572205661726961626C6573FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF040000000000000001050000004275696C64FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000C000000436F6465
+      205369676E696E67FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000
+      000B000000436F6D7072657373696F6EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      000000000000000000060000004F7574707574FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF00000000000000000012000000436F6465205369676E696E6720486F6F
+      6B73
+    }
+  end
+  object pcOptionTabs: TPageControl
+    AnchorSideLeft.Control = Tree
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Tree
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = btnCancel
+    Left = 208
+    Height = 361
+    Top = 16
+    Width = 460
+    ActivePage = tsPageCodeSigningHooks
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 16
+    BorderSpacing.Right = 16
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = '.SF NS'
+    ParentFont = False
+    ShowTabs = False
+    TabIndex = 6
+    TabOrder = 3
+    object tsPageProject: TTabSheet
+      Caption = 'tsPageProject'
+      ClientHeight = 361
+      ClientWidth = 460
+      object gbProjectProperties: TGroupBox
+        AnchorSideLeft.Control = tsPageProject
+        AnchorSideTop.Control = tsPageProject
+        AnchorSideRight.Control = tsPageProject
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = tsPageProject
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 361
+        Top = 0
+        Width = 460
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSize = True
+        Caption = ' Project Properties '
+        ClientHeight = 332
+        ClientWidth = 450
+        TabOrder = 0
+        object lblManufacturer: TLabel
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = gbProjectProperties
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 16
+          Width = 85
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          Caption = '&Manufacturer:'
+          FocusControl = Manufacturer
+          ParentColor = False
+        end
+        object Manufacturer: TEdit
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = lblManufacturer
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbProjectProperties
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 21
+          Top = 33
+          Width = 418
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 1
+          BorderSpacing.Right = 16
+          TabOrder = 0
+        end
+        object lblProductName: TLabel
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = Manufacturer
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 56
+          Width = 90
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 2
+          Caption = '&Product Name:'
+          FocusControl = ProductName
+          ParentColor = False
+        end
+        object lblProductVersion: TLabel
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = ProductName
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 96
+          Width = 100
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 2
+          Caption = 'Product &Version:'
+          FocusControl = ProductVersion
+          ParentColor = False
+        end
+        object lblLanguage: TLabel
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = RevisionCode
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 230
+          Width = 111
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 2
+          Caption = 'Default &Language:'
+          FocusControl = Language
+          ParentColor = False
+        end
+        object lblProductCode: TLabel
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = ProductVersion
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 136
+          Width = 87
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 2
+          Caption = 'Product &Code:'
+          FocusControl = ProductCode
+          ParentColor = False
+        end
+        object ProductName: TEdit
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = lblProductName
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbProjectProperties
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 21
+          Top = 73
+          Width = 418
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 1
+          BorderSpacing.Right = 16
+          TabOrder = 1
+        end
+        object ProductVersion: TEdit
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = lblProductVersion
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbProjectProperties
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 21
+          Top = 113
+          Width = 418
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 1
+          BorderSpacing.Right = 16
+          TabOrder = 2
+        end
+        object btnNewProductCode: TButton
+          AnchorSideTop.Control = ProductCode
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = gbProjectProperties
+          AnchorSideRight.Side = asrBottom
+          Left = 342
+          Height = 25
+          Top = 151
+          Width = 92
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 16
+          Caption = '&New'
+          TabOrder = 4
+          OnClick = btnNewProductCodeClick
+        end
+        object ProductCode: TEdit
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = lblProductCode
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = btnNewProductCode
+          Left = 16
+          Height = 21
+          Top = 153
+          Width = 322
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 1
+          BorderSpacing.Right = 4
+          TabOrder = 3
+        end
+        object Language: TComboBox
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = lblLanguage
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 20
+          Top = 247
+          Width = 195
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 1
+          BorderSpacing.Right = 8
+          Constraints.MinWidth = 180
+          ItemHeight = 26
+          ItemIndex = 0
+          Items.Strings = (
+            'English'
+          )
+          Style = csDropDownList
+          TabOrder = 7
+          Text = 'English'
+        end
+        object LangEx: TCheckBox
+          AnchorSideLeft.Control = Language
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Language
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = gbProjectProperties
+          AnchorSideRight.Side = asrBottom
+          Left = 219
+          Height = 18
+          Top = 248
+          Width = 215
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 4
+          BorderSpacing.Right = 16
+          Caption = 'Display language &selector'
+          TabOrder = 8
+        end
+        object lblRevisionCode: TLabel
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = ProductCode
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 175
+          Width = 90
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 1
+          Caption = '&Revision Code:'
+          FocusControl = RevisionCode
+          ParentColor = False
+        end
+        object RevisionCode: TEdit
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = lblRevisionCode
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = btnNewRevisionCode
+          Left = 16
+          Height = 21
+          Top = 193
+          Width = 322
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 16
+          TabOrder = 5
+        end
+        object btnNewRevisionCode: TButton
+          AnchorSideTop.Control = RevisionCode
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = gbProjectProperties
+          AnchorSideRight.Side = asrBottom
+          Left = 342
+          Height = 25
+          Top = 191
+          Width = 92
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 16
+          Caption = '&New'
+          TabOrder = 6
+          OnClick = btnNewRevisionCodeClick
+        end
+        object Vista: TComboBox
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = Label44
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 20
+          Top = 287
+          Width = 416
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 16
+          ItemHeight = 26
+          ItemIndex = 0
+          Items.Strings = (
+            'Always Elevate'
+            'Never Elevate'
+          )
+          Style = csDropDownList
+          TabOrder = 9
+          Text = 'Always Elevate'
+          OnChange = VistaChange
+        end
+        object Label44: TLabel
+          AnchorSideLeft.Control = gbProjectProperties
+          AnchorSideTop.Control = Language
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 269
+          Width = 59
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 2
+          Caption = '&Elevation:'
+          FocusControl = Vista
+          ParentColor = False
+        end
+      end
+    end
+    object tsPageCompilerVariables: TTabSheet
+      Caption = 'tsPageCompilerVariables'
+      ClientHeight = 361
+      ClientWidth = 460
+      object gbVariables: TGroupBox
+        AnchorSideLeft.Control = tsPageCompilerVariables
+        AnchorSideTop.Control = tsPageCompilerVariables
+        AnchorSideRight.Control = tsPageCompilerVariables
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = tsPageCompilerVariables
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 361
+        Top = 0
+        Width = 460
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        Caption = ' Compiler Variables '
+        ClientHeight = 332
+        ClientWidth = 450
+        TabOrder = 0
+        object btnAddVariable: TBitBtn
+          AnchorSideRight.Control = btnEditVariable
+          AnchorSideBottom.Control = gbVariables
+          AnchorSideBottom.Side = asrBottom
+          Left = 197
+          Height = 25
+          Top = 299
+          Width = 75
+          Anchors = [akRight, akBottom]
+          BorderSpacing.Right = 8
+          BorderSpacing.Bottom = 8
+          Caption = '&Add'
+          NumGlyphs = 2
+          OnClick = btnAddVariableClick
+          TabOrder = 1
+        end
+        object btnEditVariable: TBitBtn
+          AnchorSideRight.Control = btnDeleteVariable
+          AnchorSideBottom.Control = gbVariables
+          AnchorSideBottom.Side = asrBottom
+          Left = 280
+          Height = 25
+          Top = 299
+          Width = 75
+          Anchors = [akRight, akBottom]
+          BorderSpacing.Right = 4
+          BorderSpacing.Bottom = 8
+          Caption = '&Edit'
+          NumGlyphs = 2
+          OnClick = btnEditVariableClick
+          TabOrder = 2
+        end
+        object btnDeleteVariable: TBitBtn
+          AnchorSideRight.Control = gbVariables
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = gbVariables
+          AnchorSideBottom.Side = asrBottom
+          Left = 359
+          Height = 25
+          Top = 299
+          Width = 75
+          Anchors = [akRight, akBottom]
+          BorderSpacing.Right = 16
+          BorderSpacing.Bottom = 8
+          Caption = '&Delete'
+          NumGlyphs = 2
+          OnClick = btnDeleteVariableClick
+          TabOrder = 3
+        end
+        object Conditional: TListView
+          AnchorSideLeft.Control = gbVariables
+          AnchorSideTop.Control = gbVariables
+          AnchorSideRight.Control = gbVariables
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = btnAddVariable
+          Left = 16
+          Height = 275
+          Top = 16
+          Width = 418
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          BorderSpacing.Right = 16
+          BorderSpacing.Bottom = 8
+          Columns = <          
+            item
+              AutoSize = True
+              Caption = 'Variable'
+              Width = 100
+            end          
+            item
+              AutoSize = True
+              Caption = 'Default Value'
+              Width = 100
+            end>
+          ColumnClick = False
+          Constraints.MinHeight = 200
+          HideSelection = False
+          MultiSelect = True
+          ReadOnly = True
+          RowSelect = True
+          TabOrder = 0
+          ViewStyle = vsReport
+          OnDblClick = btnEditVariableClick
+        end
+      end
+    end
+    object tsPageBuild: TTabSheet
+      Caption = 'tsPageBuild'
+      ClientHeight = 361
+      ClientWidth = 460
+      object gbDeploymentType: TGroupBox
+        AnchorSideLeft.Control = tsPageBuild
+        AnchorSideTop.Control = tsPageBuild
+        AnchorSideRight.Control = tsPageBuild
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = tsPageBuild
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 361
+        Top = 0
+        Width = 460
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSize = True
+        Caption = ' Deployment Type '
+        ClientHeight = 332
+        ClientWidth = 450
+        TabOrder = 0
+        object lblChoose: TLabel
+          Left = 16
+          Height = 16
+          Top = 16
+          Width = 330
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          BorderSpacing.Right = 8
+          Caption = 'Choose in which form your setups are to be packaged.'
+          ParentColor = False
+        end
+        object lblUnCompressed: TLabel
+          AnchorSideLeft.Control = imgUncompressed
+          AnchorSideTop.Control = imgUncompressed
+          AnchorSideTop.Side = asrBottom
+          Left = 86
+          Height = 16
+          Top = 72
+          Width = 291
+          BorderSpacing.Left = 54
+          Caption = 'Typically for media that can host nested folders.'
+          ParentColor = False
+          WordWrap = True
+        end
+        object lblCompressedSFX: TLabel
+          AnchorSideLeft.Control = lblUnCompressed
+          AnchorSideTop.Control = imgCompressedSFX
+          AnchorSideTop.Side = asrBottom
+          Left = 86
+          Height = 16
+          Top = 120
+          Width = 306
+          BorderSpacing.Right = 8
+          Caption = 'A single monolithic file containing the entire setup.'
+          ParentColor = False
+          WordWrap = True
+        end
+        object imgCompressedSFX: TImage
+          AnchorSideLeft.Control = imgUncompressed
+          AnchorSideTop.Control = lblUnCompressed
+          AnchorSideTop.Side = asrBottom
+          Left = 32
+          Height = 24
+          Top = 96
+          Width = 24
+          AutoSize = True
+          BorderSpacing.Top = 8
+          Picture.Data = {
+            07544269746D617082040000424D820400000000000042020000280000001800
+            000018000000010008000000000040020000120B0000120B0000830000008300
+            000000000000FFFFFF00FF00FF00FC00FC0076037600FF78FF00FA95FA00FF7E
+            0000E2AB6F00C47B0000DAAB1F00E0B73B00E0B83B00E3C15200E3C15300E6C6
+            5B00E5C65B00E7C96600EDD78A00EFDC9800F6E9BD00F8F2D400149110000083
+            01000082000000810000007700000076000000730000006F0000006600000062
+            0000005E000000580000004F0000004E0000004B0000005A0100018603000169
+            020002880500038B0700015D04000381080002600500025E050003760800048E
+            0A0003600600055E080005900D0006920F0004640A000796130005670D000786
+            120009981600076A0F000C7315000A9A19000A9A1A000C9D1D000A8C1B000DA0
+            21000EA3240010801E00148823001CA92F0019932B000FA4280010A528001C9A
+            310011A72C0011A72D0013AB30001E9E340020A539002FD8500015AD3500189D
+            33001DA5390023AC40002FD851002FD7510028B5450028B4450032A54B0016B0
+            390018B23D0028CC4F0027B5480033CC580019B641001AB641001CB8450034CC
+            59001BB845001DBB49001FBF4D002EBB550021C2500023C5530026C9560028CC
+            59002ACF5B002DD35E002FD7620031D9640034DD670036E16A003BE76F003EEB
+            730041EF760045F67B0047F87E0049FB80004BFE820045F67F0045F6800081FF
+            FE007FFAF80054E6F70000D7F40000CCE90000C9E30000C4E00000B1CA0000A6
+            BD000A4A52000D5A64000D586200020202020202020202020202020202020202
+            0202020202020202020202020202020224242424020202020202020202020202
+            020202020202022D59765219240202020202020202020202020202020202022D
+            59764D19240202020202020202020202020202020202022D5976531924020202
+            0202020202020202020202020202022D59755319240202020202020202020202
+            020202020202022D59764D19240202020202020202020202020202020202022D
+            566343162202020202020202020202020202020202022D4F655D493C2B230202
+            020202020202020202020202022D506964584638291A23020202020202020202
+            020202022D516D686257403528191B2302020202020202020202022D55706C67
+            614E3F332619191B230202020202020202022D54736F6B665E4A3D3217191919
+            1B23020202020202022D5474726E6A655C483B2F18191919191B230202020202
+            2D4B5F4B4741393634302A252121201E1E1C1D230202022D2424211F272E373E
+            777B7E7F805A4C4B423A242424022D211B19090909093C454E787C7D7C827174
+            7474745F3124022D2C090F0D0B0A09454E60777A7A7A815B4B44052424020202
+            02081312110C0924242424777A812424240505040202020202081514120E0902
+            0202020279020202060503040402020202080115131007020202020202020206
+            0603030304040202020208080808020202020202020202020606030404020202
+            0202020202020202020202020202020202060504020202020202020202020202
+            0202020202020202020205020202
+          }
+          Transparent = True
+        end
+        object imgUncompressed: TImage
+          AnchorSideLeft.Control = lblChoose
+          AnchorSideTop.Control = lblChoose
+          AnchorSideTop.Side = asrBottom
+          Left = 32
+          Height = 24
+          Top = 48
+          Width = 24
+          AutoSize = True
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          Picture.Data = {
+            07544269746D61706E060000424D6E060000000000002E040000280000001800
+            000018000000010008000000000040020000120B0000120B0000FE000000FE00
+            000000000000FFFFFF00EAE9ED00DEDDE100DDDCE000F0EFF200E1E0E300D8D7
+            DA00E5E3E700D1CFD300D7D5D800D8D5D900CFCCD000CECBCF00C4BFC500FF00
+            FF00FCDCFC00A9A3A900A6A0A60088838800BDB7BD00FFF8FF00B6B1B6008682
+            860025242500CBC7CB005A585A00585658005654560069676900D1CED100C2BF
+            C2005453540048474800FAF8FA007F7E7F00605F6000B5B4B500807F8000F3CC
+            F000F4C5EF00ADA6AC00979196008C878B00F6BFE900FCD5F300F8C4EB00A199
+            9F00F8C1E900FFF0FB0080797E00999096004643450054515300E2A3C700C68F
+            AF00C690AF00FFEEF800928B8F00E1A3C6008B828700FFCDE700C48FA900FFC2
+            E000E9E3E600B8819900B8829A00E0D9DC00867E8100887E810092888B00FEAD
+            C100FEA3B500A0687400FFAABB00FFAFBF0067626300706B6C0088828300746B
+            6C00935D6200996D6F008B666800A78889009C6E6F00936A6B008E6B6C00A982
+            8300FC888700FE8A8A00FC8A8900FC8A8A00FE8F8F00D5797800FF929100FC8F
+            8F00D77B7B00FF939300895050008F585800BA747300FE9F9F00FEA1A0008B5B
+            5B00FFA9A9008C5D5D00FFACAC009C6A6A0097676700EAA1A100FFB2B200A375
+            7500FFB8B800E2A4A400FFBABA00FEBDBD00FFBFBF00FFC1C100FCC2C200A680
+            8000FFD3D300FFD5D500FFD8D800FBD7D700D0BABA00FFF3F300423F3F00E6DD
+            DD005E5B5B00F3EEEE0054535300FBFAFA00F8F7F700828181008E504F007342
+            4100C07270008B5251008F58570090595800975E5D00925B5A00905A59008F5A
+            5900905B5A00966260008B5C5B00FEACA900FFAFAD00B07978009D6C6B00C089
+            8700A6777600C18B8A007B595800C18C8B00C18F8E00EAB0AF00C1919000FEC0
+            BF00A7828100FFC7C600FEC7C500FEC9C700E6B8B700FECCCB00FFCFCE00FFDA
+            D900FCA4A000FEB1AC00FFCAC700FFCCC900F8CCCA00FFD7D500FEB5AF00FEBC
+            B600FEBBB600FBCECB00FEE3E100D0BAB800FFDEDA00FEE5E200EFDDDA00F3E7
+            E300FCF2EE00FFFEFC00F7F6F4006363620031323100494A4900FCFEFC000A9C
+            120079817B007A7E7B004E595100333D3600CAD7CE004E645500A4BDAC008E9A
+            9200494C4A005558560053565400D7DDD900C0DAC90076897D00ADC2B500494E
+            4B007B7F7D00F3F3F600F0F0F300E9E9EB00D5D5D7006E6E6F00FCFCFC00F7F7
+            F700F4F4F400F0F0F000EEEEEE00EDEDED00E6E6E600E5E5E500DDDDDD00CECE
+            CE00CBCBCB00C7C7C700C2C2C200C0C0C000BDBDBD00BBBBBB00AAAAAA00A1A1
+            A1009A9A9A008E8E8E008A8A8A0089898900838383007B7B7B00767676006A6A
+            6A00656565005F5F5F005A5A5A00585858005555550052525200505050004E4E
+            4E004C4C4C00494949003F3F3F003535350032323200313131000F0F0F0F0F0F
+            0F0FFDFDFD0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0FFD4F4CEDF7F7F7
+            FD0F0F0F0F0F0F0F0F0F0F0F0F0F0F0FFD34464EDAE2E7ECEDF7F7F7BC0F0F0F
+            0F0F0F0F0F0F0FFD13353344F2E6E0DADDE2E7EDC1C2C5C5C30F0F0F0F0FFD11
+            131C2F3A20EDEDEDEAE8E5DECBCEBFBFCDCF0F0F0FFD16182A1B122AF5EDEDED
+            EDEDEDEDD0C7C6CCC4C80F0FFD1F190E141A292BFAF620F0EEEDEDEDEDC1C0CA
+            C9BD0FFD0D0A09190E17F1DC83D9DFE9F7F6F4EFEEEDED20BBF9FD0721030B1E
+            010CD5F424232583D7DBE1EBF7F6F3F8F1F9FD07020804010603576C90699AF4
+            4C26E5D6D8DCE3ECF8FBFDD405D30143536F999C9E9B9556551D2082BB85E4DC
+            FD0FFD22D101409897A4AD7AA7797B7CA0542F3C4D80F6FC0F0FFD8301406B5D
+            6EA6A5A1A2A37D0181775133457EFD0F0F0FFD01D27F646159669FABAAADB901
+            01B35232FD0F0F0F0F0F0FFDF7966D685F5A472E2C2D15010183B3620F0F0F0F
+            0F0F0F0F0F637370A84A3649503E10BE830101620F0F0F0F0F0F0F0F0F8EA173
+            A93F41F7F75028B7B6B8B8620F0F0F0F0F0F0F0F0F8B7570B03D370F0F4930B1
+            ACB4B4620F0F0F0F0F0F0F0F0F8EA179B2392738423B4868A17A7A620F0F0F0F
+            0F0F0F0F0F0F67010101313D3F4B5B58949D910F0F0F0F0F0F0F0F0F0F0F67BA
+            0101B5AFAE93655C5E88870F0F0F0F0F0F0F0F0F0F0F0F67840178727474726A
+            60860F0F0F0F0F0F0F0F0F0F0F0F0F0F92677675A174718C890F0F0F0F0F0F0F
+            0F0F0F0F0F0F0F0F0F0F8D8F8E8B8A0F0F0F0F0F0F0F0F0F0F0F
+          }
+          Transparent = True
+        end
+        object lblCompressedWeb: TLabel
+          AnchorSideLeft.Control = lblUnCompressed
+          Left = 86
+          Height = 16
+          Top = 168
+          Width = 287
+          Caption = 'Built with segments downloaded upon demand.'
+          ParentColor = False
+          WordWrap = True
+        end
+        object imgCompressedWeb: TImage
+          AnchorSideLeft.Control = imgUncompressed
+          AnchorSideTop.Control = lblCompressedSFX
+          AnchorSideTop.Side = asrBottom
+          Left = 32
+          Height = 24
+          Top = 144
+          Width = 24
+          AutoSize = True
+          BorderSpacing.Top = 8
+          Picture.Data = {
+            07544269746D617076060000424D760600000000000036040000280000001800
+            000018000000010008000000000040020000120B0000120B0000000100000000
+            000000000000FFFFFF0064636500A6A5A700A5A4A600E1E0E200F6F4F700918E
+            92009C999D00B0ACB100FF00FF009F999F00868286006A676A008E8B8E005C5A
+            5C00B8B5B800393839004C4B4C0048474800CCC7CB00A0989E005A565900413E
+            40004B484A0059565800615E600057535500ABA3A6006F6769003E3A3B004541
+            4200292828002F2E2E00702D130076311100817A77007B34100084380F00A449
+            09009F470A00C65C0400C45B0500BD570600EC720100E26B0100E06A0200D866
+            0300F2770200F3780300F37A0400F3790400EF7A0600F37D0700F37E0800F47F
+            0900F4800A00F4810D00F4830F00BFA58B00B7650B00F4841000F4861100F486
+            1300F4871500F4881600F48A1800F48B1B00804B0F00A55F1400F48F2000C574
+            1C00F4922500F4922700F6983000F69A3400DC8A2D00F69D3600F39E3B00F6A3
+            4200F6A44400E19E4C00F7AF5800F7B15E00F7BD7700645A4E00FE951000FE98
+            1400DC881600E38A1800FC9E1F00FDA02200BE791C00F3A94800F8CA90004A3D
+            2C00FEA42300FEA52500FEA72900FEA92A00FFAB2D00FEAB3900FFC67400FED9
+            A400E0BF9100E6D7C200FFB13500FFB43B00BD853000FFB84200AD7E3100E6B0
+            5900A4814800896E4400D9B06F00FFBB4500FFBB4600FFBD4A00FFC15000FFC2
+            5300FEC25400A17F4600AB9E880028252000FFC55500BC924200FFC75A00FFCA
+            5E00D0A54B00FFCB6000FFCF6700FFD06A00BBAF9600FFD36D00FFD57300FFD7
+            7500FFD97900FFDC7F00FFE08400FEE28900FEE69100BDAB6E00A9A08200FEE9
+            9600FEEB9A00B9AF85005C563C0076704E00B1A33A00FEF3A700A0921C00BBB6
+            5E005D5C1300A3B5590071971F0093B75B004E7F16003C701A00408C19003598
+            1B0043A42D003DA32B0025A023002378220025A52B0025A429001AA123001CA4
+            280011A323001BA62B00262F270011A0250016632100185120001C331F00109E
+            2600109D2800175A210035A04800165827001E913D00427B54000D863600135C
+            2D000C7B3B000C7B3F001E6F5C000C6B5C0009635B00085B5600257376000958
+            5D000A555A005E6869004C5A60000C5B8900094163003C4E5900074872000953
+            83000B5C96000C5288002B4D6700299DFE00268FE7002A4E6B0072849300145F
+            A0002494FB001880E9001B84EF001C89F4001C84ED001C83EA001871CA001F8E
+            F800186BC000336597004F647900747576001481F800157CEE001574D8001468
+            BF0016416F00255993000A73F2000B74F4000C75F40008458B001079F200083E
+            7E000F6BD4000D4F9D00164D9100215087000658C5000649A400053B83000969
+            E500095CC5000959BF000A4CA000194277000445A300043D900005459E000743
+            97005050510062626300555556006F6F6F00656565002D2D2D00272727001E1E
+            1E000A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0AFAFAFAFA0A0A0A0A0A0A0A0A0A0A
+            0A0A0A0A0A0A0A0AFD0D0408070D210A0A0A0A0A0A0A0A0A0A2626252322221F
+            050504080709151F0A0A0A0A0A0A0A2727272828449DA3FC06090E030C18151A
+            0A0A0A0A0A0A2B2A292A3C9CA8A8ACAEF91AFB03091619200A0A0A0A0A2F2D2E
+            2D459EA8A8ACF810141C241D1B11FF0A0A0A0A0A2C30313234E0E7C0B9B30D6C
+            6566676914100B0FFF0A0A3136383A3F40C5F4F0EDEEF3925856575A5B5D723B
+            0E110A393F4346484C71F6E2E3EFECF5CA60636463625B5747123E43494A4B4E
+            C2EAE8E6E6E4EFF7936B6D74736D6A615C1343494D4F51C1F2D1D7D0D2DCF1CD
+            80777E817F7C756A5C1F494DA0A0B5E9D5CBCCD8D6D4E9937882868887837E73
+            6C174A94A8A8BCDED0D8C9BDE5DFEB7D81878B8C8B8882766E1E4E80A7B0C7D3
+            D6C6B6A8BFE5DA7D82898F95908A857C791E4F5297B4C8DDC3B8A8A8B6C4DB24
+            848E918E8D8D837770215D535491CFE8BBAFA8A8A8B75F7BFFFE13F8021A1319
+            55FF0A53545EE1F0BEAFA8A8A8A46F504A473C98B1ADAAFFFF0A0AA7995ECEED
+            D9A9A8A8A8A8A5A1A642379FA8A80A0A0A0A0A0AA89B68EBEAB2A8A8A8A8A8A8
+            A24135A8A80A0A0A0A0A0A0A0AA89B7AEEBAABA8A8A8A8A89A3D33A80A0A0A0A
+            0A0A0A0A0A0AA89772B4AFA8A8A8A8A659372C0A0A0A0A0A0A0A0A0A0A0A0AA8
+            A4A8A8A8A8A8A8963A330A0A0A0A0A0A0A0A0A0A0A0A0A0A0AA8A8A8A8A89A3F
+            0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A
+            0A0A
+          }
+          Transparent = True
+        end
+        object Bevel1: TBevel
+          AnchorSideLeft.Control = gbDeploymentType
+          AnchorSideTop.Control = Console
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbDeploymentType
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 9
+          Top = 252
+          Width = 418
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          BorderSpacing.Right = 16
+          Shape = bsTopLine
+        end
+        object Debug: TCheckBox
+          AnchorSideLeft.Control = CacheSource
+          AnchorSideTop.Control = CacheSource
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 18
+          Top = 287
+          Width = 333
+          BorderSpacing.Top = 4
+          BorderSpacing.Bottom = 16
+          Caption = '&Debug Build (allows setups to be debugged in IDE)'
+          TabOrder = 6
+          OnChange = DebugChange
+        end
+        object CD: TRadioButton
+          AnchorSideLeft.Control = imgUncompressed
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = imgUncompressed
+          AnchorSideTop.Side = asrCenter
+          Left = 64
+          Height = 18
+          Top = 51
+          Width = 222
+          BorderSpacing.Left = 8
+          Caption = '&Uncompressed Directory Layout'
+          TabOrder = 0
+        end
+        object SFX: TRadioButton
+          AnchorSideLeft.Control = CD
+          AnchorSideTop.Control = imgCompressedSFX
+          AnchorSideTop.Side = asrCenter
+          Left = 64
+          Height = 18
+          Top = 99
+          Width = 255
+          Caption = '&Compressed Single Self-Installing File'
+          TabOrder = 1
+        end
+        object Web: TRadioButton
+          AnchorSideLeft.Control = CD
+          AnchorSideTop.Control = imgCompressedWeb
+          AnchorSideTop.Side = asrCenter
+          Left = 64
+          Height = 18
+          Top = 147
+          Width = 202
+          Caption = 'Compressed &Web-Based File'
+          TabOrder = 2
+        end
+        object CacheSource: TCheckBox
+          AnchorSideLeft.Control = gbDeploymentType
+          AnchorSideTop.Control = Bevel1
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 18
+          Top = 265
+          Width = 376
+          AllowGrayed = True
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 4
+          Caption = 'Always Cache Setup &Sources (enables easy maintenance)'
+          TabOrder = 5
+          OnChange = CacheSourceChange
+        end
+        object IgnoreMissing: TCheckBox
+          AnchorSideLeft.Control = CD
+          AnchorSideTop.Control = lblCompressedWeb
+          AnchorSideTop.Side = asrBottom
+          Left = 64
+          Height = 18
+          Top = 192
+          Width = 262
+          BorderSpacing.Top = 8
+          Caption = '&Ignore Missing Files (don''t break build)'
+          TabOrder = 3
+          OnClick = IgnoreMissingClick
+        end
+        object Console: TCheckBox
+          AnchorSideLeft.Control = CD
+          AnchorSideTop.Control = IgnoreMissing
+          AnchorSideTop.Side = asrBottom
+          Left = 64
+          Height = 18
+          Top = 218
+          Width = 298
+          AllowGrayed = True
+          BorderSpacing.Top = 8
+          Caption = 'Console Mode Setups (SSH/&TTy Compatible)'
+          TabOrder = 4
+          OnChange = ConsoleChange
+        end
+        object imgCompressedWeb1: TImage
+          AnchorSideLeft.Control = imgUncompressed
+          AnchorSideTop.Control = IgnoreMissing
+          AnchorSideTop.Side = asrBottom
+          Left = 32
+          Height = 24
+          Top = 218
+          Width = 24
+          AutoSize = True
+          BorderSpacing.Top = 8
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B47726170686963B703000089504E47
+            0D0A1A0A0000000D4948445200000018000000180803000000D7A9CDCA000000
+            206348524D00007A26000080840000FA00000080E8000075300000EA6000003A
+            98000017709CBA513C00000186504C54450000000099FF0099FF99CCFF3DADFF
+            0085EB0091F73233352825282A262A2A282A27262A29262A29282A28272A2826
+            2A2C292D302E313433353A373A3F3D40403F4157575727272802290000220000
+            04000000000C3C04001300000D000003000015000D4405001C00000E00000800
+            000100000A0048454826282822700E217A111E5F0F001800389E1B3CA21D47B1
+            23276F130B3E063EAA1E33921933921A3EA7202D831741A620389D1C06320051
+            4F512A282B001600001D00002100001100000F00001E00002800063C03093A06
+            0017005957592A2A2A0122012F821719590C114F081356092A7B152976152675
+            121255091E6C0F1B600E0002006060602A292A287D13206E111B690D24781222
+            72101B620E19670C2E85172F8C170009006666662A272A011D00125A096E6E6E
+            24720E1E750E1C5C0F0B4A058DFF47002500737373082E04001900175E0A7474
+            742C2A2C3333333838383F3F3F4242426D6D6D5E5E5E4F4F4F5959595F5F5F63
+            63636969697878787C7C7C7B7B7B757575959595FFFFFFAB1F74510000000274
+            524E5300479E2B190B00000001624B47448112BAAEFE0000000774494D4507E7
+            0C0E0A2D134BB9854F000000FC4944415428CF6360201D303261018C40092666
+            4CC0C2049660C5006C6009166C668124D83938B9B8B8797878F9B8F979040485
+            844544C5C012E2129252D232B272F20A8A4A72CA2AAA926AD2EA60090D4D2D6D
+            1D5D3D7D0343236313533359730B4B2BB084B58A8D9494AD929DBD83A3939DB3
+            8BB4ABA3B41B58C25D5A5ADAC3D3CBDBC757D9CF3F203028585A3A042C110A94
+            B00D0B8F888C528E8E898D0B8B97964E004B2426C9AABA262B4BABAA4A4BAB4A
+            03D54B4BA7402C4F4D4BCFC8CC924602D960091E9B9CF8DC3C6564897CB04481
+            340680E828C42551844BA218974409A6442958A2ACBCA2B2AABA34BFA6B60E0A
+            EA1B98F0452DA90000F00D3A829F4C77EC0000002574455874646174653A6372
+            6561746500323032332D31322D31345431303A34353A31392B30303A3030E56D
+            6D3C0000002574455874646174653A6D6F6469667900323032332D31322D3134
+            5431303A34353A31392B30303A30309430D5800000002874455874646174653A
+            74696D657374616D7000323032332D31322D31345431303A34353A31392B3030
+            3A3030C325F45F0000000049454E44AE426082
+          }
+          Transparent = True
+        end
+      end
+    end
+    object tsPageAuthenticode: TTabSheet
+      Caption = 'tsPageAuthenticode'
+      ClientHeight = 361
+      ClientWidth = 460
+      object gbAuthenticode: TGroupBox
+        AnchorSideLeft.Control = tsPageAuthenticode
+        AnchorSideTop.Control = tsPageAuthenticode
+        AnchorSideRight.Control = tsPageAuthenticode
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = tsPageAuthenticode
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 361
+        Top = 0
+        Width = 460
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSize = True
+        Caption = ' Code Signing '
+        ClientHeight = 332
+        ClientWidth = 450
+        TabOrder = 0
+        object CodeSign: TCheckBox
+          AnchorSideLeft.Control = gbAuthenticode
+          AnchorSideTop.Control = gbAuthenticode
+          Left = 16
+          Height = 18
+          Top = 16
+          Width = 135
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          Caption = 'Sign the p&ackage:'
+          TabOrder = 0
+        end
+        object pcCerts: TPageControl
+          AnchorSideLeft.Control = gbAuthenticode
+          AnchorSideTop.Control = CodeSign
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbAuthenticode
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 225
+          Top = 42
+          Width = 418
+          ActivePage = tsSPC
+          Anchors = [akTop, akLeft, akRight]
+          AutoSize = True
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 8
+          BorderSpacing.Right = 16
+          TabIndex = 0
+          TabOrder = 1
+          object tsSPC: TTabSheet
+            AutoSize = True
+            Caption = 'macOS'
+            ClientHeight = 189
+            ClientWidth = 412
+            object lblSPC: TLabel
+              AnchorSideLeft.Control = tsSPC
+              AnchorSideTop.Control = tsSPC
+              Left = 8
+              Height = 16
+              Top = 0
+              Width = 259
+              BorderSpacing.Left = 8
+              Caption = '&Common Name for Application Developer ID:'
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentColor = False
+              ParentFont = False
+            end
+            object lblPVK: TLabel
+              AnchorSideLeft.Control = lblSPC
+              AnchorSideTop.Control = SPC
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 16
+              Top = 46
+              Width = 209
+              BorderSpacing.Top = 8
+              Caption = '&Apple ID: (required for Notarization)'
+              FocusControl = PVK
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentColor = False
+              ParentFont = False
+            end
+            object btnBrowseSPC: TButton
+              AnchorSideRight.Control = tsSPC
+              AnchorSideRight.Side = asrBottom
+              Left = 328
+              Height = 20
+              Top = 15
+              Width = 76
+              Anchors = [akTop, akRight]
+              AutoSize = True
+              BorderSpacing.Right = 8
+              Caption = 'B&rowse...'
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentFont = False
+              TabOrder = 1
+              Visible = False
+              OnClick = btnBrowseSPCClick
+            end
+            object PVK: TEdit
+              AnchorSideLeft.Control = lblSPC
+              AnchorSideTop.Control = lblPVK
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 21
+              Top = 64
+              Width = 396
+              BorderSpacing.Top = 2
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentFont = False
+              TabOrder = 2
+            end
+            object SPC: TComboBox
+              AnchorSideLeft.Control = lblSPC
+              AnchorSideTop.Control = lblSPC
+              AnchorSideTop.Side = asrBottom
+              AnchorSideRight.Control = btnBrowseSPC
+              Left = 8
+              Height = 20
+              Top = 18
+              Width = 316
+              Anchors = [akTop, akLeft, akRight]
+              BorderSpacing.Top = 2
+              BorderSpacing.Right = 4
+              Font.CharSet = ANSI_CHARSET
+              Font.Height = -13
+              Font.Name = '.SF NS'
+              ItemHeight = 18
+              ParentFont = False
+              TabOrder = 0
+              OnDropDown = SPCDropDown
+            end
+            object lblAppleIDPassword: TLabel
+              AnchorSideLeft.Control = lblSPC
+              AnchorSideTop.Control = PVK
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 16
+              Top = 89
+              Width = 286
+              BorderSpacing.Top = 4
+              Caption = 'App Specific &Password: (required for Notarization)'
+              FocusControl = AppleIDPassword
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentColor = False
+              ParentFont = False
+            end
+            object AppleIDPassword: TEdit
+              AnchorSideLeft.Control = lblSPC
+              AnchorSideTop.Control = lblAppleIDPassword
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 21
+              Top = 107
+              Width = 396
+              BorderSpacing.Top = 2
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentFont = False
+              TabOrder = 4
+            end
+            object lblTeamID: TLabel
+              AnchorSideLeft.Control = lblSPC
+              AnchorSideTop.Control = AppleIDPassword
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 16
+              Top = 132
+              Width = 207
+              BorderSpacing.Top = 4
+              Caption = '&Team ID: (required for Notarization)'
+              FocusControl = TeamID
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentColor = False
+              ParentFont = False
+            end
+            object TeamID: TEdit
+              AnchorSideLeft.Control = lblSPC
+              AnchorSideTop.Control = lblTeamID
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 21
+              Top = 150
+              Width = 396
+              BorderSpacing.Top = 2
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentFont = False
+              TabOrder = 5
+            end
+            object HideTextEy: TCheckBox
+              AnchorSideLeft.Control = lblAppleIDPassword
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = lblAppleIDPassword
+              AnchorSideTop.Side = asrCenter
+              Left = 310
+              Height = 18
+              Top = 88
+              Width = 81
+              BorderSpacing.Left = 16
+              Caption = '&Hide text'
+              Checked = True
+              State = cbChecked
+              TabOrder = 3
+              OnChange = HideTextEyChange
+            end
+          end
+          object tsPFX: TTabSheet
+            Caption = 'Windows'
+            ClientHeight = 189
+            ClientWidth = 412
+            ImageIndex = 1
+            object lblPFX: TLabel
+              AnchorSideLeft.Control = tsPFX
+              AnchorSideTop.Control = tsPFX
+              Left = 8
+              Height = 16
+              Top = 0
+              Width = 291
+              BorderSpacing.Left = 8
+              Caption = 'Perso&nal Information Exchange File (*.PFX/*.P12):'
+              FocusControl = PFX
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentColor = False
+              ParentFont = False
+            end
+            object PFX: TEdit
+              AnchorSideLeft.Control = lblPFX
+              AnchorSideTop.Control = lblPFX
+              AnchorSideTop.Side = asrBottom
+              AnchorSideRight.Control = btnBrowsePFX
+              Left = 8
+              Height = 21
+              Top = 18
+              Width = 316
+              Anchors = [akTop, akLeft, akRight]
+              BorderSpacing.Top = 2
+              BorderSpacing.Right = 4
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentFont = False
+              TabOrder = 0
+            end
+            object btnBrowsePFX: TButton
+              AnchorSideTop.Control = PFX
+              AnchorSideRight.Control = tsPFX
+              AnchorSideRight.Side = asrBottom
+              Left = 328
+              Height = 20
+              Top = 18
+              Width = 76
+              Anchors = [akTop, akRight]
+              AutoSize = True
+              BorderSpacing.Right = 8
+              Caption = 'B&rowse...'
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentFont = False
+              TabOrder = 1
+              OnClick = btnBrowsePFXClick
+            end
+            object lblTimestamp: TLabel
+              AnchorSideLeft.Control = PFX
+              AnchorSideTop.Control = PFX
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 16
+              Top = 43
+              Width = 160
+              BorderSpacing.Top = 4
+              Caption = '&Time Stamp URL: (optional)'
+              FocusControl = TimeStamp
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentColor = False
+              ParentFont = False
+            end
+            object TimeStamp: TComboBox
+              AnchorSideLeft.Control = lblTimestamp
+              AnchorSideTop.Control = lblTimestamp
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 20
+              Top = 61
+              Width = 396
+              BorderSpacing.Top = 2
+              ItemHeight = 18
+              Items.Strings = (
+                'http://time.certum.pl'
+                'http://dse200.ncipher.com/TSS/HttpTspServer'
+                'http://zeitstempel.dfn.de'
+                'http://tsa.tecxoft.com'
+                'http://sha256timestamp.ws.symantec.com/sha256/timestamp'
+                'http://timestamp.globalsign.com/scripts/timstamp.dll'
+                'https://ca.signfiles.com/tsa/get.aspx'
+                'https://tsp.iaik.tugraz.at/tsp/TspRequest'
+              )
+              TabOrder = 2
+            end
+            object lblInfoURL: TLabel
+              AnchorSideLeft.Control = lblTimestamp
+              AnchorSideTop.Control = TimeStamp
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 16
+              Top = 85
+              Width = 206
+              BorderSpacing.Top = 4
+              Caption = 'Product &Information URL: (optional)'
+              FocusControl = InfoURL
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentColor = False
+              ParentFont = False
+            end
+            object InfoURL: TEdit
+              AnchorSideLeft.Control = lblTimestamp
+              AnchorSideTop.Control = lblInfoURL
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 21
+              Top = 103
+              Width = 396
+              BorderSpacing.Top = 2
+              Font.CharSet = ANSI_CHARSET
+              Font.Height = -13
+              Font.Name = '.SF NS'
+              ParentFont = False
+              TabOrder = 3
+            end
+            object lblPassword: TLabel
+              AnchorSideLeft.Control = lblTimestamp
+              AnchorSideTop.Control = InfoURL
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 16
+              Top = 128
+              Width = 118
+              BorderSpacing.Top = 4
+              Caption = '&Password: (optional)'
+              FocusControl = Password
+              Font.CharSet = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              ParentColor = False
+              ParentFont = False
+            end
+            object HideTextEx: TCheckBox
+              AnchorSideLeft.Control = lblPassword
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = lblPassword
+              AnchorSideTop.Side = asrCenter
+              Left = 142
+              Height = 18
+              Top = 127
+              Width = 81
+              BorderSpacing.Left = 16
+              Caption = '&Hide text'
+              Checked = True
+              State = cbChecked
+              TabOrder = 4
+              OnChange = HideTextExChange
+            end
+            object Password: TEdit
+              AnchorSideLeft.Control = lblTimestamp
+              AnchorSideTop.Control = lblPassword
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 21
+              Top = 146
+              Width = 396
+              BorderSpacing.Top = 2
+              TabOrder = 5
+            end
+            object poSignAll: TCheckBox
+              AnchorSideLeft.Control = Password
+              AnchorSideTop.Control = Password
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 18
+              Top = 171
+              Width = 382
+              AllowGrayed = True
+              BorderSpacing.Top = 4
+              Caption = 'Sign All &Executables (EXE, DLL, OCX, SYS, CPL, DRV, SCR)'
+              TabOrder = 6
+            end
+          end
+        end
+      end
+    end
+    object tsPageCompression: TTabSheet
+      Caption = 'tsPageCompression'
+      ClientHeight = 361
+      ClientWidth = 460
+      object gbCompression: TGroupBox
+        AnchorSideLeft.Control = tsPageCompression
+        AnchorSideTop.Control = tsPageCompression
+        AnchorSideRight.Control = tsPageCompression
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = tsPageCompression
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 361
+        Top = 0
+        Width = 460
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSize = True
+        Caption = ' Compression '
+        ClientHeight = 332
+        ClientWidth = 450
+        TabOrder = 0
+        object lblNone: TLabel
+          AnchorSideLeft.Control = gbCompression
+          AnchorSideTop.Control = CompressBar
+          Left = 16
+          Height = 16
+          Top = 19
+          Width = 32
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 3
+          BorderSpacing.Right = 6
+          Caption = 'None'
+          ParentColor = False
+        end
+        object lblBest: TLabel
+          AnchorSideTop.Control = lblNone
+          AnchorSideRight.Control = gbCompression
+          AnchorSideRight.Side = asrBottom
+          Left = 407
+          Height = 16
+          Top = 19
+          Width = 27
+          Alignment = taRightJustify
+          Anchors = [akTop, akRight]
+          BorderSpacing.Left = 6
+          BorderSpacing.Right = 16
+          Caption = 'Best'
+          ParentColor = False
+        end
+        object lblAESPassword: TLabel
+          AnchorSideLeft.Control = Encrypt
+          AnchorSideTop.Control = Encrypt
+          AnchorSideTop.Side = asrBottom
+          Left = 40
+          Height = 16
+          Top = 182
+          Width = 62
+          BorderSpacing.Left = 24
+          BorderSpacing.Top = 8
+          Caption = '&Password:'
+          FocusControl = Key
+          ParentColor = False
+        end
+        object CompressBar: TTrackBar
+          AnchorSideLeft.Control = lblNone
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = gbCompression
+          AnchorSideRight.Control = lblBest
+          Left = 54
+          Height = 28
+          Top = 16
+          Width = 347
+          AutoSize = True
+          Max = 8
+          OnChange = CompressBarChange
+          PageSize = 1
+          Position = 0
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 6
+          BorderSpacing.Top = 16
+          BorderSpacing.Right = 6
+          TabOrder = 0
+        end
+        object Encrypt: TCheckBox
+          AnchorSideLeft.Control = lblNone
+          AnchorSideTop.Control = pnCompressionText
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 18
+          Top = 156
+          Width = 196
+          BorderSpacing.Top = 8
+          Caption = 'Use 256-bit AES &Encryption'
+          TabOrder = 1
+          OnChange = EncryptChange
+        end
+        object Key: TEdit
+          AnchorSideLeft.Control = lblAESPassword
+          AnchorSideTop.Control = lblAESPassword
+          AnchorSideTop.Side = asrBottom
+          Left = 40
+          Height = 21
+          Top = 200
+          Width = 394
+          BorderSpacing.Top = 2
+          TabOrder = 2
+        end
+        object HideText: TCheckBox
+          AnchorSideLeft.Control = lblAESPassword
+          AnchorSideTop.Control = Key
+          AnchorSideTop.Side = asrBottom
+          Left = 40
+          Height = 18
+          Top = 225
+          Width = 81
+          BorderSpacing.Top = 4
+          Caption = '&Hide text'
+          Checked = True
+          State = cbChecked
+          TabOrder = 3
+          OnChange = HideTextChange
+        end
+        object pnCompressionText: TPanel
+          AnchorSideLeft.Control = gbCompression
+          AnchorSideTop.Control = CompressBar
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbCompression
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 104
+          Top = 44
+          Width = 418
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 16
+          BorderSpacing.Right = 16
+          BevelOuter = bvNone
+          ClientHeight = 104
+          ClientWidth = 418
+          TabOrder = 4
+          object Compress1: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 16
+            Top = 8
+            Width = 1251
+            AutoSize = False
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will pre-process data to increase compressibility, treat all files as a continuous data stream, and use an 8 MB buffer for LZMA2 compression with hash chaining. Leverages all available CPU cores.'
+            ParentColor = False
+            Visible = False
+            WordWrap = True
+          end
+          object CompressText: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 64
+            Top = 8
+            Width = 386
+            Anchors = [akTop, akLeft, akRight]
+            AutoSize = False
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will pre-process data, compress from a continuous stream, and use a 32 MB LZMA buffer. May require up to 384 MB physical memory for compression. Requires 32 MB physical memory for extraction.'
+            ParentColor = False
+            WordWrap = True
+          end
+          object Compress0: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 16
+            Top = 8
+            Width = 678
+            AutoSize = False
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will store data in uncompressed form. Choose when nesting setups or planning to recompress data.'
+            ParentColor = False
+            Visible = False
+            WordWrap = True
+          end
+          object Compress2: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 16
+            Top = 8
+            Width = 1240
+            AutoSize = False
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will pre-process data to increase compressibility, treat all files as a continuous data stream, and use an 8 MB buffer for LZMA2 compression with binary trees. Leverages all available CPU cores.'
+            ParentColor = False
+            Visible = False
+            WordWrap = True
+          end
+          object Compress3: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 16
+            Top = 8
+            Width = 1053
+            AutoSize = False
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will pre-process data, compress from a continuous stream, and use a 32 MB buffer for LZMA2 compression with binary trees. Leverages a maximum of 3 threads.'
+            ParentColor = False
+            Visible = False
+            WordWrap = True
+          end
+          object Compress4: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 16
+            Top = 8
+            Width = 1053
+            AutoSize = False
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will pre-process data, compress from a continuous stream, and use a 64 MB buffer for LZMA2 compression with binary trees. Leverages a maximum of 2 threads.'
+            ParentColor = False
+            Visible = False
+            WordWrap = True
+          end
+          object Compress5: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 88
+            Top = 8
+            Width = 386
+            Anchors = [akTop, akLeft, akRight]
+            AutoSize = False
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will pre-process data from a continuous stream, using a 1 GB buffer for LZMA compression running on 2 threads, with binary optimization. Requires a 64 bit operating system and 10 GB of memory for compression.'
+            ParentColor = False
+            Visible = False
+            WordWrap = True
+          end
+          object Compress6: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 88
+            Top = 8
+            Width = 386
+            Anchors = [akTop, akLeft, akRight]
+            AutoSize = False
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will pre-process data from a continuous stream, using a 1 GB buffer for LZMA compression running on 2 threads, with heuristic optimization. Requires a 64 bit operating system and 10 GB of memory for compression.'
+            ParentColor = False
+            Visible = False
+            WordWrap = True
+          end
+          object Compress7: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 64
+            Top = 8
+            Width = 386
+            Anchors = [akTop, akLeft, akRight]
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will pre-process data from a continuous stream, using a 1.5 GB buffer for LZMA compression running on 2 threads, with binary optimization. Requires 16 GB of memory for compression, and a 64 bit operating system for extraction.'
+            ParentColor = False
+            Visible = False
+            WordWrap = True
+          end
+          object Compress8: TLabel
+            AnchorSideLeft.Control = pnCompressionText
+            AnchorSideTop.Control = pnCompressionText
+            AnchorSideRight.Control = pnCompressionText
+            AnchorSideRight.Side = asrBottom
+            Left = 16
+            Height = 64
+            Top = 8
+            Width = 386
+            Anchors = [akTop, akLeft, akRight]
+            BorderSpacing.Left = 16
+            BorderSpacing.Top = 8
+            BorderSpacing.Right = 16
+            BorderSpacing.Bottom = 8
+            Caption = 'InstallAware will pre-process data from a continuous stream, using a 1.5 GB buffer for LZMA compression running on 2 threads, with heuristic optimization. Requires 16 GB of memory for compression, and a 64 bit operating system for extraction.'
+            ParentColor = False
+            Visible = False
+            WordWrap = True
+          end
+        end
+      end
+    end
+    object tsPageOutput: TTabSheet
+      Caption = 'tsPageOutput'
+      ClientHeight = 361
+      ClientWidth = 460
+      object gbOutput: TGroupBox
+        AnchorSideLeft.Control = tsPageOutput
+        AnchorSideTop.Control = tsPageOutput
+        AnchorSideRight.Control = tsPageOutput
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = tsPageOutput
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 361
+        Top = 0
+        Width = 460
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSize = True
+        Caption = ' Output '
+        ClientHeight = 332
+        ClientWidth = 450
+        TabOrder = 0
+        object lblCreateBuildsIn: TLabel
+          AnchorSideLeft.Control = gbOutput
+          AnchorSideTop.Control = gbOutput
+          Left = 16
+          Height = 16
+          Top = 16
+          Width = 98
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          Caption = 'Create builds in:'
+          ParentColor = False
+        end
+        object BevelChangeRevision: TBevel
+          AnchorSideTop.Control = lblSpecifyFilename
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 9
+          Top = 243
+          Width = 376
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          Shape = bsTopLine
+        end
+        object BevelOutputFilename: TBevel
+          AnchorSideLeft.Control = gbOutput
+          AnchorSideTop.Control = BuildFolderBrowse
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = gbOutput
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 9
+          Top = 121
+          Width = 418
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          BorderSpacing.Right = 16
+          Shape = bsTopLine
+        end
+        object lblOutputFilename: TLabel
+          AnchorSideLeft.Control = gbOutput
+          AnchorSideTop.Control = BevelOutputFilename
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 146
+          Width = 101
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          Caption = '&Output filename:'
+          FocusControl = BuildFilename
+          ParentColor = False
+        end
+        object lblLeaveEmpty: TLabel
+          AnchorSideLeft.Control = BevelOutputFilename
+          AnchorSideTop.Control = BuildFilename
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = BevelOutputFilename
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 193
+          Width = 371
+          BorderSpacing.Top = 8
+          BorderSpacing.Right = 16
+          Caption = 'Leave empty for default filename, based on the project name.'
+          ParentColor = False
+        end
+        object lblSpecifyFilename: TLabel
+          AnchorSideLeft.Control = lblLeaveEmpty
+          AnchorSideTop.Control = lblLeaveEmpty
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 211
+          Width = 304
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 16
+          Caption = 'If specifying a filename, exclude the file extension.'
+          ParentColor = False
+        end
+        object ProjectFolder: TRadioButton
+          AnchorSideLeft.Control = lblCreateBuildsIn
+          AnchorSideTop.Control = lblCreateBuildsIn
+          AnchorSideTop.Side = asrBottom
+          Left = 32
+          Height = 18
+          Top = 40
+          Width = 111
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 8
+          Caption = '&Project Folder'
+          Checked = True
+          TabOrder = 0
+          TabStop = True
+          OnChange = ProjectFolderChange
+        end
+        object CustomFolder: TRadioButton
+          AnchorSideLeft.Control = ProjectFolder
+          AnchorSideTop.Control = ProjectFolder
+          AnchorSideTop.Side = asrBottom
+          Left = 32
+          Height = 18
+          Top = 62
+          Width = 119
+          BorderSpacing.Top = 4
+          Caption = '&Custom Folder:'
+          TabOrder = 1
+        end
+        object BuildFolder: TEdit
+          AnchorSideLeft.Control = CustomFolder
+          AnchorSideTop.Control = CustomFolder
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = BuildFolderBrowse
+          Left = 56
+          Height = 21
+          Top = 82
+          Width = 298
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 24
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 5
+          TabOrder = 2
+        end
+        object BuildFolderBrowse: TButton
+          AnchorSideTop.Control = BuildFolder
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = gbOutput
+          AnchorSideRight.Side = asrBottom
+          Left = 359
+          Height = 25
+          Top = 80
+          Width = 75
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 16
+          Caption = '&Browse...'
+          TabOrder = 3
+          OnClick = BuildFolderBrowseClick
+        end
+        object BuildFilename: TEdit
+          AnchorSideLeft.Control = BevelOutputFilename
+          AnchorSideTop.Control = lblOutputFilename
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = BevelOutputFilename
+          AnchorSideRight.Side = asrBottom
+          Left = 16
+          Height = 21
+          Top = 164
+          Width = 418
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 2
+          TabOrder = 4
+        end
+        object AutoUpdate: TCheckBox
+          AnchorSideLeft.Control = BevelChangeRevision
+          AnchorSideTop.Control = BevelChangeRevision
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 18
+          Top = 260
+          Width = 321
+          BorderSpacing.Top = 8
+          BorderSpacing.Right = 16
+          BorderSpacing.Bottom = 16
+          Caption = 'Change revision code &automatically upon rebuild'
+          TabOrder = 5
+        end
+      end
+    end
+    object tsPageCodeSigningHooks: TTabSheet
+      Caption = 'Code Signing Hooks'
+      ClientHeight = 361
+      ClientWidth = 460
+      object gbHooks: TGroupBox
+        Left = 0
+        Height = 361
+        Top = 0
+        Width = 460
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSize = True
+        Caption = ' Code Signing Hooks '
+        ClientHeight = 332
+        ClientWidth = 450
+        TabOrder = 0
+        object Hooks: TMemo
+          AnchorSideLeft.Control = Label1
+          AnchorSideTop.Control = Label1
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 212
+          Top = 36
+          Width = 419
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BorderSpacing.Top = 4
+          TabOrder = 0
+          OnChange = HooksChange
+        end
+        object Label1: TLabel
+          Left = 16
+          Height = 16
+          Top = 16
+          Width = 72
+          BorderSpacing.Left = 16
+          BorderSpacing.Top = 16
+          Caption = '&Commands:'
+          FocusControl = Hooks
+        end
+        object Label2: TLabel
+          AnchorSideLeft.Control = Label1
+          AnchorSideTop.Control = Hooks
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 264
+          Width = 271
+          BorderSpacing.Top = 16
+          Caption = 'To start a new command, type CTRL+ENTER.'
+        end
+        object Label3: TLabel
+          AnchorSideLeft.Control = Label2
+          AnchorSideTop.Control = Label2
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 284
+          Width = 306
+          BorderSpacing.Top = 4
+          Caption = 'Type "%1" to designate the file being code signed.'
+        end
+        object Label4: TLabel
+          AnchorSideLeft.Control = Label3
+          AnchorSideTop.Control = Label3
+          AnchorSideTop.Side = asrBottom
+          Left = 16
+          Height = 16
+          Top = 304
+          Width = 335
+          BorderSpacing.Top = 4
+          Caption = 'Your hooks override PFX/P12 settings on Windows only.'
+        end
+      end
+    end
+  end
+  object SPCopen: TOpenDialog
+    Title = 'Select Software Publishing Certificate File'
+    DefaultExt = '.spc'
+    Filter = 'Software Publishing Certificate Files|*.spc|All Files|*.*'
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    Left = 40
+    Top = 384
+  end
+  object PVKopen: TOpenDialog
+    Title = 'Select Private Key File'
+    DefaultExt = '.pvk'
+    Filter = 'Private Key Files|*.pvk|All Files|*.*'
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    Left = 72
+    Top = 384
+  end
+  object OpenIcon: TOpenDialog
+    Title = 'Select Icon'
+    DefaultExt = '.ico'
+    Filter = 'Icons|*.ico|All Files|*.*'
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    Left = 104
+    Top = 384
+  end
+  object PFXOpen: TOpenDialog
+    Title = 'Select Personal Information Exchange File'
+    DefaultExt = '.pfx'
+    Filter = 'Personal Information Exchange Files|*.pfx;*.p12|All Files|*.*'
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    Left = 136
+    Top = 384
+  end
+end

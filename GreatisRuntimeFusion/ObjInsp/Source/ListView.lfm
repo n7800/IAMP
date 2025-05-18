@@ -1,0 +1,163 @@
+object frmListViewEditor: TfrmListViewEditor
+  Left = 12
+  Top = 154
+  Width = 508
+  Height = 359
+  BorderIcons = [biSystemMenu, biMaximize]
+  Caption = 'List View Editor'
+  Color = clBtnFace
+  Font.Charset = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Icon.Data = {
+    000001000200101010000000000028010000260000002020100000000000E802
+    00004E0100002800000010000000200000000100040000000000C00000000000
+    0000000000000000000000000000000000000000800000800000008080008000
+    00008000800080800000C0C0C000808080000000FF0000FF000000FFFF00FF00
+    0000FF00FF00FFFF0000FFFFFF000000000000000000F888888888888800F777
+    777777777800F777777777777800F777777777777800F777777777777800F777
+    777777777800F770070070077800F770070070077800F777777777777800F777
+    777777777800F777777777777800F777777777777800F777777777777800FFFF
+    FFFFFFFFFF000000000000000000000100000001910000013300000121000001
+    000000018C160001050000010600000100000001000000010000000100FF0001
+    00000001000000010000FFFF0000280000002000000040000000010004000000
+    0000800200000000000000000000000000000000000000000000000080000080
+    000000808000800000008000800080800000C0C0C000808080000000FF0000FF
+    000000FFFF00FF000000FF00FF00FFFF0000FFFFFF0000000000000000000000
+    00000000000000000000000000000F8888888888888000000000000000000F77
+    77777777778000000000000000000F7777777777778000000000000000000F77
+    77777777778000000000000000000F7777777777778000000000000000000F77
+    77777777778000000000000000000F7700700700778000000000000000000F77
+    00700700778000000000000000000F7777777777778000000000000000000F77
+    77777777778000000000000000000F7777777777778000000000000000000F77
+    77777777778000000000000000000F7777777777778000000000000000000FFF
+    FFFFFFFFFFF00000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000BBBBBB0BBBBBBBBB000
+    BBB0BBBBB0000B0000BBB00000B0B000B0BBB000BB000B0BBB0BB0BBBBB0BBBB
+    B0BB0BBB0BB00B0B0BB0B0BBBBB0BB0BB0B0BB0BB0B00B0B00B0B00000B0B0B0
+    B0B0B000B0B00B0B0BB0B0BBBBB00BBB00B0BB0BB0B00B0BBB0BB0BBBBB0BB0B
+    B0BB0BBB0BB00B0000BBB00000B0B000B0BBB000BB000BBBBBB0BBBBBBBBB000
+    BBB0BBBBB00000000000000000000000000000000000FFFF8000FFFF8000FFFF
+    8000FFFF8000FFFF8000FFFF8000FFFF8000FFFF8000FFFF8000FFFF8000FFFF
+    8000FFFF8000FFFF8000FFFF8000FFFF8000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFF810071078000700380000001880000218C00
+    007188000021800020018000700381007107FFFFFFFF}
+  OldCreateOrder = True
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object splMain: TSplitter
+    Left = 241
+    Top = 0
+    Width = 5
+    Height = 289
+  end
+  object pnlButtons: TPanel
+    Left = 0
+    Top = 289
+    Width = 492
+    Height = 31
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 2
+    object btnAdd: TButton
+      Tag = 1
+      Left = 2
+      Top = 4
+      Width = 57
+      Height = 25
+      Caption = 'Add'
+      TabOrder = 0
+      OnClick = btnAddClick
+    end
+    object btnDelete: TButton
+      Left = 62
+      Top = 4
+      Width = 57
+      Height = 25
+      Caption = 'Delete'
+      TabOrder = 1
+      OnClick = btnDeleteClick
+    end
+    object pnlSysButtons: TPanel
+      Left = 332
+      Top = 0
+      Width = 160
+      Height = 31
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 4
+      object btnOK: TButton
+        Left = 0
+        Top = 4
+        Width = 77
+        Height = 25
+        Caption = 'OK'
+        Default = True
+        ModalResult = 1
+        TabOrder = 0
+      end
+      object btnCancel: TButton
+        Left = 80
+        Top = 4
+        Width = 77
+        Height = 25
+        Caption = 'Cancel'
+        ModalResult = 2
+        TabOrder = 1
+      end
+    end
+    object btnUp: TButton
+      Left = 124
+      Top = 4
+      Width = 57
+      Height = 25
+      Caption = 'Up'
+      TabOrder = 2
+      OnClick = btnUpClick
+    end
+    object btnDown: TButton
+      Left = 184
+      Top = 4
+      Width = 57
+      Height = 25
+      Caption = 'Down'
+      TabOrder = 3
+      OnClick = btnDownClick
+    end
+  end
+  object cinItemProperties: TComponentInspector
+    Left = 246
+    Top = 0
+    Width = 246
+    Height = 289
+    Align = alClient
+    Color = clBtnFace
+    TabOrder = 1
+    OnExit = cinItemPropertiesExit
+    OnChange = cinItemPropertiesChange
+  end
+  object lsvItems: TListView
+    Left = 0
+    Top = 0
+    Width = 241
+    Height = 289
+    Align = alLeft
+    Columns = <>
+    DragMode = dmAutomatic
+    HideSelection = False
+    TabOrder = 0
+    ViewStyle = vsList
+    OnChange = lsvItemsChange
+    OnDragDrop = lsvItemsDragDrop
+    OnDragOver = lsvItemsDragOver
+  end
+end

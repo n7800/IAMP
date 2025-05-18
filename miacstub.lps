@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="miacstub.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="271"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/fpcsrc/packages/fcl-base/src/custapp.pp"/>
+        <UnitName Value="CustApp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="161"/>
+        <CursorPos X="3" Y="184"/>
+        <UsageCount Value="39"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mutils.pas"/>
+        <UnitName Value="mUtils"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="8"/>
+        <CursorPos X="14" Y="21"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mscriptexec.pas"/>
+        <UnitName Value="mScriptExec"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="46" Y="178"/>
+        <UsageCount Value="36"/>
+      </Unit>
+      <Unit>
+        <Filename Value="upool.pas"/>
+        <UnitName Value="uPool"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2"/>
+        <CursorPos X="21" Y="14"/>
+        <UsageCount Value="36"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1017"/>
+        <CursorPos X="26" Y="1026"/>
+        <UsageCount Value="80"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1511"/>
+        <CursorPos X="24" Y="1529"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/include/application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="237"/>
+        <CursorPos X="3" Y="239"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/components/lazutils/lazutf8.pas"/>
+        <UnitName Value="LazUTF8"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="10" Y="49"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/components/lazutils/unixlazutf8.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="22" Y="36"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mAutomate.pas"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="16"/>
+        <CursorPos Y="89"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="urunapp.pas"/>
+        <UnitName Value="uRunApp"/>
+        <EditorIndex Value="6"/>
+        <CursorPos Y="17"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/components/lazutils/masks.pas"/>
+        <UnitName Value="Masks"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="13"/>
+        <CursorPos X="21" Y="28"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/fpcsrc/packages/fcl-base/src/contnrs.pp"/>
+        <UnitName Value="Contnrs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="60"/>
+        <CursorPos Y="60"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="verifysign.pas"/>
+        <UnitName Value="VerifySign"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="25"/>
+        <CursorPos Y="25"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="usleep.pas"/>
+        <UnitName Value="uSleep"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="29" Y="15"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="t4a_VersionInfo.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="301"/>
+        <CursorPos Y="301"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ugrabmedia.pas"/>
+        <UnitName Value="uGrabMedia"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="2"/>
+        <CursorPos X="5" Y="16"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/fpcsrc/packages/univint/src/CFURL.pas"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="1352"/>
+        <CursorPos Y="1377"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/interfaces/cocoa/cocoautils.pas"/>
+        <UnitName Value="CocoaUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1245"/>
+        <CursorPos Y="1265"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/widgetset/wslclclasses.pp"/>
+        <UnitName Value="WSLCLClasses"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="740"/>
+        <CursorPos Y="753"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="11" Column="13" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="8" Column="27"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="20" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="49" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="29" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="34" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="111" Column="5" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="111" Column="3" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="23" Column="78" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="1020" Column="29" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="1030" Column="53" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="1020" Column="29" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="1030" Column="53" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="1026" TopLine="1006"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="2836" Column="28" TopLine="2824"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="2837" Column="28" TopLine="2824"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="2977" Column="30" TopLine="2957"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="2994" Column="30" TopLine="2974"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="1023" Column="29" TopLine="1010"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="2837" Column="28" TopLine="2817"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="2977" Column="30" TopLine="2957"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="2994" Column="30" TopLine="2974"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="1023" Column="29" TopLine="1010"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="2840" Column="26" TopLine="2828"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="86" Column="29" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+        <Caret Line="76" Column="9" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="miacstub.lpr"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+        <Caret Line="4434" Column="22" TopLine="4424"/>
+      </Position>
+      <Position>
+        <Filename Value="mutils.pas"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

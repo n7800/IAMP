@@ -1,0 +1,135 @@
+object scrDeleteRegistry: TscrDeleteRegistry
+  Left = 8
+  Height = 297
+  Top = 25
+  Width = 335
+  HelpType = htKeyword
+  HelpKeyword = 'deleteregistry'
+  BorderStyle = bsDialog
+  Caption = 'Delete Registry (Windows Only)'
+  ClientHeight = 297
+  ClientWidth = 335
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.6.0'
+  object Label4: TLabel
+    Left = 16
+    Height = 13
+    Top = 16
+    Width = 26
+    Caption = '&Root:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 64
+    Width = 21
+    Caption = '&Key:'
+    FocusControl = Key
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 13
+    Top = 112
+    Width = 30
+    Caption = '&Value:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 13
+    Top = 208
+    Width = 136
+    Caption = 'Target &Computer: (optional)'
+    FocusControl = Target
+    ParentColor = False
+    Visible = False
+  end
+  object Root: TComboBox
+    Left = 16
+    Height = 20
+    Top = 32
+    Width = 304
+    ItemHeight = 26
+    ItemIndex = 0
+    Items.Strings = (
+      'HKEY_CLASSES_ROOT'
+      'HKEY_CURRENT_USER'
+      'HKEY_LOCAL_MACHINE'
+      'HKEY_USERS'
+      'HKEY_CURRENT_CONFIG'
+    )
+    OnChange = RootChange
+    Style = csDropDownList
+    TabOrder = 0
+    Text = 'HKEY_CLASSES_ROOT'
+  end
+  object Key: TEdit
+    Left = 16
+    Height = 22
+    Top = 80
+    Width = 304
+    TabOrder = 1
+  end
+  object Value: TEdit
+    Left = 16
+    Height = 22
+    Top = 128
+    Width = 304
+    TabOrder = 2
+  end
+  object delKey: TRadioButton
+    Left = 16
+    Height = 18
+    Top = 160
+    Width = 182
+    Caption = 'Delete &Entire Key (and subkeys)'
+    TabOrder = 3
+  end
+  object delValue: TRadioButton
+    Left = 16
+    Height = 18
+    Top = 176
+    Width = 113
+    Caption = 'Delete Value &Only'
+    TabOrder = 4
+  end
+  object BitBtn1: TBitBtn
+    Left = 165
+    Height = 25
+    Top = 256
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    NumGlyphs = 2
+    TabOrder = 6
+  end
+  object BitBtn2: TBitBtn
+    Left = 245
+    Height = 25
+    Top = 256
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    NumGlyphs = 2
+    TabOrder = 7
+  end
+  object Target: TEdit
+    Left = 16
+    Height = 22
+    Top = 224
+    Width = 304
+    TabOrder = 5
+    Visible = False
+  end
+end

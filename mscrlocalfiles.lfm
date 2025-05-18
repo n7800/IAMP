@@ -1,0 +1,141 @@
+object scrLocalFiles: TscrLocalFiles
+  Left = 7
+  Height = 335
+  Top = 34
+  Width = 266
+  HelpType = htKeyword
+  HelpKeyword = 'copymovelocalfiles'
+  BorderStyle = bsDialog
+  Caption = 'Copy/Move Local Files'
+  ClientHeight = 335
+  ClientWidth = 266
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Position = poOwnerFormCenter
+  LCLVersion = '3.99.0.0'
+  OnShow = FormShow
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 16
+    Width = 70
+    Caption = '&Source Folder:'
+    FocusControl = SourceFolder
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 64
+    Width = 199
+    Caption = 'Source &Files: (press F1 for requirements)'
+    FocusControl = SourceFiles
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 13
+    Top = 112
+    Width = 68
+    Caption = '&Target Folder:'
+    FocusControl = TargetFolder
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 13
+    Top = 160
+    Width = 196
+    Caption = 'Target F&iles: (press F1 for requirements)'
+    FocusControl = TargetFiles
+    ParentColor = False
+  end
+  object SourceFolder: TEdit
+    Left = 16
+    Height = 22
+    Top = 32
+    Width = 233
+    TabOrder = 0
+  end
+  object SourceFiles: TEdit
+    Left = 16
+    Height = 22
+    Top = 80
+    Width = 233
+    TabOrder = 1
+  end
+  object TargetFolder: TEdit
+    Left = 16
+    Height = 22
+    Top = 128
+    Width = 233
+    TabOrder = 2
+  end
+  object TargetFiles: TEdit
+    Left = 16
+    Height = 22
+    Top = 176
+    Width = 233
+    TabOrder = 3
+  end
+  object BitBtn1: TBitBtn
+    Left = 96
+    Height = 25
+    Top = 296
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    NumGlyphs = 2
+    TabOrder = 8
+  end
+  object BitBtn2: TBitBtn
+    Left = 176
+    Height = 25
+    Top = 296
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    NumGlyphs = 2
+    TabOrder = 9
+  end
+  object CopyFiles: TRadioButton
+    Left = 16
+    Height = 18
+    Top = 208
+    Width = 76
+    Caption = '&Copy Files'
+    TabOrder = 4
+    OnClick = MoveFilesClick
+  end
+  object MoveFiles: TRadioButton
+    Left = 16
+    Height = 18
+    Top = 224
+    Width = 77
+    Caption = '&Move Files'
+    TabOrder = 5
+    OnClick = MoveFilesClick
+  end
+  object Subfolders: TCheckBox
+    Left = 16
+    Height = 18
+    Top = 248
+    Width = 117
+    Caption = 'Include S&ubfolders'
+    TabOrder = 6
+  end
+  object Link: TCheckBox
+    Left = 16
+    Height = 18
+    Top = 272
+    Width = 196
+    Caption = 'Follow &Links (Linux && macOS Only)'
+    TabOrder = 7
+  end
+end

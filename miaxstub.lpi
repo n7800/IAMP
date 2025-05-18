@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="InstallAware Multi Platform Setup"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="5">
+      <Item1 Name="Default" Default="True"/>
+      <Item2 Name="Linux">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="miaxstub"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="packages/anchordocking;packages/multithreadprocs;GreatisRuntimeFusion/FormDes/Source;GreatisRuntimeFusion/ObjInsp/Source;GreatisRuntimeFusion/RunFus/Source"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+            </Debugging>
+            <Options>
+              <PassLinkerOptions Value="True"/>
+              <LinkerOptions Value="-R ./"/>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dINTEROP"/>
+            <OtherDefines Count="2">
+              <Define0 Value="INTEROP"/>
+              <Define1 Value="BYHAND"/>
+            </OtherDefines>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Guiless">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="miaxstub"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="packages/anchordocking;packages/multithreadprocs;GreatisRuntimeFusion/FormDes/Source;GreatisRuntimeFusion/ObjInsp/Source;GreatisRuntimeFusion/RunFus/Source"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Conditionals Value="if TargetOS = &apos;darwin&apos; then
+begin
+  CustomOptions += &apos;-WM10.9&apos;;
+end;"/>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dINTEROP
+-dNOGUI"/>
+            <OtherDefines Count="2">
+              <Define0 Value="INTEROP"/>
+              <Define1 Value="BYHAND"/>
+            </OtherDefines>
+          </Other>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="Licensed">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="miaxstub"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="packages/anchordocking;packages/multithreadprocs;GreatisRuntimeFusion/FormDes/Source;GreatisRuntimeFusion/ObjInsp/Source;GreatisRuntimeFusion/RunFus/Source"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Conditionals Value="if TargetOS = &apos;darwin&apos; then
+begin
+  CustomOptions += &apos;-WM10.9&apos;;
+end;"/>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dINTEROP
+-dLICENSED"/>
+            <OtherDefines Count="2">
+              <Define0 Value="INTEROP"/>
+              <Define1 Value="BYHAND"/>
+            </OtherDefines>
+          </Other>
+        </CompilerOptions>
+      </Item4>
+      <Item5 Name="LicensedGuiless">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="miaxstub"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="packages/anchordocking;packages/multithreadprocs;GreatisRuntimeFusion/FormDes/Source;GreatisRuntimeFusion/ObjInsp/Source;GreatisRuntimeFusion/RunFus/Source"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Conditionals Value="if TargetOS = &apos;darwin&apos; then
+begin
+  CustomOptions += &apos;-WM10.9&apos;;
+end;"/>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dINTEROP
+-dNOGUI
+-dLICENSED"/>
+            <OtherDefines Count="2">
+              <Define0 Value="INTEROP"/>
+              <Define1 Value="BYHAND"/>
+            </OtherDefines>
+          </Other>
+        </CompilerOptions>
+      </Item5>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="RFPKG"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="miaxstub.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="udlgapi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uDlgAPI"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="mscriptexec.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mScriptExec"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="mutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mUtils"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="usevenzipapi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSevenZIPAPI"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="udirectextractmedia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uDirectExtractMedia"/>
+      </Unit5>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="miaxstub"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="packages/anchordocking;packages/multithreadprocs;GreatisRuntimeFusion/FormDes/Source;GreatisRuntimeFusion/ObjInsp/Source;GreatisRuntimeFusion/RunFus/Source"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Conditionals Value="if TargetOS = &apos;darwin&apos; then
+begin
+  CustomOptions += &apos;-WM10.9&apos;;
+end;"/>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dINTEROP"/>
+      <OtherDefines Count="2">
+        <Define0 Value="INTEROP"/>
+        <Define1 Value="BYHAND"/>
+      </OtherDefines>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="5">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="EResourceReaderNotFoundException"/>
+      </Item4>
+      <Item5>
+        <Name Value="EReadError"/>
+      </Item5>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="GFDLIB"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="DDetours\Source"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Linking>
+        <Debugging>
+          <DebugInfoType Value="dsDwarf2Set"/>
+        </Debugging>
+      </Linking>
+    </CompilerOptions>
+    <Version Major="1"/>
+    <Files>
+      <Item>
+        <Filename Value="CtrlDes.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="CtrlDes"/>
+      </Item>
+      <Item>
+        <Filename Value="FDAdd.pas"/>
+        <UnitName Value="FDAdd"/>
+      </Item>
+      <Item>
+        <Filename Value="FDAlign.pas"/>
+        <UnitName Value="FDAlign"/>
+      </Item>
+      <Item>
+        <Filename Value="FDAlPal.pas"/>
+        <UnitName Value="FDAlPal"/>
+      </Item>
+      <Item>
+        <Filename Value="FDEditor.pas"/>
+        <UnitName Value="FDEditor"/>
+      </Item>
+      <Item>
+        <Filename Value="FDMain.pas"/>
+        <UnitName Value="FDMain"/>
+      </Item>
+      <Item>
+        <Filename Value="FDSize.pas"/>
+        <UnitName Value="FDSize"/>
+      </Item>
+      <Item>
+        <Filename Value="FDTab.pas"/>
+        <UnitName Value="FDTab"/>
+      </Item>
+      <Item>
+        <Filename Value="FDCmpPal.res"/>
+        <Type Value="Binary"/>
+      </Item>
+    </Files>
+    <RequiredPkgs>
+      <Item>
+        <PackageName Value="lclextensions_package"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCLBase"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

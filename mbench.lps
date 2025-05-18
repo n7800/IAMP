@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="mbench.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="19" Y="11"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uguibench.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="GuiPA"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="145"/>
+        <CursorPos Y="374"/>
+        <UsageCount Value="210"/>
+        <Bookmarks Count="2">
+          <Item0 Y="177" ID="3"/>
+          <Item1 X="2" Y="198" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubencher.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="946"/>
+        <CursorPos Y="621"/>
+        <UsageCount Value="210"/>
+        <Bookmarks Count="2">
+          <Item0 X="52" Y="949" ID="4"/>
+          <Item1 X="8" Y="916" ID="2"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubenchthread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="90"/>
+        <CursorPos X="11" Y="9"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubenchglobals.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="320"/>
+        <CursorPos X="38" Y="333"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mUtils"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="765"/>
+        <CursorPos X="10" Y="779"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubenching.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Benching"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="153"/>
+        <CursorPos X="49" Y="169"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uScanThread.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="70" Y="98"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uGuiBar.pas"/>
+        <ComponentName Value="frmSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos X="4" Y="64"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mAutomate.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="176"/>
+        <CursorPos X="35" Y="188"/>
+        <UsageCount Value="199"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="filelbl.pas"/>
+        <UnitName Value="FileLbl"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="120"/>
+        <CursorPos X="26" Y="152"/>
+        <UsageCount Value="114"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="miaAutomate.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="31" Y="43"/>
+        <UsageCount Value="132"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uHalcyonSupport.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="59" Y="10"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/fileutil.pas"/>
+        <UnitName Value="FileUtil"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="138"/>
+        <CursorPos X="15" Y="148"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/fileutil.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="816"/>
+        <CursorPos X="48" Y="856"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/filutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <CursorPos X="14" Y="68"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/lazfileutils.pas"/>
+        <UnitName Value="LazFileUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="103"/>
+        <CursorPos X="15" Y="114"/>
+        <UsageCount Value="28"/>
+      </Unit>
+      <Unit>
+        <Filename Value="WiseListBox.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="80"/>
+        <UsageCount Value="52"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="668"/>
+        <CursorPos X="14" Y="681"/>
+        <UsageCount Value="32"/>
+      </Unit>
+      <Unit>
+        <Filename Value="upool.pas"/>
+        <ComponentName Value="PoolTemplate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPool"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="21" Y="11"/>
+        <UsageCount Value="87"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/packages/fcl-base/src/inifiles.pp"/>
+        <UnitName Value="IniFiles"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="354"/>
+        <CursorPos Y="359"/>
+        <UsageCount Value="27"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/classes/stringl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1261"/>
+        <CursorPos X="5" Y="1263"/>
+        <UsageCount Value="26"/>
+      </Unit>
+      <Unit>
+        <Filename Value="packages/multithreadprocs/mtprocs.pas"/>
+        <UnitName Value="MTProcs"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="584"/>
+        <CursorPos X="28" Y="605"/>
+        <UsageCount Value="79"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/darwin/ptypes.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="38"/>
+        <CursorPos X="5" Y="47"/>
+        <UsageCount Value="0"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/unix/ctypes.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="3" Y="31"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/lookupstringlist.pas"/>
+        <UnitName Value="LookupStringList"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="14" Y="52"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/avglvltree.pas"/>
+        <UnitName Value="AvgLvlTree"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="166"/>
+        <CursorPos X="14" Y="173"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/components/lazutils/laz_avl_tree.pp"/>
+        <UnitName Value="Laz_AVL_Tree"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="200"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/2.2.4/components/lazutils/lookupstringlist.pas"/>
+        <UnitName Value="LookupStringList"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos X="20" Y="38"/>
+        <UsageCount Value="0"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mscriptexec.pas"/>
+        <UnitName Value="mScriptExec"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7360"/>
+        <CursorPos X="31" Y="7381"/>
+        <UsageCount Value="4"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucopymedia.pas"/>
+        <UnitName Value="uCopyMedia"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="93"/>
+        <CursorPos X="9" Y="117"/>
+        <UsageCount Value="0"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup/mbuildthread.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="668"/>
+        <CursorPos X="7" Y="679"/>
+        <UsageCount Value="0"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup/mutils.pas"/>
+        <UnitName Value="mUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2535"/>
+        <CursorPos X="11" Y="2547"/>
+        <UsageCount Value="0"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uUpdateThread.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos Y="102"/>
+        <UsageCount Value="0"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uScanner.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="555"/>
+        <CursorPos Y="815"/>
+        <UsageCount Value="0"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/fpcsrc/rtl/objpas/fgl.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="933"/>
+        <CursorPos Y="946"/>
+        <UsageCount Value="1"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/sysstrh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="80"/>
+        <CursorPos X="10" Y="93"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/sysstr.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="571"/>
+        <CursorPos X="5" Y="573"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/inc/ustringh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="93"/>
+        <CursorPos X="5" Y="106"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="packages/multithreadprocs/mtpcpu.pas"/>
+        <UnitName Value="MTPCPU"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="17"/>
+        <CursorPos X="30" Y="30"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../fpcupdeluxe/fpcsrc/rtl/darwin/aarch64/sig_cpu.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="40" Y="37"/>
+        <UsageCount Value="7"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="184" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="185" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="189" Column="45" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="185" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="196" TopLine="176"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="60" Column="15" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="105" Column="8" TopLine="98"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="182" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="183" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="184" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="185" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="187" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="188" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="185" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="187" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="188" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="190" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="191" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="194" TopLine="172"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="195" TopLine="173"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="188" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="185" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="188" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="ubencher.pas"/>
+        <Caret Line="918" Column="8" TopLine="903"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="177" TopLine="172"/>
+      </Position>
+      <Position>
+        <Filename Value="ubencher.pas"/>
+        <Caret Line="949" Column="52" TopLine="936"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="189" Column="76" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="188" Column="35" TopLine="176"/>
+      </Position>
+      <Position>
+        <Filename Value="uguibench.pas"/>
+        <Caret Line="374" TopLine="352"/>
+      </Position>
+      <Position>
+        <Filename Value="ubencher.pas"/>
+        <Caret Line="613" Column="62" TopLine="612"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default">
+        <Mode Name="default">
+          <local>
+            <CommandLineParams Value="100000"/>
+          </local>
+        </Mode>
+      </Modes>
+    </RunParams>
+    <HistoryLists>
+      <List Name="CommandLineParameters" Count="1">
+        <Item1 Value="100000"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/local/share/fpcsrc/packages/fcl-base/src/inifiles.pp"/>
+        <Line Value="359"/>
+      </Item>
+    </BreakPoints>
+    <Watches>
+      <Item>
+        <Expression Value="s"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

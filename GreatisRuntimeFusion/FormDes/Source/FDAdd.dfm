@@ -1,0 +1,59 @@
+object frmFDAdd: TfrmFDAdd
+  Left = 74
+  Top = 135
+  BorderStyle = bsDialog
+  Caption = 'Add controls'
+  ClientHeight = 177
+  ClientWidth = 265
+  Color = clBtnFace
+  Font.Charset = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = True
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btnOk: TButton
+    Left = 180
+    Top = 116
+    Width = 77
+    Height = 25
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object btnCancel: TButton
+    Left = 180
+    Top = 144
+    Width = 77
+    Height = 25
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object btnSelectAll: TButton
+    Left = 180
+    Top = 8
+    Width = 77
+    Height = 25
+    Caption = 'Select &All'
+    TabOrder = 1
+    OnClick = btnSelectAllClick
+  end
+  object lsbAddControls: TListBox
+    Left = 8
+    Top = 9
+    Width = 161
+    Height = 160
+    IntegralHeight = True
+    ItemHeight = 13
+    MultiSelect = True
+    Sorted = True
+    TabOrder = 0
+  end
+end

@@ -1,0 +1,1809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="155">
+      <Unit0>
+        <Filename Value="miamp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="17"/>
+        <TopLine Value="2"/>
+        <CursorPos X="59" Y="159"/>
+        <UsageCount Value="224"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="ugui.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ui"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uGui"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="2"/>
+        <CursorPos X="5" Y="22201"/>
+        <UsageCount Value="224"/>
+        <Bookmarks Count="4">
+          <Item0 X="15" Y="12434" ID="7"/>
+          <Item1 X="30" Y="18331" ID="4"/>
+          <Item2 X="3" Y="4211" ID="5"/>
+          <Item3 Y="15437" ID="9"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="uabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="About"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAbout"/>
+        <EditorIndex Value="35"/>
+        <TopLine Value="65"/>
+        <CursorPos X="94" Y="72"/>
+        <UsageCount Value="224"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="mutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mUtils"/>
+        <TopLine Value="2"/>
+        <UsageCount Value="210"/>
+        <Bookmarks Count="2">
+          <Item0 X="9" Y="923"/>
+          <Item1 X="74" Y="14" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="mAutomate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="39"/>
+        <TopLine Value="21"/>
+        <CursorPos X="3" Y="18"/>
+        <UsageCount Value="209"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="mproject.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Project"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mProject"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="598"/>
+        <CursorPos X="21" Y="605"/>
+        <UsageCount Value="208"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="moptions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Options"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="473"/>
+        <CursorPos X="8" Y="495"/>
+        <UsageCount Value="205"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="mscrcomment.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrComment"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mscrComment"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="12"/>
+        <UsageCount Value="200"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="usaveall.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SaveAll"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSaveAll"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="39"/>
+        <CursorPos X="3" Y="64"/>
+        <UsageCount Value="202"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="mideoptions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="IDEOptions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="228"/>
+        <CursorPos X="8" Y="240"/>
+        <UsageCount Value="206"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="mscrmessagebox.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrMessageBox"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="15"/>
+        <TopLine Value="67"/>
+        <CursorPos X="57" Y="76"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="mscrsetvariable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetVariable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos Y="60"/>
+        <UsageCount Value="200"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="mscrif.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrIf"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="62"/>
+        <CursorPos X="65" Y="84"/>
+        <UsageCount Value="200"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="mscriptexec.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mScriptExec"/>
+        <EditorIndex Value="23"/>
+        <TopLine Value="9689"/>
+        <CursorPos X="14" Y="9705"/>
+        <UsageCount Value="200"/>
+        <Bookmarks Count="1">
+          <Item0 ID="8"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="mbuildthread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="30"/>
+        <TopLine Value="1362"/>
+        <CursorPos X="20" Y="1377"/>
+        <UsageCount Value="201"/>
+        <Bookmarks Count="3">
+          <Item0 X="57" Y="1420" ID="6"/>
+          <Item1 X="60" Y="1470" ID="2"/>
+          <Item2 X="44" Y="1565" ID="3"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="mscrinclude.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrInclude"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="41"/>
+        <CursorPos Y="62"/>
+        <UsageCount Value="201"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="madddialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AddDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="49"/>
+        <CursorPos X="27" Y="55"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="meval.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mEval"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="40" Y="14"/>
+        <UsageCount Value="209"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="mwatches.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Watches"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="140"/>
+        <CursorPos X="36" Y="149"/>
+        <UsageCount Value="208"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="crc32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CRC32"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="90"/>
+        <CursorPos X="6" Y="99"/>
+        <UsageCount Value="205"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="maddwatch.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AddWatch"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="28" Y="43"/>
+        <UsageCount Value="205"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="mscrdisplaydialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDisplayDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="69"/>
+        <CursorPos X="9" Y="66"/>
+        <UsageCount Value="200"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="udlgapi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uDlgAPI"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="1932"/>
+        <CursorPos X="14" Y="1952"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="usevenzipapi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSevenZIPAPI"/>
+        <EditorIndex Value="31"/>
+        <TopLine Value="162"/>
+        <CursorPos X="28" Y="175"/>
+        <UsageCount Value="214"/>
+        <Loaded Value="True"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="mbuild.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Build"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="255"/>
+        <CursorPos X="12" Y="268"/>
+        <UsageCount Value="225"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="mcompilervariable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CompilerVariable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="45"/>
+        <CursorPos X="53" Y="65"/>
+        <UsageCount Value="201"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="mscrlabel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrLabel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="29" Y="10"/>
+        <UsageCount Value="251"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="mscrgotolabel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGoToLabel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="21" Y="46"/>
+        <UsageCount Value="251"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="upool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PoolTemplate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPool"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="308"/>
+        <CursorPos X="4" Y="322"/>
+        <UsageCount Value="242"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="mscrinstallfiles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrInstallFiles"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="48" Y="9"/>
+        <UsageCount Value="239"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="mscrgetfolderlocation.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetFolderLocation"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos Y="59"/>
+        <UsageCount Value="239"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="umacglass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMacGlass"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="5" Y="13"/>
+        <UsageCount Value="267"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="mapplychanges.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrApplyChanges"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos Y="73"/>
+        <UsageCount Value="266"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="verifysign.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="VerifySign"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="29" Y="32"/>
+        <UsageCount Value="233"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="mscrdefinecomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDefineComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="43"/>
+        <CursorPos Y="68"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="mscrdeletecomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDeleteComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42"/>
+        <CursorPos X="16" Y="63"/>
+        <UsageCount Value="202"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="mscrgetcomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="63"/>
+        <CursorPos X="16" Y="83"/>
+        <UsageCount Value="202"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="mscrsetcomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos X="16" Y="69"/>
+        <UsageCount Value="202"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="mscrspacecomponent.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSpaceComponent"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="41"/>
+        <CursorPos X="11" Y="74"/>
+        <UsageCount Value="202"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="mscrcreatefolder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCreateFolder"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="51" Y="11"/>
+        <UsageCount Value="212"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="mscrcreateshortcut.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCreateShortcut"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="18"/>
+        <UsageCount Value="227"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="mscrrunprogram.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRunProgram"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos Y="77"/>
+        <UsageCount Value="227"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="mvirtualbrowse.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="VirtualBrowse"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="202"/>
+        <CursorPos X="5" Y="221"/>
+        <UsageCount Value="226"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="urunapp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRunApp"/>
+        <EditorIndex Value="33"/>
+        <TopLine Value="107"/>
+        <CursorPos X="27" Y="112"/>
+        <UsageCount Value="223"/>
+        <Loaded Value="True"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="mscrwebmediablock.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrWebMediaBlock"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="18"/>
+        <TopLine Value="65"/>
+        <CursorPos X="22" Y="78"/>
+        <UsageCount Value="237"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="ugrabmedia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uGrabMedia"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="129"/>
+        <CursorPos X="5" Y="144"/>
+        <UsageCount Value="227"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="uextractmedia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uExtractMedia"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="95"/>
+        <CursorPos X="3" Y="107"/>
+        <UsageCount Value="227"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="ucopymedia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCopyMedia"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="104"/>
+        <CursorPos X="63" Y="110"/>
+        <UsageCount Value="226"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="uretrydownload.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="miaProxy"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRetryDownload"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="81" Y="10"/>
+        <UsageCount Value="226"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="uretrydownloadex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="miaProxyEx"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRetryDownloadEx"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="46" Y="61"/>
+        <UsageCount Value="226"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="uretryextract.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="miaExtract"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uRetryExtract"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42"/>
+        <CursorPos X="3" Y="78"/>
+        <UsageCount Value="225"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="umiawebform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="miaWebForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="umiaWebForm"/>
+        <EditorIndex Value="44"/>
+        <TopLine Value="104"/>
+        <CursorPos X="3" Y="118"/>
+        <UsageCount Value="224"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="udownload.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDownload"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDownload"/>
+        <EditorIndex Value="41"/>
+        <TopLine Value="2"/>
+        <CursorPos X="59" Y="20"/>
+        <UsageCount Value="221"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="mbatchbuild.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BatchBuild"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="120"/>
+        <UsageCount Value="202"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="mscrdeletefiles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDeleteFiles"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="24" Y="44"/>
+        <UsageCount Value="200"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="mscrregion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRegion"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="37" Y="9"/>
+        <UsageCount Value="200"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="mscrdeletefilesrecursive.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDeleteFilesRecursive"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="200"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="mscrreadtext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReadText"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="67"/>
+        <CursorPos X="20" Y="86"/>
+        <UsageCount Value="202"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="mscrwritetext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrWriteText"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="16"/>
+        <UsageCount Value="202"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="mscrrmdir.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRmDir"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="203"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="mscrcreatelink.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCreateLink"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="8"/>
+        <CursorPos X="15" Y="37"/>
+        <UsageCount Value="228"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="mdialoglocalize.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DialogLocalize"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="45"/>
+        <TopLine Value="1062"/>
+        <CursorPos X="20" Y="1071"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="udisplaysystemfolder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DisplaySystemFolder"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDisplaySystemFolder"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="8" Y="33"/>
+        <UsageCount Value="201"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="mnewproject.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewProject"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="10"/>
+        <CursorPos X="51" Y="655"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="mscrmathematics.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrMathematics"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="41"/>
+        <CursorPos Y="63"/>
+        <UsageCount Value="202"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="mscrparsestring.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrParseString"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="52"/>
+        <CursorPos X="34" Y="78"/>
+        <UsageCount Value="201"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="mnewshortcut.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewShortcut"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="207"/>
+        <CursorPos X="52" Y="231"/>
+        <UsageCount Value="236"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="mnewrunprogram.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewRunProgram"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <CursorPos X="40" Y="73"/>
+        <UsageCount Value="201"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="mchangetheme.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ChangeTheme"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="188"/>
+        <CursorPos X="44" Y="210"/>
+        <UsageCount Value="204"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="mquickstartthread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="43"/>
+        <TopLine Value="2"/>
+        <CursorPos X="18" Y="57"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="mquickstart.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="QuickStartWizard"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="42"/>
+        <TopLine Value="2"/>
+        <CursorPos X="5" Y="74"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="mscrcreatefiletype.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCreateFileType"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="258"/>
+        <CursorPos X="70" Y="272"/>
+        <UsageCount Value="245"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="mscraccesscontrol.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrAccessControl"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="55"/>
+        <CursorPos X="48" Y="85"/>
+        <UsageCount Value="201"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="mscrgetfileversion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetFileVersion"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="44"/>
+        <CursorPos Y="61"/>
+        <UsageCount Value="201"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="mscrgetfilesize.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetFileSize"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos Y="60"/>
+        <UsageCount Value="232"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="mscrcheckfileversion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCheckFileVersion"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="55"/>
+        <CursorPos Y="74"/>
+        <UsageCount Value="218"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="mscrforeach.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrForEach"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="32" Y="16"/>
+        <UsageCount Value="215"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="mscrsleep.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSleep"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="26"/>
+        <UsageCount Value="212"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="usleep.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSleep"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="16"/>
+        <UsageCount Value="212"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="mscrterminatewithexitcode.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrTerminateWithExitCode"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14"/>
+        <CursorPos Y="9"/>
+        <UsageCount Value="211"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="mscrconvertcase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrConvertCase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="36"/>
+        <CursorPos Y="58"/>
+        <UsageCount Value="210"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="mscrconvertpath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrConvertPath"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos Y="59"/>
+        <UsageCount Value="210"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="mscrevaluate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrEvaluate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="18"/>
+        <CursorPos X="41" Y="33"/>
+        <UsageCount Value="209"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="mscrextractpath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrExtractPath"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="36"/>
+        <CursorPos Y="58"/>
+        <UsageCount Value="208"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="mscrformatstr.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFormatStr"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="39"/>
+        <CursorPos Y="61"/>
+        <UsageCount Value="207"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="mscrgetstrlen.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetStrLen"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos Y="59"/>
+        <UsageCount Value="206"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="mscrgetstrpos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetStrPos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos Y="62"/>
+        <UsageCount Value="206"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="mscrlocalizationvariable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrLocalizationVariable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos Y="57"/>
+        <UsageCount Value="205"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="mscrregex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRegEx"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="39"/>
+        <CursorPos Y="61"/>
+        <UsageCount Value="205"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="mscrreplacestring.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReplaceString"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="41"/>
+        <CursorPos Y="63"/>
+        <UsageCount Value="204"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="mscrbrowsefile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrBrowseFile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos Y="71"/>
+        <UsageCount Value="204"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="mscrbrowsefolder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrBrowseFolder"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="41"/>
+        <CursorPos Y="63"/>
+        <UsageCount Value="204"/>
+      </Unit91>
+      <Unit92>
+        <Filename Value="mscrloadfeatures.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrLoadFeatures"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="203"/>
+      </Unit92>
+      <Unit93>
+        <Filename Value="mscrpromptfortext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrPromptForText"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="55"/>
+        <CursorPos X="82" Y="77"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit93>
+      <Unit94>
+        <Filename Value="mscrsavefeatures.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSaveFeatures"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos Y="9"/>
+        <UsageCount Value="202"/>
+      </Unit94>
+      <Unit95>
+        <Filename Value="mscrsetcomponentchoice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetComponentChoice"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="34" Y="53"/>
+        <UsageCount Value="202"/>
+      </Unit95>
+      <Unit96>
+        <Filename Value="mscrgetcomponentspace.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetComponentSpace"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="34" Y="66"/>
+        <UsageCount Value="201"/>
+      </Unit96>
+      <Unit97>
+        <Filename Value="mscrsetcomponentvisibility.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetComponentVisibility"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="34" Y="53"/>
+        <UsageCount Value="201"/>
+      </Unit97>
+      <Unit98>
+        <Filename Value="mscrcheckdiskspace.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCheckDiskSpace"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="39"/>
+        <CursorPos Y="61"/>
+        <UsageCount Value="200"/>
+      </Unit98>
+      <Unit99>
+        <Filename Value="mscrfilefolderexist.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFileFolderExist"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="11" Y="60"/>
+        <UsageCount Value="200"/>
+      </Unit99>
+      <Unit100>
+        <Filename Value="mscrgetlinktarget.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetLinkTarget"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos Y="59"/>
+        <UsageCount Value="201"/>
+      </Unit100>
+      <Unit101>
+        <Filename Value="mscrfindallfiles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFindAllFiles"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos Y="65"/>
+        <UsageCount Value="200"/>
+      </Unit101>
+      <Unit102>
+        <Filename Value="mscrguid.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGUID"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos Y="57"/>
+        <UsageCount Value="200"/>
+      </Unit102>
+      <Unit103>
+        <Filename Value="mscrgetenvironment.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetEnvironment"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos Y="59"/>
+        <UsageCount Value="200"/>
+      </Unit103>
+      <Unit104>
+        <Filename Value="mscrgetinifile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetINI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="45"/>
+        <CursorPos Y="64"/>
+        <UsageCount Value="200"/>
+      </Unit104>
+      <Unit105>
+        <Filename Value="mscrgettemporaryfile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetTempFile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos Y="57"/>
+        <UsageCount Value="203"/>
+      </Unit105>
+      <Unit106>
+        <Filename Value="mscrisnative.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrIsNativeSetupInstalled"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos Y="59"/>
+        <UsageCount Value="202"/>
+      </Unit106>
+      <Unit107>
+        <Filename Value="mscrreadbinary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReadBinary"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="45"/>
+        <CursorPos Y="64"/>
+        <UsageCount Value="201"/>
+      </Unit107>
+      <Unit108>
+        <Filename Value="mscrlocalfiles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrLocalFiles"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="6" Y="47"/>
+        <UsageCount Value="200"/>
+      </Unit108>
+      <Unit109>
+        <Filename Value="mscreditinifile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrEditIniFile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="32" Y="31"/>
+        <UsageCount Value="251"/>
+      </Unit109>
+      <Unit110>
+        <Filename Value="mscrset64bitmode.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSet64BitMode"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="19" Y="29"/>
+        <UsageCount Value="246"/>
+      </Unit110>
+      <Unit111>
+        <Filename Value="mscrrename.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRename"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="10" Y="34"/>
+        <UsageCount Value="245"/>
+      </Unit111>
+      <Unit112>
+        <Filename Value="mscrwritebinary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrWriteBinary"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="51" Y="10"/>
+        <UsageCount Value="244"/>
+      </Unit112>
+      <Unit113>
+        <Filename Value="mscrhaltcompile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrHaltCompile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="29"/>
+        <CursorPos X="22" Y="51"/>
+        <UsageCount Value="243"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit113>
+      <Unit114>
+        <Filename Value="mscrfilebag.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFileBag"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mscrFileBag"/>
+        <EditorIndex Value="37"/>
+        <CursorPos X="3" Y="2"/>
+        <UsageCount Value="243"/>
+        <Loaded Value="True"/>
+      </Unit114>
+      <Unit115>
+        <Filename Value="mscrdeleteregistry.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrDeleteRegistry"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="20" Y="35"/>
+        <UsageCount Value="203"/>
+      </Unit115>
+      <Unit116>
+        <Filename Value="mscrfindallregistry.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrFindAllRegistry"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42"/>
+        <CursorPos Y="65"/>
+        <UsageCount Value="202"/>
+      </Unit116>
+      <Unit117>
+        <Filename Value="mscrgetosorsp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetOSorSP"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos Y="57"/>
+        <UsageCount Value="201"/>
+      </Unit117>
+      <Unit118>
+        <Filename Value="mscrgetsystemsettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetSystemSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="57" Y="48"/>
+        <UsageCount Value="201"/>
+      </Unit118>
+      <Unit119>
+        <Filename Value="mscrreadregistry.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReadRegistry"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="19" Y="25"/>
+        <UsageCount Value="201"/>
+      </Unit119>
+      <Unit120>
+        <Filename Value="mscrwriteregistry.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrWriteRegistry"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos X="20" Y="53"/>
+        <UsageCount Value="202"/>
+      </Unit120>
+      <Unit121>
+        <Filename Value="mupdatepack.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="UpdatePack"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="19"/>
+        <TopLine Value="66"/>
+        <CursorPos X="22" Y="88"/>
+        <UsageCount Value="217"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit121>
+      <Unit122>
+        <Filename Value="mscrcompress7zip.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCompress7Zip"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="20"/>
+        <CursorPos Y="12"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit122>
+      <Unit123>
+        <Filename Value="mscrextract7zip.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrExtract7Zip"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="21"/>
+        <TopLine Value="48"/>
+        <CursorPos X="64" Y="57"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit123>
+      <Unit124>
+        <Filename Value="mscrsetowner.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetOwner"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19" Y="15"/>
+        <UsageCount Value="203"/>
+      </Unit124>
+      <Unit125>
+        <Filename Value="mscrsetgroup.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrSetGroup"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="12"/>
+        <CursorPos Y="26"/>
+        <UsageCount Value="200"/>
+      </Unit125>
+      <Unit126>
+        <Filename Value="mscrgetnativesettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrGetNativeSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="75" Y="23"/>
+        <UsageCount Value="203"/>
+      </Unit126>
+      <Unit127>
+        <Filename Value="mscrreturnfrominclude.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrReturnFromInclude"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9"/>
+        <CursorPos X="63" Y="28"/>
+        <UsageCount Value="200"/>
+      </Unit127>
+      <Unit128>
+        <Filename Value="ulicenseeslr8.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LicenseESLR8"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uLicenseESLR8"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="73"/>
+        <CursorPos X="33" Y="96"/>
+        <UsageCount Value="212"/>
+      </Unit128>
+      <Unit129>
+        <Filename Value="mscrrunprogramas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRunProgramAs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="22"/>
+        <TopLine Value="60"/>
+        <CursorPos X="38" Y="81"/>
+        <UsageCount Value="285"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit129>
+      <Unit130>
+        <Filename Value="urunappas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRunAppAs"/>
+        <EditorIndex Value="34"/>
+        <CursorPos X="3" Y="8"/>
+        <UsageCount Value="280"/>
+        <Loaded Value="True"/>
+      </Unit130>
+      <Unit131>
+        <Filename Value="mscrrunscript.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrRunScript"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="16"/>
+        <TopLine Value="59"/>
+        <CursorPos X="69" Y="74"/>
+        <UsageCount Value="214"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit131>
+      <Unit132>
+        <Filename Value="urunscript.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRunScript"/>
+        <EditorIndex Value="29"/>
+        <CursorPos Y="12"/>
+        <UsageCount Value="213"/>
+        <Loaded Value="True"/>
+      </Unit132>
+      <Unit133>
+        <Filename Value="mscrcheckprocess.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="scrCheckProcess"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="2"/>
+        <CursorPos X="3" Y="9"/>
+        <UsageCount Value="113"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit133>
+      <Unit134>
+        <Filename Value="WiseListBox.pas"/>
+        <EditorIndex Value="24"/>
+        <UsageCount Value="131"/>
+        <Loaded Value="True"/>
+      </Unit134>
+      <Unit135>
+        <Filename Value="udirectextractmedia.pas"/>
+        <UnitName Value="uDirectExtractMedia"/>
+        <EditorIndex Value="25"/>
+        <TopLine Value="133"/>
+        <CursorPos X="32" Y="141"/>
+        <UsageCount Value="108"/>
+        <Loaded Value="True"/>
+      </Unit135>
+      <Unit136>
+        <Filename Value="uguipa.pas"/>
+        <ComponentName Value="GuiPA"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="36"/>
+        <TopLine Value="401"/>
+        <CursorPos X="67" Y="413"/>
+        <UsageCount Value="149"/>
+        <Loaded Value="True"/>
+      </Unit136>
+      <Unit137>
+        <Filename Value="uimagelistpool.pas"/>
+        <ComponentName Value="ImageListPool"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uImageListPool"/>
+        <EditorIndex Value="32"/>
+        <CursorPos X="51" Y="11"/>
+        <UsageCount Value="146"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit137>
+      <Unit138>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/customtimer.pas"/>
+        <UnitName Value="CustomTimer"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="144"/>
+        <CursorPos Y="157"/>
+        <UsageCount Value="86"/>
+      </Unit138>
+      <Unit139>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/interfaces/cocoa/cocoaobject.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="566"/>
+        <CursorPos Y="579"/>
+        <UsageCount Value="86"/>
+      </Unit139>
+      <Unit140>
+        <Filename Value="packages/UnTerminal-trunk/UnTerminal.pas"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="305"/>
+        <CursorPos X="47" Y="316"/>
+        <UsageCount Value="110"/>
+        <Loaded Value="True"/>
+      </Unit140>
+      <Unit141>
+        <Filename Value="design.pas"/>
+        <ComponentName Value="frmDesign"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Design"/>
+        <EditorIndex Value="27"/>
+        <TopLine Value="53"/>
+        <CursorPos Y="64"/>
+        <UsageCount Value="105"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit141>
+      <Unit142>
+        <Filename Value="GreatisRuntimeFusion/FormDes/Source/FDCmpPal.pas"/>
+        <EditorIndex Value="28"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit142>
+      <Unit143>
+        <Filename Value="GreatisRuntimeFusion/FormDes/Source/FDMain.pas"/>
+        <EditorIndex Value="26"/>
+        <TopLine Value="1607"/>
+        <CursorPos X="7" Y="1622"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit143>
+      <Unit144>
+        <Filename Value="GreatisRuntimeFusion/RunFus/Source/RFReg.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="40"/>
+        <TopLine Value="26"/>
+        <CursorPos X="11" Y="39"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit144>
+      <Unit145>
+        <Filename Value="../../fpcupdeluxe/fpcsrc/packages/fcl-web/src/base/fphttpclient.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14"/>
+        <CursorPos X="22" Y="27"/>
+        <UsageCount Value="33"/>
+      </Unit145>
+      <Unit146>
+        <Filename Value="opensslsockets.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="42" Y="21"/>
+        <UsageCount Value="20"/>
+      </Unit146>
+      <Unit147>
+        <Filename Value="../../fpcupdeluxe/lazarus/components/fpdebug/fpdbgrsp.pas"/>
+        <UnitName Value="FpDbgRsp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22" Y="6"/>
+        <UsageCount Value="9"/>
+      </Unit147>
+      <Unit148>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/buttons.pp"/>
+        <UnitName Value="Buttons"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="231"/>
+        <CursorPos X="36" Y="231"/>
+        <UsageCount Value="61"/>
+        <Loaded Value="True"/>
+      </Unit148>
+      <Unit149>
+        <Filename Value="../../fpcupdeluxe/lazarus/lcl/menus.pp"/>
+        <UnitName Value="Menus"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="41"/>
+        <CursorPos X="3" Y="53"/>
+        <UsageCount Value="61"/>
+        <Loaded Value="True"/>
+      </Unit149>
+      <Unit150>
+        <Filename Value="miaxbuild.lpr"/>
+        <EditorIndex Value="38"/>
+        <TopLine Value="159"/>
+        <CursorPos X="70" Y="172"/>
+        <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+      </Unit150>
+      <Unit151>
+        <Filename Value="../../Desktop/mscrcheckprocess.pas"/>
+        <ComponentName Value="scrCheckProcess"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="11"/>
+      </Unit151>
+      <Unit152>
+        <Filename Value="processchecker.pas"/>
+        <UnitName Value="ProcessChecker"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="6" Y="123"/>
+        <UsageCount Value="56"/>
+      </Unit152>
+      <Unit153>
+        <Filename Value="observations/macosprocesses.pas"/>
+        <UnitName Value="MacOSProcesses"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit153>
+      <Unit154>
+        <Filename Value="macosprocesses.pas"/>
+        <UnitName Value="MacOSProcesses"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="283"/>
+        <CursorPos X="85" Y="300"/>
+        <UsageCount Value="21"/>
+      </Unit154>
+    </Units>
+    <JumpHistory Count="25" HistoryIndex="24">
+      <Position1>
+        <Filename Value="WiseListBox.pas"/>
+        <Caret Line="468" Column="51" TopLine="456"/>
+      </Position1>
+      <Position2>
+        <Filename Value="WiseListBox.pas"/>
+      </Position2>
+      <Position3>
+        <Filename Value="WiseListBox.pas"/>
+        <Caret Line="483" Column="5" TopLine="458"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mscriptexec.pas"/>
+        <Caret Line="41" Column="51" TopLine="31"/>
+      </Position4>
+      <Position5>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="15" Column="51"/>
+      </Position5>
+      <Position6>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="50" Column="20" TopLine="30"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="54" Column="16" TopLine="33"/>
+      </Position7>
+      <Position8>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="145" Column="16" TopLine="124"/>
+      </Position8>
+      <Position9>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="568" Column="40" TopLine="548"/>
+      </Position9>
+      <Position10>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="676" Column="32" TopLine="656"/>
+      </Position10>
+      <Position11>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="803" Column="32" TopLine="783"/>
+      </Position11>
+      <Position12>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="868" Column="34" TopLine="848"/>
+      </Position12>
+      <Position13>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="1148" Column="38" TopLine="1128"/>
+      </Position13>
+      <Position14>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="1305" Column="19" TopLine="1285"/>
+      </Position14>
+      <Position15>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="1307" Column="19" TopLine="1287"/>
+      </Position15>
+      <Position16>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="1516" Column="36" TopLine="1496"/>
+      </Position16>
+      <Position17>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="1523" Column="36" TopLine="1503"/>
+      </Position17>
+      <Position18>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="1625" Column="32" TopLine="1605"/>
+      </Position18>
+      <Position19>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="1894" Column="29" TopLine="1873"/>
+      </Position19>
+      <Position20>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="2106" Column="14" TopLine="2085"/>
+      </Position20>
+      <Position21>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="2118" Column="33" TopLine="2097"/>
+      </Position21>
+      <Position22>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="49" Column="20" TopLine="39"/>
+      </Position22>
+      <Position23>
+        <Filename Value="mbuildthread.pas"/>
+        <Caret Line="1377" Column="20" TopLine="1362"/>
+      </Position23>
+      <Position24>
+        <Filename Value="usevenzipapi.pas"/>
+        <Caret Line="33" Column="10" TopLine="21"/>
+      </Position24>
+      <Position25>
+        <Filename Value="usevenzipapi.pas"/>
+        <Caret Line="175" Column="28" TopLine="162"/>
+      </Position25>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1" ActiveMode="default">
+        <Mode0 Name="default"/>
+      </Modes>
+    </RunParams>
+    <HistoryLists Count="1">
+      <List0 Name="CommandLineParameters" Count="4">
+        <Item1 Value="&quot;~/Documents/My Installation Project/My Installation Project.mprx&quot;"/>
+        <Item2 Value="~/Developer/miamp/iamp/iamp.mprx"/>
+        <Item3 Value="~/Documents/My\ Installation\ Project/My Installation\ Project.mprx"/>
+        <Item4 Value="~/Documents/My\ Installation\ Project/My\ Installation\ Project.mprx"/>
+      </List0>
+    </HistoryLists>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="usevenzipapi.pas"/>
+        <Line Value="155"/>
+      </Item>
+    </BreakPoints>
+    <Watches>
+      <Item>
+        <Expression Value="s"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

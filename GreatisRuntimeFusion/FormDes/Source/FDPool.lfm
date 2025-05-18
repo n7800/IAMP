@@ -1,0 +1,21 @@
+object PoolTemplate: TPoolTemplate
+  Left = 274
+  Height = 181
+  Top = 392
+  Width = 462
+  BorderStyle = bsDialog
+  Caption = 'PoolTemplate'
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Position = poScreenCenter
+  LCLVersion = '3.99.0.0'
+  OnCloseQuery = FormCloseQuery
+  object Designer: TRFDesigner
+    KeySelect = False
+    KeyMove = False
+    Left = 24
+    Top = 16
+  end
+end

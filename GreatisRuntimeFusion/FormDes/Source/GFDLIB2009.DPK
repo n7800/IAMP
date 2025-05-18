@@ -1,0 +1,48 @@
+(*  GREATIS FORM DESIGNER                         *)
+(*  Copyright (C) 2001-2008 Greatis Software      *)
+(*  http://www.greatis.com/delphicb/formdes/      *)
+(*  http://www.greatis.com/delphicb/formdes/faq/  *)
+(*  http://www.greatis.com/bteam.html             *)
+
+package GFDLIB2009;
+
+{$R *.res}
+{$R 'FDReg.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS OFF}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Greatis Form Designer Run-Time Package'}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  rtl;
+
+contains
+  FDEditor in 'FDEditor.pas',
+  FDAdd in 'FDAdd.pas',
+  FDSize in 'FDSize.pas' {frmSize},
+  FDAlPal in 'FDAlPal.pas' {frmAlignmentPalette},
+  FDAlign in 'FDAlign.pas' {frmAlign},
+  FDMain in 'FDMain.pas',
+  FDTab in 'FDTab.pas';
+
+end.

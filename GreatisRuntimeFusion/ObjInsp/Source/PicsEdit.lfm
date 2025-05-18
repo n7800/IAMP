@@ -1,0 +1,117 @@
+object frmPicture: TfrmPicture
+  Left = 529
+  Height = 285
+  Top = 168
+  Width = 338
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Picture Editor'
+  ClientHeight = 285
+  ClientWidth = 338
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
+  object btnOK: TButton
+    Left = 256
+    Height = 25
+    Top = 210
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 4
+  end
+  object btnCancel: TButton
+    Left = 256
+    Height = 25
+    Top = 242
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 5
+  end
+  object pnlImage: TPanel
+    Left = 8
+    Height = 237
+    Top = 30
+    Width = 237
+    BevelOuter = bvNone
+    BorderWidth = 5
+    BorderStyle = bsSingle
+    ClientHeight = 235
+    ClientWidth = 235
+    Color = clWindow
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object pntImage: TPaintBox
+      Left = 5
+      Height = 225
+      Top = 5
+      Width = 225
+      Align = alClient
+      OnPaint = pntImagePaint
+    end
+  end
+  object btnLoad: TButton
+    Left = 256
+    Height = 25
+    Top = 30
+    Width = 77
+    Caption = '&Load...'
+    TabOrder = 1
+    OnClick = btnLoadClick
+  end
+  object btnSave: TButton
+    Left = 256
+    Height = 25
+    Top = 62
+    Width = 77
+    Caption = '&Save...'
+    TabOrder = 2
+    OnClick = btnSaveClick
+  end
+  object btnClear: TButton
+    Left = 256
+    Height = 25
+    Top = 94
+    Width = 77
+    Caption = '&Clear'
+    TabOrder = 3
+    OnClick = btnClearClick
+  end
+  object cbSizeSelection: TComboBox
+    Left = 80
+    Height = 20
+    Top = 5
+    Width = 165
+    ItemHeight = 19
+    TabOrder = 6
+    Text = 'cbSizeSelection'
+    OnChange = cbSizeSelectionChange
+  end
+  object lSizeSelection: TLabel
+    Left = 8
+    Height = 13
+    Top = 7
+    Width = 65
+    Caption = 'Size selection'
+  end
+  object opdImage: TOpenPictureDialog
+    Filter = 'All (*.bmp;*.ico;*.emf;*.wmf,*.jpg)|*.bmp;*.ico;*.emf;*.wmf;*.jpg;*.jpeg|Bitmaps (*.bmp)|*.bmp|Icons (*.ico)|*.ico|Enhanced Metafiles (*.emf)|*.emf|Metafiles (*.wmf)|*.wmf|JPEG Images (*.jpg)|*.jpg;*.jpeg'
+    Left = 256
+    Top = 128
+  end
+  object svdImage: TSavePictureDialog
+    Filter = 'All (*.bmp;*.ico;*.emf;*.wmf;*.jpg)|*.bmp;*.ico;*.emf;*.wmf;*.jpg|Bitmaps (*.bmp)|*.bmp|Icons (*.ico)|*.ico|Enhanced Metafiles (*.emf)|*.emf|Metafiles (*.wmf)|*.wmf|JPEG Images (*.jpg)|*.jpg'
+    Options = [ofOverwritePrompt]
+    Left = 300
+    Top = 128
+  end
+end

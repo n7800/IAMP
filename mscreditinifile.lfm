@@ -1,0 +1,150 @@
+object scrEditIniFile: TscrEditIniFile
+  Left = 8
+  Height = 336
+  Top = 25
+  Width = 235
+  HelpType = htKeyword
+  HelpKeyword = 'editinifile'
+  BorderStyle = bsDialog
+  Caption = 'Edit Ini File'
+  ClientHeight = 336
+  ClientWidth = 235
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 16
+    Width = 64
+    Caption = 'INI File &Path:'
+    FocusControl = FilePath
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 256
+    Width = 34
+    Caption = '&Action:'
+    FocusControl = Action
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 13
+    Top = 112
+    Width = 39
+    Caption = '&Section:'
+    FocusControl = Section
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 13
+    Top = 160
+    Width = 21
+    Caption = '&Key:'
+    FocusControl = Key
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 13
+    Top = 208
+    Width = 30
+    Caption = '&Value:'
+    FocusControl = Value
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 13
+    Top = 64
+    Width = 208
+    Caption = 'INI File &Name: (press F1 for requirements)'
+    FocusControl = FileName
+    ParentColor = False
+  end
+  object FilePath: TEdit
+    Left = 16
+    Height = 22
+    Top = 32
+    Width = 201
+    TabOrder = 0
+  end
+  object Action: TComboBox
+    Left = 16
+    Height = 20
+    Top = 272
+    Width = 201
+    ItemHeight = 26
+    ItemIndex = 0
+    Items.Strings = (
+      'Line->Create or Update'
+      'Line->Create Only'
+      'Line->Remove'
+      'Tag->Add'
+      'Tag->Remove'
+    )
+    Style = csDropDownList
+    TabOrder = 5
+    Text = 'Line->Create or Update'
+  end
+  object Section: TEdit
+    Left = 16
+    Height = 22
+    Top = 128
+    Width = 201
+    TabOrder = 2
+  end
+  object BitBtn1: TBitBtn
+    Left = 64
+    Height = 25
+    Top = 296
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    NumGlyphs = 2
+    TabOrder = 6
+  end
+  object BitBtn2: TBitBtn
+    Left = 144
+    Height = 25
+    Top = 296
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    NumGlyphs = 2
+    TabOrder = 7
+  end
+  object Key: TEdit
+    Left = 16
+    Height = 22
+    Top = 176
+    Width = 201
+    TabOrder = 3
+  end
+  object Value: TEdit
+    Left = 16
+    Height = 22
+    Top = 224
+    Width = 201
+    TabOrder = 4
+  end
+  object FileName: TEdit
+    Left = 16
+    Height = 22
+    Top = 80
+    Width = 201
+    TabOrder = 1
+  end
+end

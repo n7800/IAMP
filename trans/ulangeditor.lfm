@@ -1,0 +1,443 @@
+object Translator: TTranslator
+  Left = 295
+  Height = 395
+  Top = 64
+  Width = 739
+  Caption = 'InstallAware Translator'
+  ClientHeight = 395
+  ClientWidth = 739
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Menu = MainMenu
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '3.99.0.0'
+  OnCreate = FormCreate
+  OnResize = FormResize
+  object Splitter: TSplitter
+    Left = 171
+    Height = 328
+    Top = 49
+    Width = 4
+  end
+  object List: TListView
+    Left = 175
+    Height = 328
+    Top = 49
+    Width = 564
+    Align = alClient
+    Columns = <>
+    ColumnClick = False
+    PopupMenu = ListPopup
+    RowSelect = True
+    TabOrder = 0
+    ViewStyle = vsReport
+    OnDblClick = ListDblClick
+    OnEdited = ListEdited
+    OnEditing = ListEditing
+    OnKeyUp = ListKeyUp
+  end
+  object Status: TStatusBar
+    Left = 0
+    Height = 18
+    Top = 377
+    Width = 739
+    AutoHint = True
+    Panels = <>
+  end
+  object CoolBar: TCoolBar
+    Left = 0
+    Height = 46
+    Top = 0
+    Width = 739
+    AutoSize = True
+    Bands = <    
+      item
+        Control = ToolBarMenu
+        MinHeight = 36
+        Width = 733
+      end>
+    object ToolBarMenu: TToolBar
+      AnchorSideLeft.Control = CoolBar
+      AnchorSideTop.Control = CoolBar
+      Left = 24
+      Height = 36
+      Top = 5
+      Width = 294
+      Align = alNone
+      AutoSize = True
+      BorderSpacing.Left = 22
+      BorderSpacing.Top = 3
+      ButtonHeight = 36
+      ButtonWidth = 46
+      EdgeInner = esNone
+      EdgeOuter = esNone
+      Images = LoResImages
+      ShowCaptions = True
+      TabOrder = 0
+      Transparent = True
+      Wrapable = False
+      object ToolButton4: TToolButton
+        Left = 1
+        Top = 0
+        Action = New
+        Visible = False
+      end
+      object ToolButton5: TToolButton
+        Left = 47
+        Top = 0
+        Action = Rename
+        Visible = False
+      end
+      object ToolButton6: TToolButton
+        Left = 94
+        Top = 0
+        Action = Delete
+        Visible = False
+      end
+      object ToolButton7: TToolButton
+        Left = 140
+        Height = 36
+        Top = 0
+        Caption = 'ToolButton7'
+        ImageIndex = 3
+        Style = tbsSeparator
+        Visible = False
+      end
+      object ToolButton8: TToolButton
+        Left = 148
+        Top = 0
+        Action = Revert
+      end
+      object ToolButton10: TToolButton
+        Left = 194
+        Top = 0
+        Action = Grid
+      end
+      object ToolButton11: TToolButton
+        Left = 240
+        Height = 36
+        Top = 0
+        Caption = 'ToolButton11'
+        ImageIndex = 6
+        Style = tbsSeparator
+      end
+      object ToolButton12: TToolButton
+        Left = 248
+        Top = 0
+        Action = Help
+      end
+    end
+  end
+  object Container: TPanel
+    Left = 0
+    Height = 328
+    Top = 49
+    Width = 171
+    Align = alLeft
+    BevelOuter = bvNone
+    ClientHeight = 328
+    ClientWidth = 171
+    ParentBackground = False
+    TabOrder = 3
+    object Tree: TTreeView
+      Left = 0
+      Height = 303
+      Top = 25
+      Width = 171
+      Align = alClient
+      BorderStyle = bsNone
+      HideSelection = False
+      Indent = 19
+      PopupMenu = TreeMenu
+      ShowLines = False
+      TabOrder = 0
+      Options = [tvoAutoItemHeight, tvoKeepCollapsedNodes, tvoShowButtons, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+      OnChange = TreeChange
+      OnCollapsed = TreeExpanded
+      OnEdited = TreeEdited
+      OnEditing = TreeEditing
+      OnExpanded = TreeExpanded
+      OnKeyUp = TreeKeyUp
+    end
+    object Panel: TPanel
+      Left = 0
+      Height = 25
+      Top = 0
+      Width = 171
+      Align = alTop
+      Alignment = taLeftJustify
+      BevelInner = bvRaised
+      BevelOuter = bvLowered
+      Caption = '  All Languages'
+      ParentBackground = False
+      TabOrder = 1
+    end
+  end
+  object TopPanel: TPanel
+    Left = 0
+    Height = 3
+    Top = 46
+    Width = 739
+    Align = alTop
+    BevelOuter = bvNone
+    ParentBackground = False
+    TabOrder = 4
+  end
+  object LoResImages: TImageList
+    Left = 8
+    Top = 103
+    Bitmap = {
+      4C7A090000001000000010000000510200000000000078DAED9AEB8E84200C85
+      79747FF86CBE161B71ABA5B4E514DC31B391844C96F13BE5620B742725B7E4DF
+      1A2D855BD35A6A40A3E278ED68981CA091B76DEBB28E46699FD038DB0735AA76
+      5483AD6DF39DA77132EBAA8EC1D2E05CF9AEE64D0DC95135DECDC6A6E41CB6D1
+      A07703E41A0D364F237E9427FC6FA8286B1262F732A851E68B8AA6B1B7518DF0
+      C478DA92A7E738B79774F1AA0F57CFA654715CB77C2A3E6CF1D27E94FF16FB5C
+      2368BFD1E0BC58338BAFC651C547F11EF4F889FDC88CD14EBD256E70FFF26ACF
+      FFB535E76B676910AF71FC9DB0C686D8173A61FB08FFDA7FEDF70AE0B7237E3F
+      BDF7DFE9FF5A31CE7D21DE3B1F80F3AECEA1C5EFDB05D9E5FD40F8E3B9436384
+      2756F601E1C936D7A19719E1799F651F7A3C1FB7AC08AF6CFD551F3C5EDA926D
+      A481AEBFF51EFE052FEF295ED5CE0E0FC790595B88DF0EF34EDC8DD877EF8D13
+      B1FFE5FF01FFD4DEFD7CD9F7E3F3DE34F0ECD1D6D7F1BEEF69A07DD434D0B1E9
+      7D89F3563F3E615F1FFFF8DCA1F38FADFF1CDFD788CFF598BF7CC6CEED7BB89B
+      7740EF5F461CC538C6CB1C7473D728F994ABF233B4C5A733BF73304968A1F657
+      9137221EB5DFE44DE879D07EE2794C31F6887D398EA87D6FFD61FB4A2E11B59F
+      70FBEEFB2FCF82DE3DD6B837973E786CC03F677DFC53F123017FCF4552E1E3D1
+      7A87FD47C70FE66DA2F99C77FCDF31FE47CF0AE367984CE9A881D874B171FB35
+      BB2C39101FCFF87DB23ADF67F7CF83CD466C17EDB36CBE345AD6DA5794FCDD02
+      E561747E817EC3D16A2C513619FE16D953C3BF59E9FCFF0DB18F9CB3D1DC031C
+      677E002A1B01C1
+    }
+  end
+  object TreeMenu: TPopupMenu
+    Images = LoResImages
+    Left = 40
+    Top = 103
+    object New1: TMenuItem
+      Action = New
+      Visible = False
+    end
+    object Rename1: TMenuItem
+      Action = Rename
+      Visible = False
+    end
+    object Delete1: TMenuItem
+      Action = Delete
+      Visible = False
+    end
+    object N1: TMenuItem
+      Caption = '-'
+      Visible = False
+    end
+    object Help1: TMenuItem
+      Action = Help
+    end
+  end
+  object Actions: TActionList
+    Images = LoResImages
+    OnUpdate = ActionsUpdate
+    Left = 72
+    Top = 103
+    object New: TAction
+      Category = 'File'
+      Caption = '&New'
+      Hint = 'Create New Language'
+      ImageIndex = 4
+      OnExecute = NewExecute
+    end
+    object Rename: TAction
+      Category = 'File'
+      Caption = '&Rename'
+      Hint = 'Rename Selected Language'
+      ImageIndex = 3
+      OnExecute = RenameExecute
+    end
+    object Delete: TAction
+      Category = 'File'
+      Caption = '&Delete'
+      Hint = 'Delete Selected Language'
+      ImageIndex = 5
+      OnExecute = DeleteExecute
+    end
+    object Grid: TAction
+      Category = 'View'
+      Caption = '&Grid'
+      Hint = 'Toggle Language Editor Grid On/Off'
+      ImageIndex = 7
+      OnExecute = GridExecute
+    end
+    object Help: TAction
+      Category = 'Help'
+      Caption = '&Help'
+      Hint = 'Display Brief Information'
+      ImageIndex = 6
+      OnExecute = HelpExecute
+    end
+    object Version: TAction
+      Category = 'Help'
+      Caption = '&Version...'
+      Hint = 'Display Product Version'
+      OnExecute = VersionExecute
+    end
+    object Revert: TAction
+      Category = 'View'
+      Caption = 'Re&vert'
+      Hint = 'Revert to original (untranslated) string'
+      ImageIndex = 8
+      OnExecute = RevertExecute
+    end
+  end
+  object ListPopup: TPopupMenu
+    Images = LoResImages
+    Left = 104
+    Top = 103
+    object Revert1: TMenuItem
+      Action = Revert
+    end
+    object Grid1: TMenuItem
+      Action = Grid
+    end
+    object N3: TMenuItem
+      Caption = '-'
+    end
+    object Help2: TMenuItem
+      Action = Help
+    end
+  end
+  object FileMenu: TPopupMenu
+    Images = LoResImages
+    Left = 8
+    Top = 138
+    object New2: TMenuItem
+      Action = New
+      Visible = False
+    end
+    object Rename2: TMenuItem
+      Action = Rename
+      Visible = False
+    end
+    object Delete2: TMenuItem
+      Action = Delete
+      Visible = False
+    end
+    object N4: TMenuItem
+      Caption = '-'
+      Visible = False
+    end
+    object Exit1: TMenuItem
+      Caption = '&Exit'
+      Hint = 'End Emissary Translator'
+      OnClick = Exit1Click
+    end
+  end
+  object ViewMenu: TPopupMenu
+    Images = LoResImages
+    Left = 40
+    Top = 138
+    object Revert2: TMenuItem
+      Action = Revert
+    end
+    object Grid2: TMenuItem
+      Action = Grid
+    end
+  end
+  object HelpMenu: TPopupMenu
+    Images = LoResImages
+    Left = 72
+    Top = 138
+    object Help3: TMenuItem
+      Action = Help
+      Caption = '&About...'
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object Version1: TMenuItem
+      Action = Version
+    end
+  end
+  object HiResImages: TImageList
+    Left = 136
+    Top = 103
+    Bitmap = {
+      4C7A090000001000000010000000A00200000000000078DAED9A8B7184201086
+      69E96AB2110BB1265A222222CBB24FBC784926CCEC38277EFF0FC84B9210C494
+      CEF0A6834B7139C2A1D17130148DC66DE8AA6BEC791BCDC2EB1984468AAF3D62
+      9CD528BCA6810268349ED3E0F934F08AC6C5EC6D46D681D200DCB6ED6DBD27C4
+      B31A903B340F3626A66F767CEF57D8547CA5FED4F117AB73830668A79971946E
+      8C3F77CAED7487CD6D34A951FAC8D9CE9C46BE5F83E37382F990A1F229BE9601
+      323585C677E30FF2C77321B4FE7672D03FE7C5A5BD5F8DC7FE5EFEAEFFAF283F
+      D0E0FC2FB6E703D6C07CED0F173BF25D3FA8F30EC9F17C9937167B70EB9933CA
+      58595E490B710ED8F3E3B6B0A169E4BC631D4EF18CD45DAB3EA7D1783A2DFB7C
+      0C43F297EA9143E6B954D6109D7FB77F6C61F2E7D967CB3F7A3FE31FFB2BF296
+      78CD57E271FFD4E23BD67F4B48BC96B4F5DDC2336BB889E7E63E893F3E0FD05A
+      02F69F225F9E2B1A337C6571192C7CF5863A1E1E3E8FCBA0F1B0DE382C3C6E2F
+      5C0689C75EF85ED5B0BE7FAE1F7E074FEE1398A0F60EB36BFF9BD25D2FCBB89D
+      E681CE1D7FF1BBD192FEF9BFCB7F68DCFD8094D7E33AFFCE3C5BEEE93A52BEA6
+      612D23A561AD1B5D163FCF95E3097FBAFEF36D676D7FDBFBBFC7EB1AFEB69E1B
+      2FCFF8BC7D0D97E6B0E1AC47FC4DEC5F4C1CE0D177C0F8AD919F01D19D29517C
+      68FA950948CBEABF81B367A897143E30676655CFEA1FE0D915711E66F5C7F5F0
+      FA4BEFDFEC0FDBCDE91FECFE62FFC77B41CB3935FA6E3ECA20B18EF179778C3F
+      357F04C3EF7B33291AE3DE7887FF47EB6F3CB7F19EE7FCD7FF77D4FFA37B85F9
+      3D4C61473EB958BF7FCFAE6B72CC8FD7FC7DB134AFB3F95AD8C4CCEDE83ECDAE
+      694D3636358DD1975B5788F3BBD5740E43F3ABE97F38468DD5CB0666BC79D654
+      F7FFAC287FB7B7F85BF6D9D6B307F33CF305F9387FEC
+    }
+  end
+  object MainMenu: TMainMenu
+    Images = LoResImages
+    Left = 216
+    Top = 102
+    object MenuItem1: TMenuItem
+      Caption = '&File'
+      object MenuItem7: TMenuItem
+        Action = New
+      end
+      object MenuItem8: TMenuItem
+        Action = Rename
+      end
+      object MenuItem9: TMenuItem
+        Action = Delete
+      end
+      object Separator4: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem10: TMenuItem
+        Caption = '&Exit'
+        OnClick = Exit1Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = '&View'
+      object MenuItem5: TMenuItem
+        Action = Revert
+      end
+      object Separator3: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem6: TMenuItem
+        Action = Grid
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = '&Help'
+      object Separator1: TMenuItem
+        Action = Help
+      end
+      object Separator2: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem4: TMenuItem
+        Action = Version
+      end
+    end
+  end
+  object AppEx: TApplicationProperties
+    OnException = AppExException
+    Left = 216
+    Top = 152
+  end
+end

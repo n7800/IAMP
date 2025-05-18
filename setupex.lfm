@@ -1,0 +1,354 @@
+object frmSetup: TfrmSetup
+  Left = 70
+  Height = 182
+  Top = 189
+  Width = 369
+  BorderStyle = bsDialog
+  Caption = 'TFormDesigner properties'
+  ClientHeight = 182
+  ClientWidth = 369
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Position = poScreenCenter
+  LCLVersion = '3.99.0.0'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object lblGridStep: TLabel
+    Left = 308
+    Height = 13
+    Top = 4
+    Width = 44
+    Caption = 'Grid step'
+  end
+  object lblDesignerColor: TLabel
+    Left = 8
+    Height = 13
+    Top = 4
+    Width = 70
+    Caption = 'Designer color'
+  end
+  object lblGridColor: TLabel
+    Left = 104
+    Height = 13
+    Top = 4
+    Width = 47
+    Caption = 'Grid color'
+  end
+  object lblGrabSize: TLabel
+    Left = 200
+    Height = 13
+    Top = 52
+    Width = 80
+    Caption = 'Grab handle size'
+  end
+  object chbDisplayGrid: TCheckBox
+    Left = 200
+    Height = 18
+    Top = 8
+    Width = 83
+    Caption = 'Display grid'
+    Checked = True
+    State = cbChecked
+    TabOrder = 6
+  end
+  object chbSnapToGrid: TCheckBox
+    Left = 200
+    Height = 18
+    Top = 28
+    Width = 86
+    Caption = 'Snap to grid'
+    Checked = True
+    State = cbChecked
+    TabOrder = 7
+  end
+  object edtGridStep: TEdit
+    Left = 308
+    Height = 22
+    Top = 20
+    Width = 37
+    ReadOnly = True
+    TabOrder = 8
+    Text = '8'
+  end
+  object udnGridStep: TUpDown
+    Left = 345
+    Height = 22
+    Top = 20
+    Width = 15
+    Associate = edtGridStep
+    Max = 128
+    Min = 2
+    Position = 8
+    TabOrder = 9
+  end
+  object pnlDesignerColor: TPanel
+    Left = 8
+    Height = 17
+    Top = 20
+    Width = 65
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ParentBackground = False
+    TabOrder = 0
+  end
+  object btnDesignerColor: TButton
+    Left = 76
+    Height = 17
+    Top = 20
+    Width = 17
+    Caption = '...'
+    TabOrder = 1
+    OnClick = btnDesignerColorClick
+  end
+  object pnlGridColor: TPanel
+    Left = 104
+    Height = 17
+    Top = 20
+    Width = 65
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    Color = clWindowText
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 2
+  end
+  object btnGridColor: TButton
+    Left = 172
+    Height = 17
+    Top = 20
+    Width = 17
+    Caption = '...'
+    TabOrder = 3
+    OnClick = btnGridColorClick
+  end
+  object btnOk: TButton
+    Left = 200
+    Height = 25
+    Top = 148
+    Width = 77
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 15
+  end
+  object btnCancel: TButton
+    Left = 284
+    Height = 25
+    Top = 148
+    Width = 77
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 16
+  end
+  object grbNormalGrabs: TGroupBox
+    Left = 8
+    Height = 93
+    Top = 44
+    Width = 85
+    Caption = 'Normal grabs'
+    ClientHeight = 71
+    ClientWidth = 75
+    ParentBackground = False
+    TabOrder = 4
+    object lblNBorder: TLabel
+      Left = 8
+      Height = 13
+      Top = 16
+      Width = 32
+      Caption = 'Border'
+    end
+    object lblNFill: TLabel
+      Left = 8
+      Height = 13
+      Top = 52
+      Width = 13
+      Caption = 'Fill'
+    end
+    object pnlNBorder: TPanel
+      Left = 8
+      Height = 17
+      Top = 32
+      Width = 49
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Color = clBlack
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 0
+    end
+    object btnNBorder: TButton
+      Left = 60
+      Height = 17
+      Top = 32
+      Width = 17
+      Caption = '...'
+      TabOrder = 1
+      OnClick = btnNBorderClick
+    end
+    object pnlNFill: TPanel
+      Left = 8
+      Height = 17
+      Top = 68
+      Width = 49
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Color = clBlack
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 2
+    end
+    object btnNFill: TButton
+      Left = 60
+      Height = 17
+      Top = 68
+      Width = 17
+      Caption = '...'
+      TabOrder = 3
+      OnClick = btnNFillClick
+    end
+  end
+  object grbLockedGrabs: TGroupBox
+    Left = 104
+    Height = 93
+    Top = 44
+    Width = 85
+    Caption = 'Locked grabs'
+    ClientHeight = 71
+    ClientWidth = 75
+    ParentBackground = False
+    TabOrder = 5
+    object lblLBorder: TLabel
+      Left = 8
+      Height = 13
+      Top = 16
+      Width = 32
+      Caption = 'Border'
+    end
+    object lblLFill: TLabel
+      Left = 8
+      Height = 13
+      Top = 52
+      Width = 13
+      Caption = 'Fill'
+    end
+    object pnlLBorder: TPanel
+      Left = 8
+      Height = 17
+      Top = 32
+      Width = 49
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Color = clBlack
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 0
+    end
+    object btnLBorder: TButton
+      Left = 60
+      Height = 17
+      Top = 32
+      Width = 17
+      Caption = '...'
+      TabOrder = 1
+      OnClick = btnLBorderClick
+    end
+    object pnlLFill: TPanel
+      Left = 8
+      Height = 17
+      Top = 68
+      Width = 49
+      BevelOuter = bvNone
+      BorderStyle = bsSingle
+      Color = clGray
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 2
+    end
+    object btnLFill: TButton
+      Left = 60
+      Height = 17
+      Top = 68
+      Width = 17
+      Caption = '...'
+      TabOrder = 3
+      OnClick = btnLFillClick
+    end
+  end
+  object edtGrabSize: TEdit
+    Left = 308
+    Height = 22
+    Top = 48
+    Width = 37
+    ReadOnly = True
+    TabOrder = 10
+    Text = '5'
+  end
+  object udnGrabSize: TUpDown
+    Left = 345
+    Height = 22
+    Top = 48
+    Width = 15
+    Associate = edtGrabSize
+    Max = 128
+    Min = 2
+    Position = 5
+    TabOrder = 11
+  end
+  object chbShowHint: TCheckBox
+    Left = 200
+    Height = 18
+    Top = 80
+    Width = 127
+    Caption = 'Show move/size hint'
+    Checked = True
+    State = cbChecked
+    TabOrder = 12
+  end
+  object chbShowComponentHint: TCheckBox
+    Left = 200
+    Height = 18
+    Top = 100
+    Width = 132
+    Caption = 'Show component hint'
+    TabOrder = 13
+  end
+  object chbShowNonVisual: TCheckBox
+    Left = 200
+    Height = 18
+    Top = 120
+    Width = 168
+    Caption = 'Show non-visual components'
+    TabOrder = 14
+  end
+  object cldMain: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 160
+    Top = 4
+  end
+end

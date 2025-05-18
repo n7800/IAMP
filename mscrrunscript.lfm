@@ -1,0 +1,168 @@
+object scrRunScript: TscrRunScript
+  Left = 306
+  Height = 487
+  Top = 52
+  Width = 464
+  HelpType = htKeyword
+  HelpKeyword = 'runscript'
+  BorderStyle = bsDialog
+  Caption = 'Run Script'
+  ClientHeight = 487
+  ClientWidth = 464
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Position = poOwnerFormCenter
+  LCLVersion = '3.99.0.0'
+  OnShow = FormShow
+  object Label1: TLabel
+    Left = 16
+    Height = 62
+    Top = 16
+    Width = 428
+    AutoSize = False
+    Caption = 'Execute an AppleScript (macOS only), JavaScript (not supported on Linux), or VBScript (Windows only). MSIcode variables will be resolved before running.'
+    WordWrap = True
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 160
+    Width = 120
+    Caption = '&Return result in variable:'
+    FocusControl = Variable
+  end
+  object Label3: TLabel
+    Left = 232
+    Height = 13
+    Top = 160
+    Width = 70
+    Caption = '&Type of Script:'
+    FocusControl = ScriptType
+    Visible = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 13
+    Top = 56
+    Width = 397
+    Caption = '&Maximum Runtime: (msec, set to 0 to ignore a maximum runtime, Windows only)'
+    FocusControl = TimeOut
+  end
+  object Label8: TLabel
+    Left = 16
+    Height = 13
+    Top = 208
+    Width = 31
+    Caption = '&Script:'
+    FocusControl = Script
+  end
+  object BitBtn1: TBitBtn
+    Left = 296
+    Height = 25
+    Top = 440
+    Width = 75
+    Caption = '&OK'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    NumGlyphs = 2
+    TabOrder = 7
+  end
+  object BitBtn2: TBitBtn
+    Left = 376
+    Height = 25
+    Top = 440
+    Width = 75
+    Cancel = True
+    Caption = '&Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    NumGlyphs = 2
+    TabOrder = 8
+  end
+  object Script: TMemo
+    Left = 16
+    Height = 201
+    Top = 224
+    Width = 433
+    ScrollBars = ssBoth
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 25
+    Top = 440
+    Width = 97
+    Caption = '&Load Script...'
+    TabOrder = 6
+    OnClick = Button1Click
+  end
+  object SafeOnly: TCheckBox
+    Left = 16
+    Height = 18
+    Top = 104
+    Width = 430
+    Caption = 'No access to objects and &procedures that can compromise security (Windows only)'
+    TabOrder = 2
+  end
+  object Interactive: TCheckBox
+    Left = 16
+    Height = 18
+    Top = 128
+    Width = 398
+    AllowGrayed = True
+    Caption = '&Allow user interface interaction (mandates interactive setups, Windows only)'
+    TabOrder = 3
+  end
+  object ScriptType: TComboBox
+    Left = 232
+    Height = 20
+    Top = 176
+    Width = 209
+    ItemHeight = 26
+    Items.Strings = (
+      'JavaScript'
+      'VBScript'
+    )
+    Style = csDropDownList
+    TabOrder = 0
+    Visible = False
+  end
+  object TimeOut: TSpinEdit
+    Left = 16
+    Height = 22
+    Top = 72
+    Width = 433
+    Increment = 1000
+    MaxValue = 2147483647
+    TabOrder = 1
+  end
+  object Variable: TComboBox
+    Left = 16
+    Height = 20
+    Top = 176
+    Width = 209
+    ItemHeight = 19
+    Items.Strings = (
+      'Extract File Extension Only'
+      'Extract File Folder'
+      'Extract File Name Only'
+      'Extract Full File Name'
+      'Extract Parent Drive'
+      'Extract Parent Folder'
+      'Replace \\ with \'
+    )
+    Sorted = True
+    TabOrder = 4
+  end
+  object OpenDialog: TOpenDialog
+    Title = 'Load Script'
+    DefaultExt = '.js'
+    Filter = 'All Scripts (*.SCPT;*.SCPTD;*.JS;*.VBS)|*.SCPT;*.SCPTD;*.JS;*.VBS|AppleScript Scripts (*.SCPT;*.SCPTD)|*.SCPT;*.SCPTD|JavaScript Scripts (*.JS)|*.JS|VBScript Scripts (*.VBS)|*.VBS|All Files (*)|*'
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    Left = 400
+    Top = 376
+  end
+end

@@ -1,0 +1,42 @@
+object frmObjectInspector: TfrmObjectInspector
+  Left = 0
+  Height = 380
+  Top = 145
+  Width = 230
+  HelpType = htKeyword
+  HelpKeyword = 'dialogcontrols'
+  BorderStyle = bsSizeToolWin
+  Caption = 'Object Properties'
+  ClientHeight = 380
+  ClientWidth = 230
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  LCLVersion = '3.99.0.0'
+  OnResize = FormResize
+  OnShow = FormShow
+  object cmbObjectInspector: TRFComboBox
+    Left = 0
+    Height = 20
+    Top = 0
+    Width = 230
+    ComponentInspector = cmpObjectInspector
+    OnFilter = cmbObjectInspectorFilter
+    TabOrder = 0
+  end
+  object cmpObjectInspector: TRFInspector
+    Left = 0
+    Height = 380
+    Top = 0
+    Width = 230
+    Align = alClient
+    Color = clBtnFace
+    TabOrder = 1
+    OnChangeValue = cmpObjectInspectorChangeValue
+    OnGetValuesList = cmpObjectInspectorGetValuesList
+    OnFilter = cmpObjectInspectorFilter
+    OnChange = cmpObjectInspectorChange
+    Designer = frmDesign.cmpFormDesigner
+  end
+end

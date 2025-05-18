@@ -1,0 +1,96 @@
+object scrRegEx: TscrRegEx
+  Left = 0
+  Height = 212
+  Top = 25
+  Width = 236
+  HelpType = htKeyword
+  HelpKeyword = 'regex'
+  BorderStyle = bsDialog
+  Caption = 'Match Regular Expression'
+  ClientHeight = 212
+  ClientWidth = 236
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 16
+    Width = 42
+    Caption = '&Variable:'
+    FocusControl = Variable
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 64
+    Width = 96
+    Caption = '&Regular Expression:'
+    FocusControl = Ex
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 13
+    Top = 112
+    Width = 78
+    Caption = '&String to Match:'
+    FocusControl = Match
+    ParentColor = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 62
+    Height = 25
+    Top = 168
+    Width = 75
+    HelpType = htKeyword
+    HelpKeyword = 'createshare'
+    Caption = 'OK'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    NumGlyphs = 2
+    TabOrder = 3
+  end
+  object BitBtn2: TBitBtn
+    Left = 142
+    Height = 25
+    Top = 168
+    Width = 75
+    HelpType = htKeyword
+    HelpKeyword = 'createshare'
+    Cancel = True
+    Caption = 'Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    NumGlyphs = 2
+    TabOrder = 4
+  end
+  object Variable: TComboBox
+    Left = 16
+    Height = 20
+    Top = 32
+    Width = 201
+    ItemHeight = 19
+    TabOrder = 0
+  end
+  object Ex: TEdit
+    Left = 16
+    Height = 22
+    Top = 80
+    Width = 201
+    TabOrder = 1
+  end
+  object Match: TEdit
+    Left = 16
+    Height = 22
+    Top = 128
+    Width = 201
+    TabOrder = 2
+  end
+end

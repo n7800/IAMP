@@ -1,0 +1,147 @@
+object frmDesign: TfrmDesign
+  Left = 226
+  Height = 557
+  Top = 151
+  Width = 673
+  HelpType = htKeyword
+  HelpKeyword = 'passingvariables'
+  Caption = 'Form1'
+  ClientHeight = 557
+  ClientWidth = 673
+  Color = clBtnFace
+  DoubleBuffered = True
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  ParentDoubleBuffered = False
+  Position = poDefault
+  LCLVersion = '2.0.10.0'
+  object CheckBox1: TCheckBox
+    Left = 42
+    Height = 18
+    Top = 54
+    Width = 79
+    Caption = 'CheckBox1'
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Tag = 2
+    Left = 49
+    Height = 90
+    Top = 133
+    Width = 150
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Tag = 4
+    Left = 203
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = 'Button1'
+    TabOrder = 2
+  end
+  object ComboBox1: TComboBox
+    Left = 90
+    Height = 20
+    Top = 420
+    Width = 100
+    ItemHeight = 19
+    TabOrder = 3
+    Text = 'ComboBox1'
+  end
+  object RadioButton1: TRadioButton
+    Left = 24
+    Height = 18
+    Top = 12
+    Width = 92
+    Caption = 'RadioButton1'
+    Checked = True
+    TabOrder = 4
+    TabStop = True
+  end
+  object Edit1: TEdit
+    Tag = 2
+    Left = 24
+    Height = 22
+    Top = 96
+    Width = 270
+    TabOrder = 5
+    Text = 'Edit1'
+  end
+  object TreeView1: TTreeView
+    Tag = 1
+    Left = 330
+    Height = 294
+    Top = 18
+    Width = 300
+    TabOrder = 6
+  end
+  object CheckListBox1: TCheckListBox
+    Tag = 1
+    Left = 216
+    Height = 80
+    Top = 396
+    Width = 100
+    ItemHeight = 0
+    TabOrder = 7
+  end
+  object ProgressBar1: TProgressBar
+    Tag = 1
+    Left = 114
+    Height = 12
+    Top = 510
+    Width = 276
+    TabOrder = 8
+  end
+  object StaticText1: TStaticText
+    Tag = 2
+    Left = 336
+    Height = 18
+    Top = 318
+    Width = 282
+    Caption = 'StaticText1'
+    TabOrder = 9
+  end
+  object StaticText2: TStaticText
+    Tag = 3
+    Left = 336
+    Height = 18
+    Top = 342
+    Width = 282
+    Caption = 'StaticText2'
+    TabOrder = 10
+  end
+  object StaticText3: TStaticText
+    Tag = 4
+    Left = 336
+    Height = 18
+    Top = 366
+    Width = 288
+    Caption = 'StaticText3'
+    TabOrder = 11
+  end
+  object TrackBar1: TTrackBar
+    Left = 30
+    Height = 18
+    Top = 264
+    Width = 276
+    Position = 0
+    TabOrder = 12
+  end
+  object BitBtn1: TBitBtn
+    Left = 36
+    Height = 30
+    Top = 294
+    Width = 75
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 13
+  end
+end

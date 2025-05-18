@@ -1,0 +1,70 @@
+object FolderBrowse: TFolderBrowse
+  Left = 240
+  Height = 391
+  Top = 122
+  Width = 497
+  BorderIcons = [biSystemMenu, biMaximize]
+  Caption = 'FolderBrowse'
+  ClientHeight = 391
+  ClientWidth = 497
+  Position = poScreenCenter
+  LCLVersion = '3.99.0.0'
+  object Tree: TShellTreeView
+    Left = 16
+    Height = 266
+    Top = 16
+    Width = 466
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    FileSortType = fstFoldersFirst
+    HideSelection = False
+    ParentShowHint = False
+    ReadOnly = True
+    TabOrder = 0
+    Options = [tvoAutoItemHeight, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+    ObjectTypes = [otFolders, otHidden]
+    OnChange = TreeChange
+  end
+  object Folder: TEdit
+    Left = 16
+    Height = 35
+    Top = 307
+    Width = 465
+    Anchors = [akLeft, akRight, akBottom]
+    TabOrder = 1
+  end
+  object BitBtn1: TBitBtn
+    Left = 320
+    Height = 30
+    Top = 347
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 406
+    Height = 30
+    Top = 347
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 32
+    Top = 288
+    Width = 463
+    Anchors = [akLeft, akBottom]
+    AutoSize = False
+    Caption = 'Label1'
+    ParentColor = False
+    WordWrap = True
+  end
+end
