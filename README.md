@@ -2,7 +2,7 @@
 
 ## 0. Governing License
 
-Please refer to LICENSE-BSL.txt found in the root of this distribution.
+Please refer to [LICENSE-BSL.txt](LICENSE-BSL.txt) found in the root of this distribution.
 
 InstallAware Software has attempted to preserve the original licenses of
 third party files found in this distribution, where applicable.
@@ -13,7 +13,7 @@ still govern the third party files as if the mistake had not been made by the
 automated source code formatting and preparation software used herewith.
 
 Notwithstanding the foregoing, all first party contributions made by
-InstallAware Software are governed entirely by LICENSE-BSL.txt found in the
+InstallAware Software are governed entirely by [LICENSE-BSL.txt](LICENSE-BSL.txt) found in the
 root of this distribution, without exception.
 
 ## 1. Software Requirements
@@ -40,8 +40,7 @@ or by adding support for new platforms where Lazarus/Free Pascal are available
 
 ### macOS: Lazarus 3.4 Paired With Free Pascal 3.2.2
 
-We recommend you install this combination using FPCUPDELUXE:
-https://github.com/LongDirtyAnimAlf/fpcupdeluxe/releases
+We recommend you install this combination using [FPCUPDELUXE](https://github.com/LongDirtyAnimAlf/fpcupdeluxe/releases).
 
 You will also need to install Xcode Command Line Tools on macOS.
 Xcode itself is not required.
