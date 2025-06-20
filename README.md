@@ -1,10 +1,6 @@
-=====================================================
-InstallAware (Multi Platform) 2025 Build Instructions
-=====================================================
+# InstallAware (Multi Platform) 2025 Build Instructions
 
-
-0. Governing License
-====================
+## 0. Governing License
 
 Please refer to LICENSE-BSL.txt found in the root of this distribution.
 
@@ -20,9 +16,7 @@ Notwithstanding the foregoing, all first party contributions made by
 InstallAware Software are governed entirely by LICENSE-BSL.txt found in the
 root of this distribution, without exception.
 
-
-1. Software Requirements
-========================
+## 1. Software Requirements
 
 InstallAware for Windows Installer is built using Delphi, which makes it
 difficult, if not impossible, to open source - due to the large number of
@@ -44,8 +38,7 @@ able to transcend the suggestions below, either by changing this source code,
 or by adding support for new platforms where Lazarus/Free Pascal are available
 (such as Amiga).
 
-macOS: Lazarus 3.4 Paired With Free Pascal 3.2.2
-------------------------------------------------
+### macOS: Lazarus 3.4 Paired With Free Pascal 3.2.2
 
 We recommend you install this combination using FPCUPDELUXE:
 https://github.com/LongDirtyAnimAlf/fpcupdeluxe/releases
@@ -64,8 +57,7 @@ There are additional compatibility problems on Apple Silicon macOS with
 the required version of Lazarus, which are resolved through the application of
 a patch as described in the build instructions following this section.
 
-Linux: Various Versions
------------------------
+### Linux: Various Versions
 
 For aarch64 Linux on GTK2, InstallAware Software uses Lazarus 3.99 paired with
 Free Pascal 3.3.1, as installed by FPCUPDELUXE. The build environment runs
@@ -83,8 +75,7 @@ For x86_64 Linux on Qt5, InstallAware Software uses Lazarus 3.6 paired with
 Free Pascal 3.2.2, as installed by the operating system application manager.
 This build environment runs Manjaro (rolling release).
 
-Windows: Lazarus 3.99 Paired With Free Pascal 3.3.1
----------------------------------------------------
+### Windows: Lazarus 3.99 Paired With Free Pascal 3.3.1
 
 You may install this recommended combination using FPCUPDELUXE.
 
@@ -103,9 +94,7 @@ functionality standpoint.
 Please note that a similar level of compatibility is achievable on
 Apple platforms by building the Intel version of this software.
 
-
-2. Preparing Your Build Environment
-===================================
+## 2. Preparing Your Build Environment
 
 You must install the following packages in the Lazarus IDE before you may build
 InstallAware Multi Platform:
@@ -120,23 +109,21 @@ d. GreatisRuntimeFusion/RunFus/Source/rfpkg.lpk: The merged runtime designers.
 
 No additional packages are required to be installed in the Lazarus IDE.
 
-
-3. Building InstallAware Multi Platform
-=======================================
+## 3. Building InstallAware Multi Platform
 
 The following build scripts perform builds on each supported platform.
 You may need to enable executable attributes on the scripts in your project
 folder by running the command "chmod 777 *.sh" in your favorite shell before
 you are able to run the named build scripts.
 
-a. pubmacosfpc.sh: macOS Intel
-   ---------------------------
+### a. pubmacosfpc.sh: macOS Intel
+
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
 inside the following folder:
 ~/fpcupdeluxe/
 
-b. pubmacarm.sh: macOS Apple Silicon
-   ---------------------------------
+### b. pubmacarm.sh: macOS Apple Silicon
+
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
 inside the following folder:
 ~/fpcupdeluxe/
@@ -148,32 +135,32 @@ Lazarus/Free Pascal that is used to build InstallAware Multi Platform:
 This script then replaces these files with their patched versions from:
 patch/*
 
-c. pubwindowsfpc.bat: Windows
-   --------------------------
+### c. pubwindowsfpc.bat: Windows
+
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
 inside the following folder:
 c:\fpcupdeluxe\
 
-d. publinuxarm.sh: Linux aarch64 GTK2
-   ----------------------------------
+### d. publinuxarm.sh: Linux aarch64 GTK2
+
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
 inside the following folder:
 ~/fpcupdeluxe/
 
-e. publinuxarmqt5.sh: Linux aarch64 Qt5
-   ------------------------------------
+### e. publinuxarmqt5.sh: Linux aarch64 Qt5
+
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
 inside the following folder:
 ~/Downloads/fpcupdeluxe/
 
-f. publinuxfpc.sh: Linux x86_64 GTK2
-   ---------------------------------
+### f. publinuxfpc.sh: Linux x86_64 GTK2
+
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
 inside the following folder:
 ~/fpcupdeluxe/
 
-g. publinuxqt5.sh: Linux x86_64 Qt5
-   --------------------------------
+### g. publinuxqt5.sh: Linux x86_64 Qt5
+
 This script assumes you have installed Lazarus and Free Pascal via the
 operating system application manager, and Lazarus binaries are in your path.
 
@@ -212,21 +199,19 @@ macOS Intel and macOS Apple Silicon.
 Once all binaries have been built successfully, the following files start the
 process of packaging the installers for InstallAware Multi Platform:
 
-h. buildmac.sh
-   -----------
+### h. buildmac.sh
+
 Builds the InstallAware Multi Platform setup on macOS (platform agnostic).
 
-i. buildwin.sh
-   -----------
+### i. buildwin.sh
+
 Builds the InstallAware Multi Platform setup in Windows.
 
-j. buildlinux.sh
-   -------------
+### j. buildlinux.sh
+
 Builds the InstallAware Multi Platform setup on Linux (platform agnostic).
 
-
-4. Excluded Dependencies
-========================
+## 4. Excluded Dependencies
 
 This collection of source files does not include the following (non-exhaustive)
 list of items that are be required for the build scripts above to succeed:
@@ -255,9 +240,7 @@ Please be advised that this document does not grant you any usage rights
 over any and all material that you do not already have rights over, which rights
 may all be reserved.
 
-
-5. Extending InstallAware Multi Platform
-========================================
+## 5. Extending InstallAware Multi Platform
 
 A good place to start is by implementing the stubbed "Check Process" command
 in mScriptExec.pas.
@@ -327,10 +310,7 @@ macOS Notarization on non-Apple platforms.
 Last but not least, the best new features of InstallAware Multi Platform are
 going to be those of which we have not even though of yet - that you invent!
 
-
-=============================================
-Thank you for choosing InstallAware Software.
-=============================================
+## Thank you for choosing InstallAware Software
 
 InstallAware (Multi Platform) 2025
 Copyright (C) 1996-2025 InstallAware Software
