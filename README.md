@@ -98,10 +98,10 @@ Apple platforms by building the Intel version of this software.
 You must install the following packages in the Lazarus IDE before you may build
 InstallAware Multi Platform:
 
-* miap.lpk: The custom script editor and file label controls.
-* GreatisRuntimeFusion/FormDes/Source/gfstd.lpk: The form editor.
-* GreatisRuntimeFusion/ObjInsp/Source/oipkg7.lpk: The object inspector.
-* GreatisRuntimeFusion/RunFus/Source/rfpkg.lpk: The merged runtime designers.
+* `miap.lpk`: The custom script editor and file label controls.
+* `GreatisRuntimeFusion/FormDes/Source/gfstd.lpk`: The form editor.
+* `GreatisRuntimeFusion/ObjInsp/Source/oipkg7.lpk`: The object inspector.
+* `GreatisRuntimeFusion/RunFus/Source/rfpkg.lpk`: The merged runtime designers.
 
 No additional packages are required to be installed in the Lazarus IDE.
 
@@ -109,51 +109,47 @@ No additional packages are required to be installed in the Lazarus IDE.
 
 The following build scripts perform builds on each supported platform.
 You may need to enable executable attributes on the scripts in your project
-folder by running the command "chmod 777 *.sh" in your favorite shell before
+folder by running the command `chmod 777 *.sh` in your favorite shell before
 you are able to run the named build scripts.
 
 ### a. pubmacosfpc.sh: macOS Intel
 
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
-inside the following folder:
-~/fpcupdeluxe/
+inside the folder `~/fpcupdeluxe/`.
 
 ### b. pubmacarm.sh: macOS Apple Silicon
 
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
-inside the following folder:
-~/fpcupdeluxe/
+inside the folder `~/fpcupdeluxe/`.
+
 This script additionally deletes the following files to resolve some problems
 with capturing file download progress on the Apple Silicon version of
 Lazarus/Free Pascal that is used to build InstallAware Multi Platform:
-~/fpcupdeluxe/fpc/units/aarch64-darwin/openssl/*
-~/fpcupdeluxe/fpc/units/aarch64-darwin/fcl-net/*
+* `~/fpcupdeluxe/fpc/units/aarch64-darwin/openssl/*`
+* `~/fpcupdeluxe/fpc/units/aarch64-darwin/fcl-net/*`
+
 This script then replaces these files with their patched versions from:
-patch/*
+* `patch/*`
 
 ### c. pubwindowsfpc.bat: Windows
 
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
-inside the following folder:
-c:\fpcupdeluxe\
+inside the folder `C:\fpcupdeluxe\`.
 
 ### d. publinuxarm.sh: Linux aarch64 GTK2
 
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
-inside the following folder:
-~/fpcupdeluxe/
+inside the folder `~/fpcupdeluxe/`.
 
 ### e. publinuxarmqt5.sh: Linux aarch64 Qt5
 
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
-inside the following folder:
-~/Downloads/fpcupdeluxe/
+inside the folder `~/Downloads/fpcupdeluxe/`.
 
 ### f. publinuxfpc.sh: Linux x86_64 GTK2
 
 This script assumes you have installed Lazarus and Free Pascal via FPCUPDELUXE
-inside the following folder:
-~/fpcupdeluxe/
+inside the folder `~/fpcupdeluxe/`.
 
 ### g. publinuxqt5.sh: Linux x86_64 Qt5
 
@@ -165,30 +161,30 @@ platform you are working on. This will apply any necessary platform specific
 patches as described above. You may then load and edit the following projects
 inside of the Lazarus IDE:
 
-* miamp.lpr:             The InstallAware Multi Platform IDE.
-* miauix.lpr:            The InstallAware Dialog Editor.
-* miaxbuild.lpr:         The command line build tool.
-* miaxstub.lpr:          The InstallAware setup engine.
-* mpax.lpr:              The Setup Capture tool.
-* trans/mtranslator.lpr: The localization tool.
+* `miamp.lpr`:             The InstallAware Multi Platform IDE.
+* `miauix.lpr`:            The InstallAware Dialog Editor.
+* `miaxbuild.lpr`:         The command line build tool.
+* `miaxstub.lpr`:          The InstallAware setup engine.
+* `mpax.lpr`:              The Setup Capture tool.
+* `trans/mtranslator.lpr`: The localization tool.
 
 The build scripts previously mentioned in this section build some of the above
 projects multiple times with different conditional defines, to realize effects
 such as building the console (text mode only) setup engine from the same
 sources that are used to build the GUI version of the setup engine.
 
-Only on macOS, you must also load miaxstub.lpr in the Lazarus IDE, and complete
-the following additional steps: Choose Project | Project Options from the main
-menu. Choose the top level Project Options parent displayed in the tree view.
-Click the "Clear Icon" button. Choose OK, and save your project normally.
+Only on macOS, you must also load `miaxstub.lpr` in the Lazarus IDE, and complete
+the following additional steps: Choose <ins>Main Menu > Project > Project Options</ins>.
+Choose the top level "**Project Options**" parent displayed in the tree view.
+Click the "**Clear Icon**" button. Choose "**OK**", and save your project normally.
 
 Failure to complete the steps above results in the macOS Dock ignoring any
 custom icon you associate with your built setups, whereby the Dock displays the
-standard icon as seen in the Project Options window of the Lazarus IDE instead.
+standard icon as seen in the **Project Options** window of the Lazarus IDE instead.
 This is despite the correct custom icon being added to the application bundle
 on macOS. This additional step is not necessary on Windows or Linux.
 
-Feed the saved project miaxstub.lpr once again to the build scripts mentioned
+Feed the saved project `miaxstub.lpr` once again to the build scripts mentioned
 in 3a and 3b above to complete your changes. This step is required on both
 macOS Intel and macOS Apple Silicon.
 
@@ -212,11 +208,11 @@ Builds the InstallAware Multi Platform setup on Linux (platform agnostic).
 This collection of source files does not include the following (non-exhaustive)
 list of items that are be required for the build scripts above to succeed:
 
-* 7-Zip: Used to compress/extract files. Typically named miax.lib. Available
+* 7-Zip: Used to compress/extract files. Typically named `miax.lib`. Available
 in multiple platform and architecture specific instances which run natively.
 
 * Self-Extractors: Used to package compressed and web based setups.
-Typically named dependentx(.exe) for the GUI version and dependenty for the
+Typically named `dependentx` (`.exe`) for the GUI version and dependenty for the
 console version. Not required for macOS, which does not make use of any
 self-extractor but creates DMG files with Apple native compression instead,
 while retaining single file and web build capabilities as on other platforms.
@@ -239,10 +235,10 @@ may all be reserved.
 ## 5. Extending InstallAware Multi Platform
 
 A good place to start is by implementing the stubbed "Check Process" command
-in mScriptExec.pas.
+in `mScriptExec.pas`.
 
 Once you have implemented this command, you may explore adding new commands
-to the IDE and setup engine by editing uGui.pas and mScriptExec.pas.
+to the IDE and setup engine by editing `uGui.pas` and `mScriptExec.pas`.
 
 Native script commands to query/add/remove PKG/DEB/RPM packages on Mac/Linux
 would make valuable additions to the language - especially if native
@@ -259,8 +255,8 @@ corresponding IDE Layouts feature - although it is currently possible to perform
 rudimentary docking of the current Project Manager and (Variable) Watches
 windows.
 
-While the About boxes of the IDE (uAbout.*) and the Dialog Editor (About.*)
-are rendered translucently on macOS (uMacGlass.pas), Glass/Aero/Acrylic/Mica
+While the About boxes of the IDE (`uAbout.*`) and the Dialog Editor (`About.*`)
+are rendered translucently on macOS (`uMacGlass.pas`), Glass/Aero/Acrylic/Mica
 support is not impemented on Windows (or macOS); and could be formally
 implemented as a component corresponding to the VistaGlass component on
 InstallAware for Windows Installer.
