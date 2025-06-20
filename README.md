@@ -99,13 +99,10 @@ Apple platforms by building the Intel version of this software.
 You must install the following packages in the Lazarus IDE before you may build
 InstallAware Multi Platform:
 
-a. miap.lpk: The custom script editor and file label controls.
-
-b. GreatisRuntimeFusion/FormDes/Source/gfstd.lpk: The form editor.
-
-c. GreatisRuntimeFusion/ObjInsp/Source/oipkg7.lpk: The object inspector.
-
-d. GreatisRuntimeFusion/RunFus/Source/rfpkg.lpk: The merged runtime designers.
+* miap.lpk: The custom script editor and file label controls.
+* GreatisRuntimeFusion/FormDes/Source/gfstd.lpk: The form editor.
+* GreatisRuntimeFusion/ObjInsp/Source/oipkg7.lpk: The object inspector.
+* GreatisRuntimeFusion/RunFus/Source/rfpkg.lpk: The merged runtime designers.
 
 No additional packages are required to be installed in the Lazarus IDE.
 
@@ -169,12 +166,12 @@ platform you are working on. This will apply any necessary platform specific
 patches as described above. You may then load and edit the following projects
 inside of the Lazarus IDE:
 
-i.   miamp.lpr:             The InstallAware Multi Platform IDE.
-ii.  miauix.lpr:            The InstallAware Dialog Editor.
-iii. miaxbuild.lpr:         The command line build tool.
-iv.  miaxstub.lpr:          The InstallAware setup engine.
-v.   mpax.lpr:              The Setup Capture tool.
-vi.  trans/mtranslator.lpr: The localization tool.
+* miamp.lpr:             The InstallAware Multi Platform IDE.
+* miauix.lpr:            The InstallAware Dialog Editor.
+* miaxbuild.lpr:         The command line build tool.
+* miaxstub.lpr:          The InstallAware setup engine.
+* mpax.lpr:              The Setup Capture tool.
+* trans/mtranslator.lpr: The localization tool.
 
 The build scripts previously mentioned in this section build some of the above
 projects multiple times with different conditional defines, to realize effects
@@ -216,21 +213,21 @@ Builds the InstallAware Multi Platform setup on Linux (platform agnostic).
 This collection of source files does not include the following (non-exhaustive)
 list of items that are be required for the build scripts above to succeed:
 
-o 7-Zip: Used to compress/extract files. Typically named miax.lib. Available
+* 7-Zip: Used to compress/extract files. Typically named miax.lib. Available
 in multiple platform and architecture specific instances which run natively.
 
-o Self-Extractors: Used to package compressed and web based setups.
+* Self-Extractors: Used to package compressed and web based setups.
 Typically named dependentx(.exe) for the GUI version and dependenty for the
 console version. Not required for macOS, which does not make use of any
 self-extractor but creates DMG files with Apple native compression instead,
 while retaining single file and web build capabilities as on other platforms.
 
-o Setup Project for InstallAware Multi Platform: Used to package the product
+* Setup Project for InstallAware Multi Platform: Used to package the product
 itself.
 
-o Creative Assets: Setup themes, sample projects, template installations, etc.
+* Creative Assets: Setup themes, sample projects, template installations, etc.
 
-o Code Signing Certificates: macOS Notarization and Windows Authenticode.
+* Code Signing Certificates: macOS Notarization and Windows Authenticode.
 
 The Quick Start Wizard in the IDE will successfully create a fully fleshed out
 setup project for you, even in the absence of (the sources of) the above
