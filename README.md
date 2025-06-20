@@ -185,7 +185,7 @@ This is despite the correct custom icon being added to the application bundle
 on macOS. This additional step is not necessary on Windows or Linux.
 
 Feed the saved project `miaxstub.lpr` once again to the build scripts mentioned
-in 3a and 3b above to complete your changes. This step is required on both
+in [3a](#a-pubmacosfpcsh-macos-intel) and [3b](#b-pubmacarmsh-macos-apple-silicon) chapters to complete your changes. This step is required on both
 macOS Intel and macOS Apple Silicon.
 
 Once all binaries have been built successfully, the following files start the
