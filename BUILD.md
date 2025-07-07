@@ -79,15 +79,13 @@ Apple platforms by building the Intel version of this software.
 
 ## 2. Preparing Your Build Environment
 
-You must install the following packages in the Lazarus IDE before you may build
-InstallAware Multi Platform:
+_InstallAware Multi Platform_ is developed in [Lazarus IDE](https://www.lazarus-ide.org). It can be installed from the official website or via the [FpcUpDeluxe](https://github.com/LongDirtyAnimAlf/fpcupdeluxe/releases), which allows for very flexible installation of different versions on different OS.
 
+Of the third-party IDE packages not included in _Lazarus_, the project only requires the following:
 * `miap.lpk`: The custom script editor and file label controls.
 * `GreatisRuntimeFusion/FormDes/Source/gfstd.lpk`: The form editor.
 * `GreatisRuntimeFusion/ObjInsp/Source/oipkg7.lpk`: The object inspector.
 * `GreatisRuntimeFusion/RunFus/Source/rfpkg.lpk`: The merged runtime designers.
-
-No additional packages are required to be installed in the Lazarus IDE.
 
 ## 3. Building InstallAware Multi Platform
 
